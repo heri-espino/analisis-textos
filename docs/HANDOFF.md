@@ -23,3 +23,5 @@ experiment010: corte jerárquico descriptivo en diez grupos, categoría dominant
 Notebook autónoma: código fuente embebido, módulos locales generados por celdas %%writefile, cinco capítulos y gráficos derivados. No sustituye las evaluaciones históricas. Flujo dedicado para verificar sintaxis y ejecución opcional.
 
 Reorganización de la notebook autónoma: fragmentos fuente pequeños, ensamblado reproducible y celdas separadas para ajuste, tablas y figuras. No cambia el protocolo de los experimentos. El flujo de verificación comprueba el ensamblado y carga/EDA en un directorio independiente.
+
+Compatibilidad Colab: instalación condicional de dependencias, aviso de reinicio cuando se sustituyen módulos cargados, límite de procesos y descarga ZIP final. Protocolo experimental intacto. La ejecución de Colab real debe comprobarse aparte de las pruebas de la VM Windows.

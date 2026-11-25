@@ -59,3 +59,6 @@ Para actualizar únicamente los dos dashboards del capítulo 2 con resultados an
 `notebook_autonoma.ipynb` contiene el código fuente de todos los módulos necesarios. No requiere clonar el repositorio ni descargar scripts. Ejecutar en el entorno Conda anterior o activar INSTALAR. La primera ejecución descarga 20 Newsgroups. El flujo dedicado valida la sintaxis y ejecuta una prueba de carga, EDA e importación de todos los módulos en un directorio temporal. Para ejecutarla completa, usar workflow_dispatch con ejecutar_completa=true.
 
 La notebook se organiza en celdas breves con Markdown contextual. Las celdas de escritura guardan fragmentos independientes; `ensamblar` reconstruye los módulos locales sin duplicar código al repetir celdas. Ejecutar de arriba abajo. Se mantienen las rejillas y el protocolo original.
+
+## Google Colab
+Abrir directamente: https://colab.research.google.com/github/heri-espino/analisis-textos/blob/proyecto/experimentos/notebook_autonoma.ipynb . Seleccionar CPU. La notebook instala automáticamente las versiones de dependencias en Colab; si solicita reinicio, reiniciar la sesión y ejecutar todo otra vez. Se limita el paralelismo a dos procesos en Colab para controlar memoria, sin reducir las rejillas, pliegues ni corpus. Descargar el ZIP de resultados antes de desconectar. Los tiempos dependen del hardware.
