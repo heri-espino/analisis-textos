@@ -57,3 +57,5 @@ Para actualizar únicamente los dos dashboards del capítulo 2 con resultados an
 
 ## Notebook autónoma
 `notebook_autonoma.ipynb` contiene el código fuente de todos los módulos necesarios. No requiere clonar el repositorio ni descargar scripts. Ejecutar en el entorno Conda anterior o activar INSTALAR. La primera ejecución descarga 20 Newsgroups. El flujo dedicado valida la sintaxis y ejecuta una prueba de carga, EDA e importación de todos los módulos en un directorio temporal. Para ejecutarla completa, usar workflow_dispatch con ejecutar_completa=true.
+
+La notebook se organiza en celdas breves con Markdown contextual. Las celdas de escritura guardan fragmentos independientes; `ensamblar` reconstruye los módulos locales sin duplicar código al repetir celdas. Ejecutar de arriba abajo. Se mantienen las rejillas y el protocolo original.

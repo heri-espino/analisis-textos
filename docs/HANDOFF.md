@@ -21,3 +21,5 @@ experiment009: eliminar aproximaciones en 2D. Recalcular medoides y etiquetas DB
 experiment010: corte jerárquico descriptivo en diez grupos, categoría dominante y pureza de Gini normalizada por nodo. Se reproduce sin cambiar distancias ni reentrenar; consultar experimentos/experiment010/README.md. El informe editorial se entrega aparte.
 
 Notebook autónoma: código fuente embebido, módulos locales generados por celdas %%writefile, cinco capítulos y gráficos derivados. No sustituye las evaluaciones históricas. Flujo dedicado para verificar sintaxis y ejecución opcional.
+
+Reorganización de la notebook autónoma: fragmentos fuente pequeños, ensamblado reproducible y celdas separadas para ajuste, tablas y figuras. No cambia el protocolo de los experimentos. El flujo de verificación comprueba el ensamblado y carga/EDA en un directorio independiente.
