@@ -109,8 +109,32 @@ def seleccion_tabla(n, nombre, columnas):
     return tabla
 
 def imagenes(n):
-    return (sorted((RESULTADOS / f"experiment{n:03d}").glob("*.png")) +
-            (sorted((RESULTADOS / "experiment006").glob("*.png")) if n == 4 else [])) if n else []
+    return sorted((RESULTADOS / f"experiment{n:03d}").glob("*.png")) if n else []
+
+def secciones(parrafos, tablas, n):
+    """Una misma secuencia narrativa de preguntas, resultados y figuras en PDF y notebook."""
+    if n == 1:
+        yield "1.1. Corpus y limpieza", parrafos[:1], tablas[:1], imagenes(1)[:3]
+        yield "1.2. ¿Cómo representar los documentos?", parrafos[1:], tablas[1:], imagenes(1)[3:]
+    elif n == 2:
+        imgs = imagenes(2)
+        yield "2.1. ¿Qué estructura temática emerge?", parrafos[:3], tablas[:1], [imgs[i] for i in [0,1,2,3,6,7]]
+        yield "2.2. ¿Qué significan los grupos?", parrafos[3:], tablas[1:], [imgs[i] for i in [4,5]]
+    elif n == 3:
+        imgs = imagenes(3)
+        yield "3.1. Protocolo común y modelos candidatos", parrafos[:2], [], []
+        yield "3.2. ¿Qué modelo generaliza con menor costo?", parrafos[2:3], [tablas[0], tablas[2]], [imgs[i] for i in [0,5,6,7,8,12]]
+        yield "3.3. Evaluación y errores en prueba", parrafos[3:4], [tablas[1], tablas[3]], [imgs[i] for i in [1,2,3,9,10]]
+        yield "3.4. ¿Son distinguibles los finalistas?", parrafos[4:], tablas[4:], [imgs[i] for i in [4,11]]
+    elif n == 4:
+        imgs = imagenes(4)
+        yield "4.1. ¿Importa la representación?", parrafos[:2], tablas[:1], imgs[:1]
+        yield "4.2. ¿Cuánta dimensión necesitamos?", parrafos[2:3], tablas[1:3], imgs[1:3]
+        yield "4.3. ¿Cuánta complejidad necesitamos?", parrafos[3:4], tablas[3:4], imgs[3:]
+        yield "4.4. Integración: ¿aportan información los grupos?", parrafos[4:], tablas[4:], imagenes(6)
+    else:
+        yield None, parrafos, tablas, []
+
 
 def notebook(caps):
     nb = nbf.v4.new_notebook()
@@ -118,17 +142,19 @@ def notebook(caps):
     nb.cells = [nbf.v4.new_markdown_cell("# Análisis y clasificación de textos\n\nProyecto final · 20 Newsgroups\n\n**Pregunta central:** ¿qué aporta la representación léxica, la estructura temática descubierta sin etiquetas y la complejidad de los modelos a la clasificación de documentos?\n\nEl recorrido va de la representación a los grupos, luego a los clasificadores de referencia y culmina en una ablación que combina ambos enfoques.\n\nEsta notebook integra los resultados guardados. Para reproducir desde cero, ejecutar python -m proyecto en el entorno Conda. No reajusta modelos ni usa prueba para elegir hiperparámetros."),
                 nbf.v4.new_code_cell("from pathlib import Path\nimport pandas as pd\nfrom IPython.display import display, Image\nimport seaborn as sns\nsns.set_theme(style='whitegrid', palette='dark')\nRESULTADOS = Path('resultados')")]
     for titulo, parrafos, tablas, n in caps:
-        nb.cells.append(nbf.v4.new_markdown_cell("## " + titulo + "\n\n" + "\n\n".join(parrafos)))
-        for num, nombre, columnas in tablas:
-            codigo = f"tabla = pd.read_csv(RESULTADOS / 'experiment{num:03d}' / '{nombre}.csv')\n"
-            if columnas:
-                codigo += f"tabla = tabla[{columnas!r}]\n"
-            if nombre == "errores_por_par":
-                codigo += "tabla = tabla.head(5)\n"
-            nb.cells.append(nbf.v4.new_markdown_cell("### Tabla: " + nombre.replace("_", " ")))
-            nb.cells.append(nbf.v4.new_code_cell(codigo + "display(tabla.round(4))"))
-        for img in imagenes(n):
-            nb.cells.append(nbf.v4.new_code_cell(f"display(Image(filename={str(img.relative_to(RAIZ).as_posix())!r}))"))
+        nb.cells.append(nbf.v4.new_markdown_cell("## " + titulo))
+        for subtitulo, ps, ts, figuras in secciones(parrafos, tablas, n):
+            nb.cells.append(nbf.v4.new_markdown_cell(("### " + subtitulo + "\n\n" if subtitulo else "") + "\n\n".join(ps)))
+            for num, nombre, columnas in ts:
+                codigo = f"tabla = pd.read_csv(RESULTADOS / 'experiment{num:03d}' / '{nombre}.csv')\n"
+                if columnas:
+                    codigo += f"tabla = tabla[{columnas!r}]\n"
+                if nombre == "errores_por_par":
+                    codigo += "tabla = tabla.head(5)\n"
+                nb.cells.append(nbf.v4.new_markdown_cell("### Tabla: " + nombre.replace("_", " ")))
+                nb.cells.append(nbf.v4.new_code_cell(codigo + "display(tabla.round(4))"))
+            for img in figuras:
+                nb.cells.append(nbf.v4.new_code_cell(f"display(Image(filename={str(img.relative_to(RAIZ).as_posix())!r}))"))
     NotebookClient(nb, timeout=120, kernel_name="python3", resources={"metadata":{"path":str(RAIZ)}}).execute()
     nbf.write(nb, RAIZ / "notebook_final.ipynb")
 
@@ -146,31 +172,34 @@ def pdf(caps):
         if i:
             historia.append(PageBreak())
         historia.append(Paragraph(escape(titulo), estilos["Heading1"]))
-        for p in parrafos:
-            historia.append(Paragraph(escape(p), estilos["BodyText"]))
-        for num, nombre, columnas in tablas:
-            df = seleccion_tabla(num, nombre, columnas)
-            historia.append(Paragraph(escape(nombre.replace("_", " ").capitalize()), estilos["Heading3"]))
-            if nombre == "interpretacion":
-                for _, fila in df.iterrows():
-                    texto = f"Grupo {fila.grupo} ({fila.documentos} documentos): {fila.palabras}. Ejemplo: {fila.ejemplo_1}."
-                    historia.append(Paragraph(escape(texto), estilos["BodyText"]))
-                continue
-            filas = [[Paragraph(escape(str(c)), estilos["Normal"]) for c in df.columns]]
-            for fila in df.itertuples(index=False, name=None):
-                filas.append([Paragraph(escape(f"{x:.4f}" if isinstance(x, float) else str(x)), estilos["Normal"]) for x in fila])
-            tabla = Table(filas, colWidths=[ancho/len(df.columns)]*len(df.columns), repeatRows=1)
-            tabla.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.HexColor("#DDE6ED")),
-                                       ("ROWBACKGROUNDS",(0,1),(-1,-1),[colors.white,colors.HexColor("#F2F5F7")]),
-                                       ("VALIGN",(0,0),(-1,-1),"TOP"),
-                                       ("LINEBELOW",(0,0),(-1,0),.5,colors.HexColor("#607D8B"))]))
-            historia.extend([tabla, Spacer(1, 9)])
-        for img in imagenes(n):
-            w,h = ImageReader(str(img)).getSize()
-            escala = min(ancho/w, 350/h)
-            historia.append(Paragraph(escape(img.stem[3:].replace("_"," ").capitalize()), estilos["Heading3"]))
-            historia.append(Image(str(img), width=w*escala, height=h*escala))
-            historia.append(Spacer(1, 8))
+        for subtitulo, ps, ts, figuras in secciones(parrafos, tablas, n):
+            if subtitulo:
+                historia.append(Paragraph(escape(subtitulo), estilos["Heading2"]))
+            for p in ps:
+                historia.append(Paragraph(escape(p), estilos["BodyText"]))
+            for num, nombre, columnas in ts:
+                df = seleccion_tabla(num, nombre, columnas)
+                historia.append(Paragraph(escape(nombre.replace("_", " ").capitalize()), estilos["Heading3"]))
+                if nombre == "interpretacion":
+                    for _, fila in df.iterrows():
+                        texto = f"Grupo {fila.grupo} ({fila.documentos} documentos): {fila.palabras}. Ejemplo: {fila.ejemplo_1}."
+                        historia.append(Paragraph(escape(texto), estilos["BodyText"]))
+                    continue
+                filas = [[Paragraph(escape(str(c)), estilos["Normal"]) for c in df.columns]]
+                for fila in df.itertuples(index=False, name=None):
+                    filas.append([Paragraph(escape(f"{x:.4f}" if isinstance(x, float) else str(x)), estilos["Normal"]) for x in fila])
+                tabla = Table(filas, colWidths=[ancho/len(df.columns)]*len(df.columns), repeatRows=1)
+                tabla.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,0),colors.HexColor("#DDE6ED")),
+                                           ("ROWBACKGROUNDS",(0,1),(-1,-1),[colors.white,colors.HexColor("#F2F5F7")]),
+                                           ("VALIGN",(0,0),(-1,-1),"TOP"),
+                                           ("LINEBELOW",(0,0),(-1,0),.5,colors.HexColor("#607D8B"))]))
+                historia.extend([tabla, Spacer(1, 9)])
+            for img in figuras:
+                w,h = ImageReader(str(img)).getSize()
+                escala = min(ancho/w, 350/h)
+                historia.append(Paragraph(escape(img.stem[3:].replace("_"," ").capitalize()), estilos["Heading3"]))
+                historia.append(Image(str(img), width=w*escala, height=h*escala))
+                historia.append(Spacer(1, 8))
     def pie(canvas, doc):
         canvas.setFont("Helvetica", 9)
         canvas.drawString(42, 27, "Análisis y clasificación de textos")
