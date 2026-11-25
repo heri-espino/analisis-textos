@@ -56,4 +56,4 @@ Para actualizar únicamente los dos dashboards del capítulo 2 con resultados an
 `python -m proyecto experiment009`: medoides coseno de los diez grupos y etiquetas DBSCAN originales, verificadas contra las métricas históricas.
 
 ## Notebook autónoma
-`notebook_autonoma.ipynb` contiene el código fuente de todos los módulos necesarios. No requiere clonar el repositorio ni descargar scripts. Ejecutar en el entorno Conda anterior o activar INSTALAR. La primera ejecución descarga 20 Newsgroups. El flujo dedicado valida la sintaxis; para ejecutarla completa, usar workflow_dispatch con ejecutar_completa=true (requiere nbconvert).
+`notebook_autonoma.ipynb` contiene el código fuente de todos los módulos necesarios. No requiere clonar el repositorio ni descargar scripts. Ejecutar en el entorno Conda anterior o activar INSTALAR. La primera ejecución descarga 20 Newsgroups. El flujo dedicado valida la sintaxis y ejecuta una prueba de carga, EDA e importación de todos los módulos en un directorio temporal. Para ejecutarla completa, usar workflow_dispatch con ejecutar_completa=true.

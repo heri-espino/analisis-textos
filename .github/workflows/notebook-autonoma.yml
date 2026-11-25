@@ -2,7 +2,7 @@ name: Notebook autónoma LDS1071
 on:
   push:
     branches: [proyecto/experimentos]
-    paths: ['notebook_autonoma.ipynb', '.github/workflows/notebook-autonoma.yml']
+    paths: ['notebook_autonoma.ipynb', '.github/workflows/notebook-autonoma.yml', 'scripts/verificar_notebook.py']
   workflow_dispatch:
     inputs:
       ejecutar_completa:
@@ -27,6 +27,10 @@ jobs:
           "CONDA_EXE_PROYECTO=$conda" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
           & $conda run -n analisis-textos python -c "import nbformat; n=nbformat.read('notebook_autonoma.ipynb',4); nbformat.validate(n); [compile(c.source.split('\n',1)[1] if c.source.startswith('%%writefile') else c.source,'celda','exec') for c in n.cells if c.cell_type=='code']; print('Notebook validada')"
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Prueba real en un directorio independiente
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python scripts/verificar_notebook.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - uses: actions/upload-artifact@v4
         with:
           name: notebook-autonoma
@@ -34,7 +38,7 @@ jobs:
       - name: Ejecutar notebook completa
         if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
         run: |
-          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 --output notebook_autonoma_ejecutada.ipynb notebook_autonoma.ipynb
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python scripts/verificar_notebook.py --completa
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - uses: actions/upload-artifact@v4
         if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
