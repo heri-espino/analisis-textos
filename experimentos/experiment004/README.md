@@ -1,0 +1,2 @@
+# experiment004 — Generalización
+**Motivo:** aislar representación, dimensión y complejidad. **Método:** regresión logística, cinco pliegues comunes y cambios de un factor: BoW/TF-IDF, máximo de características, componentes SVD y C. Error definido como 1 − F1 macro. **Reproducción:** python -m proyecto experiment004. **Resultados:** resultados/experiment004. **Siguiente paso:** integrar conclusiones con evaluación final sin seleccionar por prueba. No hay resultados hasta ejecutar.

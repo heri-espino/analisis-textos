@@ -1,0 +1,2 @@
+# experiment001 — Preparación
+**Motivo:** describir corpus y comparar BoW/TF-IDF. **Método:** EDA y vocabulario solo sobre entrenamiento; eliminación de metadatos, correos, URL y duplicados exactos; SVD exploratorio. **Reproducción:** python -m proyecto experiment001. **Resultados:** resultados/experiment001 (tablas, figuras y huellas). **Siguiente paso:** comprobar distribución y esparsidad, luego experiment002. No hay resultados hasta ejecutar.

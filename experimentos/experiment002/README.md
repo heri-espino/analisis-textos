@@ -1,0 +1,2 @@
+# experiment002 — Agrupamiento
+**Motivo:** descubrir estructura sin etiquetas. **Método:** K-means, aglomerativo promedio, DBSCAN y GMM diagonal por EM; TF-IDF y SVD-50 normalizado (GMM solo en SVD). Silhouette coseno y cobertura para selección; después ARI/NMI. **Reproducción:** python -m proyecto experiment002. **Resultados:** resultados/experiment002. **Siguiente paso:** interpretar términos y ejemplos; no usar el agrupamiento para ajustar clasificadores. No hay resultados hasta ejecutar.
