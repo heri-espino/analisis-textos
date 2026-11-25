@@ -17,3 +17,5 @@ experiment006 finalizó correctamente en 9f580fbd1cd76aa0249fee495530499e6731795
 experiment008: repetir únicamente diagnósticos que faltaban en el informe editorial. Verificar los resultados antes de incorporar cifras; no sustituir la prueba histórica. La rama no se fusiona sin autorización.
 
 experiment009: eliminar aproximaciones en 2D. Recalcular medoides y etiquetas DBSCAN en SVD-50, comprobar ARI=1 para K-means y métricas históricas de DBSCAN; usar huella para colorear las seis proyecciones. Conservar resultados supervisados.
+
+experiment010: corte jerárquico descriptivo en diez grupos, categoría dominante y pureza de Gini normalizada por nodo. Se reproduce sin cambiar distancias ni reentrenar; consultar experimentos/experiment010/README.md. El informe editorial se entrega aparte.
