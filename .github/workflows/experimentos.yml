@@ -61,8 +61,13 @@ jobs:
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment008
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Medoides y DBSCAN originales
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment009:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment009
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Ejecutar experimentos y generar entregables
-        if: github.event_name != 'push' || (!startsWith(github.event.head_commit.message, 'experiment007:') && !startsWith(github.event.head_commit.message, 'experiment008:'))
+        if: github.event_name != 'push' || (!startsWith(github.event.head_commit.message, 'experiment007:') && !startsWith(github.event.head_commit.message, 'experiment008:') && !startsWith(github.event.head_commit.message, 'experiment009:'))
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

@@ -52,3 +52,5 @@ Para actualizar únicamente los dos dashboards del capítulo 2 con resultados an
 
 ## Diagnósticos complementarios
 `python -m proyecto experiment008` reconstruye las curvas de inercia, los dendrogramas de documentos y los pesos de términos, y amplía SVD hasta 1000 dimensiones. Requiere las asignaciones originales del agrupamiento y conserva las métricas históricas. Consultar experimentos/experiment008/README.md.
+
+`python -m proyecto experiment009`: medoides coseno de los diez grupos y etiquetas DBSCAN originales, verificadas contra las métricas históricas.

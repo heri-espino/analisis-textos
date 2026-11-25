@@ -15,3 +15,5 @@ experiment006: conservar la primera ejecución exitosa en c1324670b7bbbf15d9e97c
 experiment006 finalizó correctamente en 9f580fbd1cd76aa0249fee495530499e6731795d. experiment007 agrega seis proyecciones sobre SVD-100 y dos dashboards al capítulo 2. La ejecución de esta extensión reutiliza los resultados previos y no reentrena clasificadores. Siguiente investigación: experiment008. Verificar 19,800 filas (3,300 por método), seis métricas, dos PNG y regeneración de notebook y PDF.
 
 experiment008: repetir únicamente diagnósticos que faltaban en el informe editorial. Verificar los resultados antes de incorporar cifras; no sustituir la prueba histórica. La rama no se fusiona sin autorización.
+
+experiment009: eliminar aproximaciones en 2D. Recalcular medoides y etiquetas DBSCAN en SVD-50, comprobar ARI=1 para K-means y métricas históricas de DBSCAN; usar huella para colorear las seis proyecciones. Conservar resultados supervisados.

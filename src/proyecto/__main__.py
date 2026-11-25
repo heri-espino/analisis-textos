@@ -2,12 +2,12 @@
 import argparse
 import joblib
 from threadpoolctl import threadpool_limits
-from . import preparacion, agrupamiento, clasificacion, generalizacion, hibrido, proyecciones, diagnostico_ampliado
+from . import preparacion, agrupamiento, clasificacion, generalizacion, hibrido, proyecciones, diagnostico_ampliado, representantes
 from .comun import cargar, carpeta, limpiar
 
 def main():
     parser = argparse.ArgumentParser(description="Proyecto de análisis de textos")
-    parser.add_argument("etapa", nargs="?", choices=["experiment001", "experiment002", "experiment003", "experiment004", "experiment005", "experiment006", "experiment007", "experiment008", "entrega"])
+    parser.add_argument("etapa", nargs="?", choices=["experiment001", "experiment002", "experiment003", "experiment004", "experiment005", "experiment006", "experiment007", "experiment008", "experiment009", "entrega"])
     parser.add_argument("--texto", help="Clasificar un documento nuevo")
     parser.add_argument("--hibrido", action="store_true", help="Usar el mejor modelo híbrido por CV")
     args = parser.parse_args()
@@ -16,7 +16,7 @@ def main():
         print(modelo.predict([limpiar(args.texto)])[0])
         return
     etapas = {"experiment001": preparacion, "experiment002": agrupamiento,
-              "experiment007": proyecciones, "experiment004": generalizacion, "experiment003": clasificacion, "experiment006": hibrido, "experiment008": diagnostico_ampliado}
+              "experiment007": proyecciones, "experiment004": generalizacion, "experiment003": clasificacion, "experiment006": hibrido, "experiment008": diagnostico_ampliado, "experiment009": representantes}
     if args.etapa != "entrega":
         datos = cargar()
         with threadpool_limits(limits=1):
