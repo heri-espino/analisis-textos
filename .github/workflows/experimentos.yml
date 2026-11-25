@@ -1,0 +1,69 @@
+name: Experimentos de análisis de textos
+
+on:
+  push:
+    branches: [proyecto/experimentos]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'environment.yml'
+      - 'pyproject.toml'
+      - '.github/workflows/experimentos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analisis-textos-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  experimentos:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 120
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          miniforge-version: latest
+          activate-environment: analisis-textos
+          environment-file: environment.yml
+          auto-activate-base: false
+      - name: Instalar proyecto
+        run: conda run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
+      - name: Pruebas unitarias
+        run: conda run --no-capture-output -n analisis-textos python -m pytest -q
+      - name: Ejecutar experimentos y generar entregables
+        run: conda run --no-capture-output -n analisis-textos python -m proyecto
+      - name: Registrar versiones
+        run: |
+          conda list -n analisis-textos --explicit | Out-File -Encoding utf8 resultados/conda-win-64.txt
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Conservar artefactos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: analisis-textos-resultados
+          path: |
+            resultados/
+            notebook_final.ipynb
+            reporte.pdf
+          if-no-files-found: warn
+      - name: Versionar resultados en la rama
+        if: github.ref == 'refs/heads/proyecto/experimentos'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultados notebook_final.ipynb reporte.pdf
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { exit 0 }
+          git commit -m "Guardar resultados reproducibles y entregables [skip ci]"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git push origin HEAD:proyecto/experimentos
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
