@@ -19,3 +19,5 @@ experiment008: repetir únicamente diagnósticos que faltaban en el informe edit
 experiment009: eliminar aproximaciones en 2D. Recalcular medoides y etiquetas DBSCAN en SVD-50, comprobar ARI=1 para K-means y métricas históricas de DBSCAN; usar huella para colorear las seis proyecciones. Conservar resultados supervisados.
 
 experiment010: corte jerárquico descriptivo en diez grupos, categoría dominante y pureza de Gini normalizada por nodo. Se reproduce sin cambiar distancias ni reentrenar; consultar experimentos/experiment010/README.md. El informe editorial se entrega aparte.
+
+Notebook autónoma: código fuente embebido, módulos locales generados por celdas %%writefile, cinco capítulos y gráficos derivados. No sustituye las evaluaciones históricas. Flujo dedicado para verificar sintaxis y ejecución opcional.

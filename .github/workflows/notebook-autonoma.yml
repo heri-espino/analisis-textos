@@ -1,0 +1,43 @@
+name: Notebook autónoma LDS1071
+on:
+  push:
+    branches: [proyecto/experimentos]
+    paths: ['notebook_autonoma.ipynb', '.github/workflows/notebook-autonoma.yml']
+  workflow_dispatch:
+    inputs:
+      ejecutar_completa:
+        description: 'Ejecutar todos los análisis'
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 180
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar notebook y módulos incluidos
+        run: |
+          $conda = @("$env:USERPROFILE\miniconda3\Scripts\conda.exe", "$env:USERPROFILE\miniforge3\Scripts\conda.exe", "$env:USERPROFILE\anaconda3\Scripts\conda.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $conda) { $conda = (Get-Command conda.exe).Source }
+          "CONDA_EXE_PROYECTO=$conda" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          & $conda run -n analisis-textos python -c "import nbformat; n=nbformat.read('notebook_autonoma.ipynb',4); nbformat.validate(n); [compile(c.source.split('\n',1)[1] if c.source.startswith('%%writefile') else c.source,'celda','exec') for c in n.cells if c.cell_type=='code']; print('Notebook validada')"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notebook-autonoma
+          path: notebook_autonoma.ipynb
+      - name: Ejecutar notebook completa
+        if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=-1 --output notebook_autonoma_ejecutada.ipynb notebook_autonoma.ipynb
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
+        with:
+          name: notebook-ejecutada
+          path: notebook_autonoma_ejecutada.ipynb
