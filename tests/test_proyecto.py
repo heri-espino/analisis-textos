@@ -64,3 +64,22 @@ def test_caracteristicas_tematicas():
     assert a.transform(X[:3]).shape == (3, 18)
     for modelo, _, reducir in modelos().values():
         clone(pipeline(modelo, reducir, con_grupos=True))
+
+def test_proyecciones_alineacion_y_dashboard(tmp_path):
+    import pandas as pd
+    import pytest
+    from proyecto.proyecciones import alinear_grupos, tabla_coordenadas, dashboard, METODOS
+    datos = pd.DataFrame({"huella": ["a","b","c"], "categoria": ["A","B","A"]})
+    asignaciones = datos.assign(grupo=[0,1,-1]).iloc[::-1]
+    grupos = alinear_grupos(datos, asignaciones)
+    assert grupos.tolist() == [0,1,-1]
+    with pytest.raises(ValueError):
+        alinear_grupos(datos, asignaciones.iloc[:2])
+    coords = {m: np.array([[0.,0.],[1.,1.],[0.,1.]]) for m in METODOS}
+    tabla = tabla_coordenadas(coords, datos, grupos)
+    assert len(tabla) == 18
+    assert tabla.groupby("metodo").huella.nunique().eq(3).all()
+    dashboard(tabla, tmp_path, "categoria", "categorias", "Categorías")
+    dashboard(tabla, tmp_path, "grupo", "grupos", "Grupos")
+    assert (tmp_path / "categorias.png").stat().st_size > 0
+    assert (tmp_path / "grupos.png").stat().st_size > 0

@@ -49,7 +49,15 @@ jobs:
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m pytest -q
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Actualizar proyecciones y entregables sin reentrenar
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment007:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment007
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto entrega
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Ejecutar experimentos y generar entregables
+        if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'experiment007:')
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

@@ -53,6 +53,9 @@ def capitulos():
     hholm = leer(6,"bootstrap_holm")
     hmejor = h.iloc[0]
     hfinal = leer(6,"bootstrap_finalistas")
+    proy = leer(7, "metricas_proyecciones")
+    meta_proy = json.loads((RESULTADOS / "experiment007" / "metadatos.json").read_text(encoding="utf-8"))
+    mejor_proy = proy.loc[proy.trustworthiness_15.idxmax()]
     tablas = [
         ("1. Preparación y representación de textos", [
             f"Objetivo: descubrir temas sin etiquetas y clasificar documentos nuevos. Se emplea 20 Newsgroups: {total} documentos en seis categorías, {train} de entrenamiento y {total-train} de prueba. Se respeta la partición original y se selecciona un número fijo por categoría. Se eliminan cabeceras, firmas, citas, URL, correos y duplicados exactos. La tokenización conserva palabras inglesas y se excluyen palabras funcionales al vectorizar.",
@@ -60,11 +63,13 @@ def capitulos():
             f"Las medianas de longitud por clase van de {e.mediana_palabras.min():.0f} a {e.mediana_palabras.max():.0f} palabras. Las matrices tienen {rep.caracteristicas.min():,}–{rep.caracteristicas.max():,} características y {100*rep.esparsidad.min():.2f}–{100*rep.esparsidad.max():.2f}% de ceros. SVD con 100 componentes conserva {100*var.varianza_acumulada.iloc[-1]:.2f}% de la varianza según TruncatedSVD; al no centrarse la matriz, no equivale exactamente a PCA. La elevada esparsidad favorece algoritmos lineales y almacenamiento disperso.",
         ], [(1,"eda",None),(1,"representaciones",None)], 1),
         ("2. Aprendizaje no supervisado", [
+            "Para visualizar la geometría textual se comparan PCA, ICA, t-SNE, UMAP, Isomap y Spectral Embedding sobre los mismos documentos y la misma representación TF-IDF reducida a 100 componentes mediante TruncatedSVD. PCA se aplica con centrado real sobre este espacio común; ICA busca independencia estadística; t-SNE preserva afinidades locales; UMAP aproxima la estructura de vecindades; Isomap usa distancias geodésicas del grafo; Spectral Embedding usa autovectores del laplaciano. Ninguna técnica utiliza categorías ni grupos durante el ajuste.",
+            f"El primer dashboard colorea por categoría original; el segundo reutiliza exactamente las mismas coordenadas y colorea por grupo seleccionado en experiment002. Se calcula trustworthiness con 15 vecinos respecto al espacio SVD-100, una medida de preservación local entre 0 y 1; el máximo observado corresponde a {mejor_proy.metodo} ({mejor_proy.trustworthiness_15:.4f}). El grafo de 15 vecinos tiene {meta_proy['componentes_grafo_15']} componentes conexas. Los ejes, escalas, áreas y distancias entre paneles no son comparables; una separación visual no demuestra clusters reales ni rendimiento predictivo. Los tiempos corresponden al ajuste 2D, sin la reducción común ni el cálculo de trustworthiness; UMAP usa un hilo para reproducibilidad y su primera ejecución puede incluir compilación.",
             "Se ajusta de forma independiente una representación TF-IDF en los mismos documentos del corpus completo, sin entregar las etiquetas a los estimadores. K-means minimiza dispersión euclidiana; el aglomerativo utiliza enlace promedio y distancia coseno; DBSCAN busca regiones densas y puede declarar ruido; la mezcla gaussiana usa EM, covarianzas diagonales y el espacio SVD-50. Se compara TF-IDF original y SVD normalizado cuando es viable. La proyección en dos componentes solo ilustra la geometría. Estos grupos constituyen la motivación para el experimento híbrido del capítulo 4; no se reutilizan sus asignaciones ajustadas sobre todo el corpus.",
             "Se experimenta con k=3, 4, 6, 8 y 10 y, para DBSCAN, cinco radios y dos umbrales de vecinos. Silhouette coseno mide separación interna. Se excluye el ruido de su cálculo, se informa cobertura y se selecciona por cobertura × (1 + silhouette)/2 para penalizar el descarte. ARI y NMI se calculan únicamente después de congelar la selección; no se selecciona por las etiquetas.",
             f"La configuración seleccionada internamente es {sel.algoritmo}, {sel.parametros}, {sel.representacion}: {int(sel.grupos)} grupos, cobertura {sel.cobertura:.1%}, silhouette {sel.silhouette:.4f}, ARI {sel.ARI:.4f} y NMI {sel.NMI:.4f}. En contraste, el mayor ARI retrospectivo es {externo.ARI:.4f} ({externo.algoritmo}, {externo.representacion}, {externo.parametros}). Un ARI cercano a cero señala concordancia ajustada por azar escasa; uno indica equivalencia perfecta. La geometría y las etiquetas temáticas no tienen por qué coincidir.",
             "Las tablas de mejores configuraciones muestran el efecto de reducir la dimensión por algoritmo. No se compara GMM en el espacio original: una mezcla de alta dimensión resultaría más costosa y los vectores esparsos no satisfacen bien una hipótesis gaussiana. Se interpretan los grupos con términos de mayor TF-IDF promedio y extractos de dos documentos representativos. Los grupos de ruido, si aparecen, no representan necesariamente un tema.",
-        ], [(2,"mejores",["algoritmo","representacion","parametros","grupos","cobertura","silhouette","ARI","NMI","segundos_ajuste"]),
+        ], [(7,"metricas_proyecciones",["metodo","documentos","segundos_proyeccion","trustworthiness_15"]),(2,"mejores",["algoritmo","representacion","parametros","grupos","cobertura","silhouette","ARI","NMI","segundos_ajuste"]),
             (2,"interpretacion",["grupo","documentos","palabras","ejemplo_1"])], 2),
         ("3. Aprendizaje supervisado", [
             "Se comparan regresión logística, SGD logístico, árbol de decisión, Random Forest, AdaBoost, Gradient Boosting y SVM con kernel RBF, además de tres ensambles. Las transformaciones se ajustan dentro de Pipeline en cada pliegue. Gradient Boosting usa SVD-50 para limitar su costo. GridSearchCV selecciona por F1 macro en cinco pliegues estratificados comunes, sin acceso a prueba. F1 macro promedia la media armónica de precisión y exhaustividad por clase; las demás métricas se calculan también con promedio macro salvo Accuracy.",
@@ -118,8 +123,9 @@ def secciones(parrafos, tablas, n):
         yield "1.2. ¿Cómo representar los documentos?", parrafos[1:], tablas[1:], imagenes(1)[3:]
     elif n == 2:
         imgs = imagenes(2)
-        yield "2.1. ¿Qué estructura temática emerge?", parrafos[:3], tablas[:1], [imgs[i] for i in [0,1,2,3,6,7]]
-        yield "2.2. ¿Qué significan los grupos?", parrafos[3:], tablas[1:], [imgs[i] for i in [4,5]]
+        yield "2.1. ¿Cómo se ve el corpus en dos dimensiones?", parrafos[:2], tablas[:1], imagenes(7)[:1]
+        yield "2.2. ¿Qué estructura temática emerge?", parrafos[2:5], tablas[1:2], [imgs[i] for i in [0,1,2,3,6,7]]
+        yield "2.3. ¿Qué significan los grupos?", parrafos[5:], tablas[2:], imagenes(7)[1:] + [imgs[5]]
     elif n == 3:
         imgs = imagenes(3)
         yield "3.1. Protocolo común y modelos candidatos", parrafos[:2], [], []

@@ -12,7 +12,7 @@ python -m pytest -q
 python -m proyecto
 ```
 
-Si el entorno existe, usar `conda env update -f environment.yml --prune`. La primera ejecución descarga 20 Newsgroups desde la fuente oficial de scikit-learn; no se versiona el corpus completo. Para ejecutar únicamente una etapa: `python -m proyecto experiment001` (también 002, 003, 004, 005, 006 o `entrega`). Ejecutar todas las etapas antes de generar la entrega. Para clasificar textos nuevos después del experimento003:
+Si el entorno existe, usar `conda env update -f environment.yml --prune`. La primera ejecución descarga 20 Newsgroups desde la fuente oficial de scikit-learn; no se versiona el corpus completo. Para ejecutar únicamente una etapa: `python -m proyecto experiment001` (también 002, 003, 004, 005, 006, 007 o `entrega`). Ejecutar todas las etapas antes de generar la entrega. Para clasificar textos nuevos después del experimento003:
 
 ```powershell
 python -m proyecto --texto "The spacecraft entered orbit around Mars."
@@ -32,8 +32,9 @@ La selección supervisada se realiza con F1 macro y los mismos cinco pliegues es
 | experiment004 | Representación, dimensión y sobreajuste con CV | generalizacion.py |
 | experiment005 | Bagging logístico, votación de siete modelos y stacking XGBoost, integrados en 003 | ensambles.py |
 | experiment006 | Ablación: mismos diez modelos con 20 indicadores temáticos K-means/GMM | hibrido.py, temas.py |
+| experiment007 | Seis proyecciones 2D, dos dashboards, preservación local y tiempos | proyecciones.py |
 
-La ejecución completa realiza 001, 002, 004, 003 (incluye 005) y 006 (el estudio de generalización se termina antes de evaluar prueba). Los resultados se guardan en resultados/experimentNNN. Después se generan notebook_final.ipynb (con salidas) y reporte.pdf, en cinco capítulos, a partir de los resultados reales. No se inventan métricas. El reporte se genera automáticamente; debe revisarse visual y científicamente antes de entregar.
+La ejecución completa realiza 001, 002, 007, 004, 003 (incluye 005) y 006 (el estudio de generalización se termina antes de evaluar prueba). Los resultados se guardan en resultados/experimentNNN. Después se generan notebook_final.ipynb (con salidas) y reporte.pdf, en cinco capítulos, a partir de los resultados reales. No se inventan métricas. El reporte se genera automáticamente; debe revisarse visual y científicamente antes de entregar.
 
 ## Runner
 
@@ -44,3 +45,7 @@ Fuente: https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgrou
 ## Pregunta integradora
 
 ¿La estructura temática no supervisada mejora la clasificación respecto a la representación léxica? experiment006 compara los mismos diez candidatos con y sin 20 columnas one-hot (10 K-means + 10 GMM, SVD-50 normalizado). Se conservan particiones, rejillas y pliegues; todos los ajustes están dentro del pipeline. El corpus de prueba se había evaluado antes de proponer esta extensión: sus resultados son exploratorios, no una nueva prueba independiente. Para ejecutar solo la extensión con resultados previos del 003: `python -m proyecto experiment006`, luego `python -m proyecto entrega`. Para predecir con el mejor híbrido: `python -m proyecto --hibrido --texto "spacecraft orbit"`.
+
+## Visualización de la geometría textual
+
+Para actualizar únicamente los dos dashboards del capítulo 2 con resultados anteriores de experiment002: `python -m proyecto experiment007` y `python -m proyecto entrega`. PCA centrado, ICA, t-SNE, UMAP, Isomap y Spectral Embedding comparten TF-IDF → SVD-100. Se guardan las coordenadas de todos los documentos, tiempos, trustworthiness(15), parámetros y advertencias. Los colores corresponden a categorías reales o grupos seleccionados, únicamente después del ajuste. Las proyecciones son exploratorias y nunca se transfieren al clasificador.
