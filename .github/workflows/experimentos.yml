@@ -56,8 +56,13 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto entrega
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Diagnósticos complementarios sin modificar resultados históricos
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment008:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment008
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Ejecutar experimentos y generar entregables
-        if: github.event_name != 'push' || !startsWith(github.event.head_commit.message, 'experiment007:')
+        if: github.event_name != 'push' || (!startsWith(github.event.head_commit.message, 'experiment007:') && !startsWith(github.event.head_commit.message, 'experiment008:'))
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

@@ -49,3 +49,6 @@ Fuente: https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgrou
 ## Visualización de la geometría textual
 
 Para actualizar únicamente los dos dashboards del capítulo 2 con resultados anteriores de experiment002: `python -m proyecto experiment007` y `python -m proyecto entrega`. PCA centrado, ICA, t-SNE, UMAP, Isomap y Spectral Embedding comparten TF-IDF → SVD-100. Se guardan las coordenadas de todos los documentos, tiempos, trustworthiness(15), parámetros y advertencias. Los colores corresponden a categorías reales o grupos seleccionados, únicamente después del ajuste. Las proyecciones son exploratorias y nunca se transfieren al clasificador.
+
+## Diagnósticos complementarios
+`python -m proyecto experiment008` reconstruye las curvas de inercia, los dendrogramas de documentos y los pesos de términos, y amplía SVD hasta 1000 dimensiones. Requiere las asignaciones originales del agrupamiento y conserva las métricas históricas. Consultar experimentos/experiment008/README.md.
