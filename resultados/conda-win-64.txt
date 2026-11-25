@@ -70,6 +70,7 @@ https://conda.anaconda.org/conda-forge/win-64/libfreetype6-2.14.3-hdbac1cb_2.con
 https://conda.anaconda.org/conda-forge/win-64/libglib-2.90.1-h7c262e9_4.conda
 https://conda.anaconda.org/conda-forge/win-64/libtiff-4.7.2-hef6d50c_2.conda
 https://conda.anaconda.org/conda-forge/win-64/libxml2-2.15.4-he095d88_1.conda
+https://conda.anaconda.org/conda-forge/win-64/llvmlite-0.50.0-py312h1534abe_1.conda
 https://conda.anaconda.org/conda-forge/noarch/munkres-1.1.4-pyhd8ed1ab_1.conda
 https://conda.anaconda.org/conda-forge/noarch/nest-asyncio2-1.7.4-pyh5ded981_0.conda
 https://conda.anaconda.org/conda-forge/noarch/packaging-26.4-pyhc364b38_0.conda
@@ -110,6 +111,7 @@ https://conda.anaconda.org/conda-forge/noarch/python-dateutil-4.0.0-pyh5ded981_0
 https://conda.anaconda.org/conda-forge/noarch/python-gil-3.12.16-hd8ed1ab_0.conda
 https://conda.anaconda.org/conda-forge/noarch/referencing-0.37.0-pyhcf101f3_0.conda
 https://conda.anaconda.org/conda-forge/noarch/stack_data-0.6.3-pyhd8ed1ab_1.conda
+https://conda.anaconda.org/conda-forge/noarch/tqdm-4.70.1-pyh6be1c34_0.conda
 https://conda.anaconda.org/conda-forge/noarch/wheel-0.48.0-pyhd8ed1ab_0.conda
 https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda
 https://conda.anaconda.org/conda-forge/win-64/fontconfig-2.18.4-hbf4c354_0.conda
@@ -146,6 +148,7 @@ https://conda.anaconda.org/conda-forge/noarch/reportlab-5.1.0-pyh5ded981_0.conda
 https://conda.anaconda.org/conda-forge/noarch/ipykernel-7.4.0-pyhe2676ad_0.conda
 https://conda.anaconda.org/conda-forge/win-64/numpy-2.2.6-py312h3150e54_0.conda
 https://conda.anaconda.org/conda-forge/win-64/contourpy-1.4.0-py312h78d62e6_2.conda
+https://conda.anaconda.org/conda-forge/win-64/numba-0.68.1-py312ha1a9051_1.conda
 https://conda.anaconda.org/conda-forge/win-64/pandas-2.2.3-py312h72972c8_3.conda
 https://conda.anaconda.org/conda-forge/noarch/patsy-1.0.3-pyhcf101f3_0.conda
 https://conda.anaconda.org/conda-forge/win-64/scipy-1.15.2-py312h451d5c4_0.conda
@@ -154,5 +157,7 @@ https://conda.anaconda.org/conda-forge/win-64/scikit-learn-1.6.1-py312h816cc57_0
 https://conda.anaconda.org/conda-forge/win-64/statsmodels-0.14.6-py312h196c9fc_0.conda
 https://conda.anaconda.org/conda-forge/win-64/matplotlib-3.10.9-py312h2e8e312_0.conda
 https://conda.anaconda.org/conda-forge/noarch/py-xgboost-3.0.5-cuda129_pyha75543c_1.conda
+https://conda.anaconda.org/conda-forge/noarch/pynndescent-0.7.0-pyhd8ed1ab_0.conda
 https://conda.anaconda.org/conda-forge/noarch/seaborn-base-0.13.2-pyhd8ed1ab_3.conda
 https://conda.anaconda.org/conda-forge/noarch/seaborn-0.13.2-hd8ed1ab_3.conda
+https://conda.anaconda.org/conda-forge/win-64/umap-learn-0.5.9.post2-py312h2e8e312_1.conda
