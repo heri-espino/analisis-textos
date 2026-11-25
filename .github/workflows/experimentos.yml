@@ -35,11 +35,17 @@ jobs:
           environment-file: environment.yml
           auto-activate-base: false
       - name: Instalar proyecto
-        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
+        run: |
+          & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Pruebas unitarias
-        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pytest -q
+        run: |
+          & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pytest -q
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Ejecutar experimentos y generar entregables
-        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m proyecto
+        run: |
+          & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m proyecto
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Registrar versiones
         run: |
           & "$env:CONDA\Scripts\conda.exe" list -n analisis-textos --explicit | Out-File -Encoding utf8 resultados/conda-win-64.txt

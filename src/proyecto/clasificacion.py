@@ -144,7 +144,7 @@ def ejecutar(datos):
     ax.set(title="F1 macro en validación cruzada (media ± DE)", xlim=(0, 1), ylabel="")
     figura(ruta, "01_validacion", fig)
     fig, ax = plt.subplots(figsize=(11, 6))
-    sns.barplot(data=metricas.melt("modelo", var_name="metrica", value_name="valor"),
+    sns.barplot(data=metricas.melt("modelo", ["Accuracy", "Precision", "Recall", "F1"], var_name="metrica", value_name="valor"),
                 y="modelo", x="valor", hue="metrica", ax=ax)
     ax.set(title="Evaluación final en prueba", xlim=(0, 1), ylabel="")
     figura(ruta, "02_metricas", fig)

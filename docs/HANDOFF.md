@@ -5,3 +5,5 @@ La implementación inicial define experiment001–005. El runner ejecuta los exp
 Si falla el runner, revisar etiquetas Windows/X64, disponibilidad de Conda, acceso a Figshare y permisos del token. Si la descarga falla, reintentar sin cambiar los conjuntos. Las siguientes investigaciones deben usar experiment006, etc. No reajustar basándose en la prueba ya observada.
 
 La primera ejecución 45568371842 falló antes de las pruebas porque no existe pwsh en el runner. Se cambia a Windows PowerShell y se invoca conda.exe directamente. experiment005 está integrado en 003 para congelar el ranking de diez modelos antes de prueba. Revisar los nuevos tiempos y gráficos, sin inferir resultados hasta ejecutarlos.
+
+La segunda ejecución 45569130565 no generó jobs: corregir la sintaxis YAML de los comandos PowerShell con bloques literales. Las métricas de clasificación se grafican separadas de los tiempos.
