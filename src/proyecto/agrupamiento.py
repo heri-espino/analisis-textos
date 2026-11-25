@@ -1,5 +1,6 @@
 """Agrupamiento independiente del clasificador, sin acceso a etiquetas durante el ajuste."""
 from itertools import product
+from time import perf_counter
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -23,7 +24,10 @@ def configuraciones(reducida):
         yield "DBSCAN", f"eps={eps}, min={minimo}", DBSCAN(eps=eps, min_samples=minimo, metric="precomputed", n_jobs=1), True
 
 def ajustar(nombre, parametros, modelo, precomputado, X, D, representacion):
+    inicio = perf_counter()
     etiquetas = modelo.fit_predict(D if precomputado else X)
+    tiempo_ajuste = perf_counter()-inicio
+    inicio = perf_counter()
     valido = etiquetas != -1
     grupos = len(np.unique(etiquetas[valido]))
     cobertura = valido.mean()
@@ -32,7 +36,8 @@ def ajustar(nombre, parametros, modelo, precomputado, X, D, representacion):
     # Penalización explícita por descartar documentos como ruido.
     criterio = cobertura * (1 + sil) / 2 if np.isfinite(sil) else np.nan
     return {"algoritmo": nombre, "parametros": parametros, "representacion": representacion,
-            "grupos": grupos, "cobertura": cobertura, "silhouette": sil, "criterio": criterio}, etiquetas
+            "grupos": grupos, "cobertura": cobertura, "silhouette": sil, "criterio": criterio,
+            "segundos_ajuste": tiempo_ajuste, "segundos_silhouette": perf_counter()-inicio}, etiquetas
 
 def ejecutar(datos):
     ruta = carpeta(2)
@@ -44,6 +49,7 @@ def ejecutar(datos):
     resultados = []
     for nombre, matriz in [("TF-IDF", X), ("SVD-50", Z)]:
         D = cosine_distances(matriz)
+        np.clip(D, 0, 2, out=D)
         np.fill_diagonal(D, 0)
         resultados.extend(Parallel(n_jobs=-1, prefer="threads")(
             delayed(ajustar)(a, p, m, pre, matriz, D, nombre)
@@ -100,3 +106,16 @@ def ejecutar(datos):
         filas.append({"grupo": int(grupo), "documentos": len(indices), "palabras": ", ".join(palabras),
                       "ejemplo_1": ejemplos[0], "ejemplo_2": ejemplos[-1]})
     guardar(pd.DataFrame(filas), ruta, "interpretacion")
+
+    fig, ax = plt.subplots(figsize=(10,5))
+    sns.boxplot(data=tabla, y="algoritmo", x="segundos_ajuste", hue="representacion", ax=ax)
+    ax.set(title="Costo de ajuste por configuración (con ejecución paralela)", xlabel="Segundos de pared", ylabel="", xscale="log")
+    figura(ruta, "07_tiempos", fig)
+    fig, axs = plt.subplots(1,2,figsize=(12,5))
+    for ax, (rep, sub) in zip(axs, tabla.loc[tabla.algoritmo.eq("DBSCAN")].groupby("representacion")):
+        sub = sub.assign(eps=sub.parametros.str.extract(r"eps=([^,]+)")[0].astype(float),
+                         minimo=sub.parametros.str.extract(r"min=(\d+)")[0].astype(int))
+        sns.heatmap(sub.pivot(index="minimo", columns="eps", values="cobertura"), annot=True, fmt=".2f", cmap="Blues", vmin=0, vmax=1, ax=ax)
+        ax.set_title(rep)
+    fig.suptitle("DBSCAN: proporción de documentos no clasificados como ruido")
+    figura(ruta, "08_cobertura_dbscan", fig)

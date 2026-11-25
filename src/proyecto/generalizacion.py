@@ -1,4 +1,5 @@
 """Tres estudios controlados mediante los mismos pliegues de entrenamiento."""
+from time import perf_counter
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
@@ -15,10 +16,11 @@ def evaluar(datos, grid):
                      ("modelo", LogisticRegression(max_iter=1000, random_state=SEMILLA))])
     busqueda = GridSearchCV(pipe, grid, cv=cv(), scoring="f1_macro", n_jobs=-1,
                             refit=False, return_train_score=True, error_score="raise")
+    inicio = perf_counter()
     with parallel_config(backend="loky", inner_max_num_threads=1):
         busqueda.fit(train.texto, train.categoria)
     r = pd.DataFrame(busqueda.cv_results_)
-    return r.assign(error_entrenamiento=1-r.mean_train_score,
+    return r.assign(segundos_busqueda=perf_counter()-inicio, error_entrenamiento=1-r.mean_train_score,
                     error_validacion=1-r.mean_test_score)
 
 def ejecutar(datos):

@@ -11,6 +11,7 @@ dependencies:
   - matplotlib=3.10
   - joblib=1.4
   - threadpoolctl
+  - py-xgboost=3.0
   - statsmodels=0.14
   - nbformat
   - nbclient

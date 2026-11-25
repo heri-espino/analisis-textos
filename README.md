@@ -12,7 +12,7 @@ python -m pytest -q
 python -m proyecto
 ```
 
-Si el entorno existe, usar `conda env update -f environment.yml --prune`. La primera ejecución descarga 20 Newsgroups desde la fuente oficial de scikit-learn; no se versiona el corpus completo. Para ejecutar únicamente una etapa: `python -m proyecto experiment001` (también 002, 003, 004 o `entrega`). Ejecutar todas las etapas antes de generar la entrega. Para clasificar textos nuevos después del experimento003:
+Si el entorno existe, usar `conda env update -f environment.yml --prune`. La primera ejecución descarga 20 Newsgroups desde la fuente oficial de scikit-learn; no se versiona el corpus completo. Para ejecutar únicamente una etapa: `python -m proyecto experiment001` (también 002, 003, 004, 005 o `entrega`). Ejecutar todas las etapas antes de generar la entrega. Para clasificar textos nuevos después del experimento003:
 
 ```powershell
 python -m proyecto --texto "The spacecraft entered orbit around Mars."
@@ -22,16 +22,17 @@ python -m proyecto --texto "The spacecraft entered orbit around Mars."
 
 Seis temas distintos: gráficos por computadora, automóviles, hockey, medicina, espacio y política de Oriente Medio. Se seleccionan 400 documentos de entrenamiento y 150 de prueba por categoría (3,300 en total), respetando las particiones oficiales, con semilla 42. Se eliminan cabeceras, firmas, citas, documentos sin vocabulario útil y duplicados exactos tras limpieza. La prueba se mantiene fuera del ajuste supervisado y de los estudios de generalización. El agrupamiento es un análisis independiente sobre el corpus completo: sus ajustes no reciben etiquetas ni se transfieren al clasificador.
 
-La selección supervisada se realiza con F1 macro y los mismos cinco pliegues estratificados. GridSearchCV usa n_jobs=-1; los estimadores internos y BLAS se limitan durante la búsqueda para evitar sobreparalelización. Se mantiene scikit-learn en CPU: estos estimadores no ofrecen GPU nativa en la configuración usada. No se introduce una implementación CUDA alternativa por el tamaño del corpus y la comparabilidad.
+La selección supervisada se realiza con F1 macro y los mismos cinco pliegues estratificados. GridSearchCV usa n_jobs=-1; los estimadores internos y BLAS se limitan durante la búsqueda para evitar sobreparalelización. Se mantiene scikit-learn en CPU: estos estimadores no ofrecen GPU nativa en la configuración usada. XGBoost se utiliza como metaestimador con tree_method=hist en CPU: la matriz de metacaracterísticas es pequeña y no justifica transferencias a GPU. Se registran tiempos de pared de búsqueda, reajuste, predicción y agrupamiento; las comparaciones dependen del hardware. Los ensambles usan bases preespecificadas y CV externa común, con CV interna para stacking.
 
 | Experimento | Objetivo | Módulo |
 | --- | --- | --- |
 | experiment001 | EDA, BoW, TF-IDF y vocabulario | preparacion.py |
 | experiment002 | K-means, aglomerativo, DBSCAN, mezcla gaussiana EM y SVD | agrupamiento.py |
-| experiment003 | Siete clasificadores, CV, prueba final, bootstrap y Holm | clasificacion.py |
+| experiment003 | Siete clasificadores y tres ensambles, CV, prueba final, bootstrap y Holm | clasificacion.py |
 | experiment004 | Representación, dimensión y sobreajuste con CV | generalizacion.py |
+| experiment005 | Bagging logístico, votación de siete modelos y stacking XGBoost, integrados en 003 | ensambles.py |
 
-La ejecución completa realiza 001, 002, 004 y 003 (el estudio de generalización se termina antes de evaluar prueba). Los resultados se guardan en resultados/experimentNNN. Después se generan notebook_final.ipynb (con salidas) y reporte.pdf, en cinco capítulos, a partir de los resultados reales. No se inventan métricas. El reporte se genera automáticamente; debe revisarse visual y científicamente antes de entregar.
+La ejecución completa realiza 001, 002, 004 y 003 (incluye 005) (el estudio de generalización se termina antes de evaluar prueba). Los resultados se guardan en resultados/experimentNNN. Después se generan notebook_final.ipynb (con salidas) y reporte.pdf, en cinco capítulos, a partir de los resultados reales. No se inventan métricas. El reporte se genera automáticamente; debe revisarse visual y científicamente antes de entregar.
 
 ## Runner
 

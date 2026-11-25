@@ -21,10 +21,10 @@ concurrency:
 jobs:
   experimentos:
     runs-on: [self-hosted, Windows, X64]
-    timeout-minutes: 120
+    timeout-minutes: 180
     defaults:
       run:
-        shell: pwsh
+        shell: powershell
     steps:
       - uses: actions/checkout@v4
       - name: Preparar Conda
@@ -35,14 +35,14 @@ jobs:
           environment-file: environment.yml
           auto-activate-base: false
       - name: Instalar proyecto
-        run: conda run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
+        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
       - name: Pruebas unitarias
-        run: conda run --no-capture-output -n analisis-textos python -m pytest -q
+        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m pytest -q
       - name: Ejecutar experimentos y generar entregables
-        run: conda run --no-capture-output -n analisis-textos python -m proyecto
+        run: & "$env:CONDA\Scripts\conda.exe" run --no-capture-output -n analisis-textos python -m proyecto
       - name: Registrar versiones
         run: |
-          conda list -n analisis-textos --explicit | Out-File -Encoding utf8 resultados/conda-win-64.txt
+          & "$env:CONDA\Scripts\conda.exe" list -n analisis-textos --explicit | Out-File -Encoding utf8 resultados/conda-win-64.txt
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Conservar artefactos
         if: always()

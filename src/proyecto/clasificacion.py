@@ -11,11 +11,13 @@ from sklearn.decomposition import TruncatedSVD
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression, SGDClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import GridSearchCV, cross_validate
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from statsmodels.stats.multitest import multipletests
+from .ensambles import construir
+from .diagnosticos import diagnosticos
 from .comun import carpeta, entrenamiento, vectorizador, cv, figura, guardar, SEMILLA, json_guardar
 
 def modelos():
@@ -70,8 +72,9 @@ def ejecutar(datos):
     ruta = carpeta(3)
     train, test = entrenamiento(datos), datos.loc[datos.particion.eq("test")]
     X, y = train.texto, train.categoria
-    estimadores, validacion, detalles = {}, [], []
+    estimadores, validacion, detalles, pliegues = {}, [], [], []
     for nombre, (modelo, grid, reducir) in modelos().items():
+        print(f"Ajustando {nombre}", flush=True)
         inicio = perf_counter()
         busqueda = GridSearchCV(pipeline(modelo, reducir), grid, cv=cv(), scoring="f1_macro",
                                 n_jobs=-1, return_train_score=True, error_score="raise")
@@ -80,25 +83,57 @@ def ejecutar(datos):
         estimadores[nombre] = busqueda.best_estimator_
         validacion.append({"modelo": nombre, "F1_CV": busqueda.best_score_,
                            "DE_CV": busqueda.cv_results_["std_test_score"][busqueda.best_index_],
-                           "parametros": str(busqueda.best_params_), "segundos": perf_counter()-inicio})
+                           "parametros": str(busqueda.best_params_), "segundos": perf_counter()-inicio,
+                           "segundos_refit": busqueda.refit_time_,
+                           "segundos_ajuste_fold": busqueda.cv_results_["mean_fit_time"][busqueda.best_index_],
+                           "familia": "Individual"})
+        for i in range(5):
+            pliegues.append({"modelo": nombre, "pliegue": i+1,
+                "F1_validacion": busqueda.cv_results_[f"split{i}_test_score"][busqueda.best_index_],
+                "F1_entrenamiento": busqueda.cv_results_[f"split{i}_train_score"][busqueda.best_index_]})
         detalle = pd.DataFrame(busqueda.cv_results_).assign(modelo=nombre)
         detalles.append(detalle)
+    # experiment005: las bases usan configuraciones preespecificadas, no las ganadoras
+    # de una búsqueda que hubiera visto las etiquetas de los pliegues externos.
+    ruta_ens = carpeta(5)
+    for nombre, ensamble in construir(modelos(), pipeline).items():
+        print(f"Ajustando {nombre}", flush=True)
+        inicio = perf_counter()
+        with parallel_config(backend="loky", inner_max_num_threads=1):
+            scores = cross_validate(ensamble, X, y, cv=cv(), scoring="f1_macro",
+                                    n_jobs=-1, return_train_score=True, error_score="raise")
+            t = perf_counter()
+            ensamble.fit(X, y)
+            refit = perf_counter()-t
+        estimadores[nombre] = ensamble
+        validacion.append({"modelo": nombre, "F1_CV": scores["test_score"].mean(),
+                           "DE_CV": scores["test_score"].std(), "parametros": "Preespecificados; XGBoost CV interna",
+                           "segundos": perf_counter()-inicio, "segundos_refit": refit,
+                           "segundos_ajuste_fold": scores["fit_time"].mean(), "familia": "Ensamble"})
+        for i, (v, e) in enumerate(zip(scores["test_score"], scores["train_score"])):
+            pliegues.append({"modelo": nombre, "pliegue": i+1, "F1_validacion": v, "F1_entrenamiento": e})
     ranking = pd.DataFrame(validacion).sort_values("F1_CV", ascending=False).reset_index(drop=True)
     guardar(ranking, ruta, "validacion")
+    guardar(pd.DataFrame(pliegues), ruta, "pliegues_cv")
+    guardar(ranking.loc[ranking.familia.eq("Ensamble")], ruta_ens, "validacion_ensambles")
     guardar(pd.concat(detalles, ignore_index=True), ruta, "busqueda_cv")
     # Solo ahora se evalúa la prueba; ranking y top 3 congelados por CV.
     predicciones, filas = {}, []
     yt = test.categoria.to_numpy()
     clases = sorted(y.unique())
     for nombre in ranking.modelo:
+        inicio = perf_counter()
         pred = estimadores[nombre].predict(test.texto)
+        segundos_pred = perf_counter()-inicio
         predicciones[nombre] = pred
         filas.append({"modelo": nombre, "Accuracy": accuracy_score(yt, pred),
                       "Precision": precision_score(yt, pred, average="macro", zero_division=0),
                       "Recall": recall_score(yt, pred, average="macro", zero_division=0),
-                      "F1": f1_score(yt, pred, average="macro")})
+                      "F1": f1_score(yt, pred, average="macro"),
+                      "segundos_prediccion": segundos_pred})
     metricas = pd.DataFrame(filas)
     guardar(metricas, ruta, "metricas_prueba")
+    guardar(metricas.loc[metricas.modelo.isin(ranking.loc[ranking.familia.eq("Ensamble"), "modelo"])], ruta_ens, "metricas_ensambles")
     guardar(pd.DataFrame({"huella": test.huella.to_numpy(), "real": yt, **predicciones}), ruta, "predicciones")
     mejor = ranking.modelo.iloc[0]
     joblib.dump(estimadores[mejor], ruta / "modelo.joblib", compress=3)
@@ -113,13 +148,14 @@ def ejecutar(datos):
                 y="modelo", x="valor", hue="metrica", ax=ax)
     ax.set(title="Evaluación final en prueba", xlim=(0, 1), ylabel="")
     figura(ruta, "02_metricas", fig)
-    fig, axs = plt.subplots(2, 4, figsize=(18, 9))
+    fig, axs = plt.subplots(3, 4, figsize=(19, 13))
     for ax, (nombre, pred) in zip(axs.flat, predicciones.items()):
         matriz = confusion_matrix(yt, pred, labels=clases)
         sns.heatmap(matriz, annot=True, fmt="d", cmap="Blues", cbar=False,
                     xticklabels=clases, yticklabels=clases, ax=ax)
         ax.set_title(nombre)
-    axs.flat[-1].axis("off")
+    for ax in list(axs.flat)[len(predicciones):]:
+        ax.axis("off")
     figura(ruta, "03_confusiones", fig)
     matriz = confusion_matrix(yt, predicciones[mejor], labels=clases)
     fig, ax = plt.subplots(figsize=(8, 6))
@@ -150,3 +186,4 @@ def ejecutar(datos):
     ax.axvline(.05, ls="--", color="gray")
     ax.set(xlabel="p ajustado", ylabel="", title="Corrección de Holm", xlim=(0, 1))
     figura(ruta, "05_bootstrap_holm", fig)
+    diagnosticos(ruta, ranking, metricas, pd.DataFrame(pliegues), yt, predicciones, clases, replicas, mejor)

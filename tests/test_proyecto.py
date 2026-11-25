@@ -33,3 +33,18 @@ def test_agrupamiento():
     np.fill_diagonal(D, 0)
     fila, lab = ajustar("K-means", "k=2", KMeans(2, n_init=1, random_state=42), False, X, D, "TF-IDF")
     assert fila["grupos"] == 2 and len(lab) == 8
+
+def test_ensambles():
+    from proyecto.ensambles import construir
+    from proyecto.clasificacion import modelos, pipeline
+    from sklearn.ensemble import BaggingClassifier, StackingClassifier, VotingClassifier
+    candidatos = construir(modelos(), pipeline)
+    assert len(candidatos) == 3
+    assert isinstance(candidatos["Bagging (regresión logística)"].named_steps["modelo"], BaggingClassifier)
+    assert isinstance(candidatos["Votación (7 modelos)"], VotingClassifier)
+    stack = candidatos["Stacking (XGBoost)"]
+    assert isinstance(stack, StackingClassifier)
+    assert len(stack.estimators) == 7 and stack.cv.n_splits == 5
+    assert stack.final_estimator.estimator.__class__.__name__ == "XGBClassifier"
+    for candidato in candidatos.values():
+        clone(candidato)
