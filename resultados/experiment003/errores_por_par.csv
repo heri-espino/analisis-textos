@@ -1,0 +1,31 @@
+real,predicha,errores
+Espacio,Automóviles,9
+Gráficos,Automóviles,8
+Gráficos,Espacio,8
+Medicina,Automóviles,7
+Espacio,Gráficos,6
+Espacio,Medicina,6
+Medicina,Espacio,4
+Automóviles,Espacio,4
+Automóviles,Medicina,4
+Oriente Medio,Automóviles,4
+Hockey,Medicina,3
+Espacio,Hockey,3
+Hockey,Espacio,3
+Hockey,Automóviles,2
+Espacio,Oriente Medio,2
+Medicina,Oriente Medio,2
+Gráficos,Medicina,2
+Medicina,Gráficos,2
+Medicina,Hockey,2
+Oriente Medio,Gráficos,2
+Oriente Medio,Espacio,1
+Automóviles,Gráficos,1
+Gráficos,Oriente Medio,1
+Automóviles,Oriente Medio,1
+Automóviles,Hockey,1
+Oriente Medio,Hockey,1
+Hockey,Oriente Medio,1
+Oriente Medio,Medicina,1
+Hockey,Gráficos,0
+Gráficos,Hockey,0

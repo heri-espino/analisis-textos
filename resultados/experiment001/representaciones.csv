@@ -1,0 +1,3 @@
+representacion,documentos,caracteristicas,no_ceros,esparsidad
+BoW,2400,10000,138733,0.9942194583333334
+TF-IDF,2400,10000,138733,0.9942194583333334
