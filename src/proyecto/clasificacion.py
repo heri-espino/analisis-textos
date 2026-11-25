@@ -1,5 +1,6 @@
 """Selección con CV común, evaluación final y contrastes bootstrap pareados."""
 from itertools import combinations
+from functools import partial
 from time import perf_counter
 import joblib
 import matplotlib.pyplot as plt
@@ -17,6 +18,7 @@ from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
 from statsmodels.stats.multitest import multipletests
 from .ensambles import construir
+from .temas import caracteristicas
 from .diagnosticos import diagnosticos
 from .comun import carpeta, entrenamiento, vectorizador, cv, figura, guardar, SEMILLA, json_guardar
 
@@ -38,9 +40,10 @@ def modelos():
                     {"modelo__C": [1, 10], "modelo__gamma": ["scale", .1]}, False),
     }
 
-def pipeline(modelo, reducir=False):
+def pipeline(modelo, reducir=False, con_grupos=False):
     return Pipeline([("texto", vectorizador()),
-                     ("svd", TruncatedSVD(50, random_state=SEMILLA) if reducir else "passthrough"),
+                     ("svd", caracteristicas(reducir) if con_grupos else
+                      (TruncatedSVD(50, random_state=SEMILLA) if reducir else "passthrough")),
                      ("modelo", modelo)])
 
 def bootstrap(y, predicciones, B=2000):
@@ -68,15 +71,14 @@ def bootstrap(y, predicciones, B=2000):
     tabla["rechaza_H0"], tabla["p_Holm"], _, _ = multipletests(tabla.p, alpha=.05, method="holm")
     return tabla, pd.DataFrame(replicas, columns=nombres)
 
-def ejecutar(datos):
-    ruta = carpeta(3)
-    train, test = entrenamiento(datos), datos.loc[datos.particion.eq("test")]
-    X, y = train.texto, train.categoria
+def ajustar_modelos(X, y, con_grupos=False):
+    """Mismo protocolo y candidatos para las dos representaciones."""
+    fabricar = partial(pipeline, con_grupos=con_grupos)
     estimadores, validacion, detalles, pliegues = {}, [], [], []
     for nombre, (modelo, grid, reducir) in modelos().items():
         print(f"Ajustando {nombre}", flush=True)
         inicio = perf_counter()
-        busqueda = GridSearchCV(pipeline(modelo, reducir), grid, cv=cv(), scoring="f1_macro",
+        busqueda = GridSearchCV(fabricar(modelo, reducir), grid, cv=cv(), scoring="f1_macro",
                                 n_jobs=-1, return_train_score=True, error_score="raise")
         with parallel_config(backend="loky", inner_max_num_threads=1):
             busqueda.fit(X, y)
@@ -95,8 +97,7 @@ def ejecutar(datos):
         detalles.append(detalle)
     # experiment005: las bases usan configuraciones preespecificadas, no las ganadoras
     # de una búsqueda que hubiera visto las etiquetas de los pliegues externos.
-    ruta_ens = carpeta(5)
-    for nombre, ensamble in construir(modelos(), pipeline).items():
+    for nombre, ensamble in construir(modelos(), fabricar).items():
         print(f"Ajustando {nombre}", flush=True)
         inicio = perf_counter()
         with parallel_config(backend="loky", inner_max_num_threads=1):
@@ -107,20 +108,38 @@ def ejecutar(datos):
             refit = perf_counter()-t
         estimadores[nombre] = ensamble
         validacion.append({"modelo": nombre, "F1_CV": scores["test_score"].mean(),
-                           "DE_CV": scores["test_score"].std(), "parametros": "Preespecificados; XGBoost CV interna",
+                           "DE_CV": scores["test_score"].std(), "parametros": "Preespecificados; XGBoost CV interna" if "Stacking" in nombre else "Preespecificados",
                            "segundos": perf_counter()-inicio, "segundos_refit": refit,
                            "segundos_ajuste_fold": scores["fit_time"].mean(), "familia": "Ensamble"})
         for i, (v, e) in enumerate(zip(scores["test_score"], scores["train_score"])):
             pliegues.append({"modelo": nombre, "pliegue": i+1, "F1_validacion": v, "F1_entrenamiento": e})
     ranking = pd.DataFrame(validacion).sort_values("F1_CV", ascending=False).reset_index(drop=True)
+    return estimadores, ranking, pd.DataFrame(pliegues), pd.concat(detalles, ignore_index=True)
+
+def ejecutar(datos):
+    ruta, ruta_ens = carpeta(3), carpeta(5)
+    train, test = entrenamiento(datos), datos.loc[datos.particion.eq("test")]
+    estimadores, ranking, pliegues, detalles = ajustar_modelos(train.texto, train.categoria)
+    y = train.categoria
     guardar(ranking, ruta, "validacion")
-    guardar(pd.DataFrame(pliegues), ruta, "pliegues_cv")
+    guardar(pliegues, ruta, "pliegues_cv")
     guardar(ranking.loc[ranking.familia.eq("Ensamble")], ruta_ens, "validacion_ensambles")
-    guardar(pd.concat(detalles, ignore_index=True), ruta, "busqueda_cv")
+    guardar(detalles, ruta, "busqueda_cv")
     # Solo ahora se evalúa la prueba; ranking y top 3 congelados por CV.
-    predicciones, filas = {}, []
+    predicciones, metricas = evaluar_modelos(estimadores, ranking, test)
     yt = test.categoria.to_numpy()
     clases = sorted(y.unique())
+    guardar(metricas, ruta, "metricas_prueba")
+    guardar(metricas.loc[metricas.modelo.isin(ranking.loc[ranking.familia.eq("Ensamble"), "modelo"])], ruta_ens, "metricas_ensambles")
+    guardar(pd.DataFrame({"huella": test.huella.to_numpy(), "real": yt, **predicciones}), ruta, "predicciones")
+    mejor = ranking.modelo.iloc[0]
+    joblib.dump(estimadores[mejor], ruta / "modelo.joblib", compress=3)
+    json_guardar({"seleccionado": mejor, "top3": ranking.modelo.head(3).tolist()}, ruta / "seleccion.json")
+    graficar_resultados(datos, ruta, ranking, metricas, predicciones, pliegues, mejor)
+
+def evaluar_modelos(estimadores, ranking, test):
+    predicciones, filas = {}, []
+    yt = test.categoria.to_numpy()
     for nombre in ranking.modelo:
         inicio = perf_counter()
         pred = estimadores[nombre].predict(test.texto)
@@ -131,13 +150,12 @@ def ejecutar(datos):
                       "Recall": recall_score(yt, pred, average="macro", zero_division=0),
                       "F1": f1_score(yt, pred, average="macro"),
                       "segundos_prediccion": segundos_pred})
-    metricas = pd.DataFrame(filas)
-    guardar(metricas, ruta, "metricas_prueba")
-    guardar(metricas.loc[metricas.modelo.isin(ranking.loc[ranking.familia.eq("Ensamble"), "modelo"])], ruta_ens, "metricas_ensambles")
-    guardar(pd.DataFrame({"huella": test.huella.to_numpy(), "real": yt, **predicciones}), ruta, "predicciones")
-    mejor = ranking.modelo.iloc[0]
-    joblib.dump(estimadores[mejor], ruta / "modelo.joblib", compress=3)
-    json_guardar({"seleccionado": mejor, "top3": ranking.modelo.head(3).tolist()}, ruta / "seleccion.json")
+    return predicciones, pd.DataFrame(filas)
+
+def graficar_resultados(datos, ruta, ranking, metricas, predicciones, pliegues, mejor):
+    test = datos.loc[datos.particion.eq("test")]
+    yt = test.categoria.to_numpy()
+    clases = sorted(datos.categoria.unique())
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.barplot(data=ranking, y="modelo", x="F1_CV", ax=ax)
     ax.errorbar(ranking.F1_CV, np.arange(len(ranking)), xerr=ranking.DE_CV, fmt="none", color="black", capsize=3)

@@ -47,6 +47,12 @@ def capitulos():
     train = int(e.documentos.sum())
     total = len(leer(1, "particiones"))
     cv_gap = test.F1 - mejor.F1_CV
+    h = leer(6,"comparacion")
+    global_ranking = leer(6,"ranking_global")
+    global_mejor = global_ranking.iloc[0]
+    hholm = leer(6,"bootstrap_holm")
+    hmejor = h.iloc[0]
+    hfinal = leer(6,"bootstrap_finalistas")
     tablas = [
         ("1. Preparación y representación de textos", [
             f"Objetivo: descubrir temas sin etiquetas y clasificar documentos nuevos. Se emplea 20 Newsgroups: {total} documentos en seis categorías, {train} de entrenamiento y {total-train} de prueba. Se respeta la partición original y se selecciona un número fijo por categoría. Se eliminan cabeceras, firmas, citas, URL, correos y duplicados exactos. La tokenización conserva palabras inglesas y se excluyen palabras funcionales al vectorizar.",
@@ -54,7 +60,7 @@ def capitulos():
             f"Las medianas de longitud por clase van de {e.mediana_palabras.min():.0f} a {e.mediana_palabras.max():.0f} palabras. Las matrices tienen {rep.caracteristicas.min():,}–{rep.caracteristicas.max():,} características y {100*rep.esparsidad.min():.2f}–{100*rep.esparsidad.max():.2f}% de ceros. SVD con 100 componentes conserva {100*var.varianza_acumulada.iloc[-1]:.2f}% de la varianza según TruncatedSVD; al no centrarse la matriz, no equivale exactamente a PCA. La elevada esparsidad favorece algoritmos lineales y almacenamiento disperso.",
         ], [(1,"eda",None),(1,"representaciones",None)], 1),
         ("2. Aprendizaje no supervisado", [
-            "Se ajusta de forma independiente una representación TF-IDF en los mismos documentos del corpus completo, sin entregar las etiquetas a los estimadores. K-means minimiza dispersión euclidiana; el aglomerativo utiliza enlace promedio y distancia coseno; DBSCAN busca regiones densas y puede declarar ruido; la mezcla gaussiana usa EM, covarianzas diagonales y el espacio SVD-50. Se compara TF-IDF original y SVD normalizado cuando es viable. La proyección en dos componentes solo ilustra la geometría.",
+            "Se ajusta de forma independiente una representación TF-IDF en los mismos documentos del corpus completo, sin entregar las etiquetas a los estimadores. K-means minimiza dispersión euclidiana; el aglomerativo utiliza enlace promedio y distancia coseno; DBSCAN busca regiones densas y puede declarar ruido; la mezcla gaussiana usa EM, covarianzas diagonales y el espacio SVD-50. Se compara TF-IDF original y SVD normalizado cuando es viable. La proyección en dos componentes solo ilustra la geometría. Estos grupos constituyen la motivación para el experimento híbrido del capítulo 4; no se reutilizan sus asignaciones ajustadas sobre todo el corpus.",
             "Se experimenta con k=3, 4, 6, 8 y 10 y, para DBSCAN, cinco radios y dos umbrales de vecinos. Silhouette coseno mide separación interna. Se excluye el ruido de su cálculo, se informa cobertura y se selecciona por cobertura × (1 + silhouette)/2 para penalizar el descarte. ARI y NMI se calculan únicamente después de congelar la selección; no se selecciona por las etiquetas.",
             f"La configuración seleccionada internamente es {sel.algoritmo}, {sel.parametros}, {sel.representacion}: {int(sel.grupos)} grupos, cobertura {sel.cobertura:.1%}, silhouette {sel.silhouette:.4f}, ARI {sel.ARI:.4f} y NMI {sel.NMI:.4f}. En contraste, el mayor ARI retrospectivo es {externo.ARI:.4f} ({externo.algoritmo}, {externo.representacion}, {externo.parametros}). Un ARI cercano a cero señala concordancia ajustada por azar escasa; uno indica equivalencia perfecta. La geometría y las etiquetas temáticas no tienen por qué coincidir.",
             "Las tablas de mejores configuraciones muestran el efecto de reducir la dimensión por algoritmo. No se compara GMM en el espacio original: una mezcla de alta dimensión resultaría más costosa y los vectores esparsos no satisfacen bien una hipótesis gaussiana. Se interpretan los grupos con términos de mayor TF-IDF promedio y extractos de dos documentos representativos. Los grupos de ruido, si aparecen, no representan necesariamente un tema.",
@@ -70,17 +76,24 @@ def capitulos():
             (3,"errores_por_par",["real","predicha","errores"]),
             (3,"bootstrap_holm",["modelo_A","modelo_B","delta_F1","IC_inferior","IC_superior","p_Holm"])], 3),
         ("4. Generalización y complejidad", [
-            "Se usa una regresión logística de referencia para aislar cada factor, manteniendo fijos datos, pliegues, limpieza y los restantes hiperparámetros. Se ejecutan estos estudios antes de consultar prueba. Las puntuaciones son de validación cruzada, no de prueba; las estimaciones de la mejor configuración tienen sesgo de selección.",
+            "Primero se usa una regresión logística de referencia para aislar cada factor, manteniendo fijos datos, pliegues, limpieza y los restantes hiperparámetros. Se ejecutan estos estudios antes de consultar prueba. Las puntuaciones son de validación cruzada, no de prueba; las estimaciones de la mejor configuración tienen sesgo de selección.",
             f"Representación: {rbest.representacion} logra el mayor F1 medio de CV ({rbest.mean_test_score:.4f}) con C=1. TF-IDF reduce el peso de términos frecuentes y la influencia de la longitud; BoW conserva el conteo absoluto. La diferencia observada puede depender del clasificador y su regularización.",
             f"Dimensionalidad: el mejor máximo de vocabulario ensayado es {int(dbest.caracteristicas_max):,} (F1={dbest.mean_test_score:.4f}); es un límite, no necesariamente el número efectivo de columnas. En el estudio SVD, {int(sbest.componentes)} componentes logran el mayor F1 ({sbest.mean_test_score:.4f}). Comprimir puede eliminar ruido, pero también vocabulario discriminativo. Comparar con TF-IDF sin reducir permite evaluar el costo de la compresión.",
             f"Complejidad: C es el inverso de la fuerza de regularización. El mejor C exploratorio es {cbest.C:g} (F1={cbest.mean_test_score:.4f}); la mayor brecha validación − entrenamiento en error 1−F1 es {brecha.max():.4f} (C={bmax.C:g}). Una brecha positiva puede ser compatible con sobreajuste; una brecha pequeña con error alto puede ser compatible con subajuste. Esta curva no usa prueba.",
+            "Integración de aprendizaje no supervisado y supervisado (experiment006). La pregunta final es si la estructura temática aporta información útil además del vocabulario. Se conserva la rama léxica de cada uno de los diez candidatos y se añaden dos bloques de diez indicadores one-hot de pertenencia a grupos, obtenidos mediante K-means y mezcla gaussiana EM sobre SVD-50 normalizado. Se usa k=10, motivado por la exploración anterior, no se elige con el F1 de prueba. Los agrupamientos se reajustan sin etiquetas dentro de cada pliegue, incluido el stacking; ningún objeto ni asignación del capítulo 2 se reutiliza. DBSCAN y aglomerativo no ofrecen predict inductivo nativo y se excluyen de esta extensión.",
+            f"Se repiten exactamente las familias, rejillas y cinco pliegues; la mayor ganancia en CV corresponde a {hmejor.modelo} ({hmejor.delta_CV:+.4f}). Mejoran {int((h.delta_CV>0).sum())} de diez candidatos por CV. El ranking conjunto de veinte candidatos sitúa primero a {global_mejor.modelo} ({global_mejor.representacion}, F1 CV={global_mejor.F1_CV:.4f}). En prueba histórica se rechazan {int(hholm.rechaza_H0.sum())} de diez contrastes pareados híbrido contra referencia tras Holm. El top tres global tiene {int(hfinal.rechaza_H0.sum())} contrastes rechazados de tres; constituye una familia separada.",
+            "Advertencia: experiment006 se diseñó después de observar la prueba original. Aunque los nuevos ajustes no utilizan sus etiquetas ni sus documentos, esta segunda evaluación es exploratoria y no una confirmación independiente; haría falta otro conjunto externo. Los IC son marginales y las correcciones Holm se aplican por familia.",
         ], [(4,"representacion",["representacion","mean_train_score","mean_test_score","std_test_score"]),
             (4,"dimensionalidad",["caracteristicas_max","mean_train_score","mean_test_score"]),
             (4,"componentes_svd",["componentes","mean_train_score","mean_test_score"]),
-            (4,"complejidad",["C","error_entrenamiento","error_validacion"])], 4),
+            (4,"complejidad",["C","error_entrenamiento","error_validacion"]),
+            (6,"comparacion",["modelo","F1_CV_base","F1_CV_hibrido","delta_CV","delta_prueba","factor_tiempo"]),
+            (6,"bootstrap_holm",["modelo","delta_F1","IC_inferior","IC_superior","p_Holm"]),
+            (6,"ranking_global",["modelo","representacion","F1_CV","F1","segundos"]),
+            (6,"bootstrap_finalistas",["modelo_A","modelo_B","delta_F1","p_Holm"])], 4),
         ("5. Discusión y conclusiones", [
             f"La clasificación supervisada y el agrupamiento resuelven problemas distintos: el primero aprende etiquetas y obtiene F1 de prueba {test.F1:.4f} con {mejor.modelo}; el segundo recupera estructura no etiquetada y obtiene ARI {sel.ARI:.4f} para la configuración elegida internamente. Las escalas y objetivos de ambas métricas son diferentes, por lo que no se deben restar ni comparar como si midieran lo mismo.",
-            f"En los estudios controlados, la mejor representación fue {rbest.representacion}, el mejor máximo de vocabulario fue {int(dbest.caracteristicas_max):,}, la mejor dimensión latente ensayada fue {int(sbest.componentes)} y el mejor C exploratorio fue {cbest.C:g}. Son conclusiones locales a los rangos y al modelo de referencia, no óptimos universales. El modelo final se escogió por CV, no por su posición en prueba.",
+            f"En los estudios controlados, la mejor representación fue {rbest.representacion}, el mejor máximo de vocabulario fue {int(dbest.caracteristicas_max):,}, la mejor dimensión latente ensayada fue {int(sbest.componentes)} y el mejor C exploratorio fue {cbest.C:g}. Son conclusiones locales a los rangos y al modelo de referencia, no óptimos universales. El modelo de referencia se escogió por CV, no por su posición en prueba. El ranking exploratorio ampliado selecciona {global_mejor.modelo} ({global_mejor.representacion}); su evaluación sobre la prueba ya observada requiere confirmación externa.",
             "Limitaciones: corpus histórico en inglés, seis temas seleccionados y balance artificial; eliminación de duplicados exactos sin garantía de independencia entre hilos relacionados; una sola partición oficial, búsqueda de hiperparámetros limitada, posibles documentos casi vacíos tras eliminar palabras funcionales, y representación léxica sin orden ni semántica contextual. El bootstrap no refleja la variabilidad del entrenamiento ni la deriva temporal. Una extensión sería evaluar todos los temas, particiones agrupadas por hilo, n-gramas, embeddings y validación en otro corpus; no debe reajustarse el modelo con la prueba ya evaluada.",
             "Fuente de datos y metodología de descarga: scikit-learn, The 20 newsgroups text dataset, https://scikit-learn.org/stable/datasets/real_world.html#the-20-newsgroups-text-dataset. Las tablas completas, configuraciones, predicciones, réplicas y código se conservan en el repositorio.",
         ], [], None),
@@ -96,12 +109,13 @@ def seleccion_tabla(n, nombre, columnas):
     return tabla
 
 def imagenes(n):
-    return sorted((RESULTADOS / f"experiment{n:03d}").glob("*.png")) if n else []
+    return (sorted((RESULTADOS / f"experiment{n:03d}").glob("*.png")) +
+            (sorted((RESULTADOS / "experiment006").glob("*.png")) if n == 4 else [])) if n else []
 
 def notebook(caps):
     nb = nbf.v4.new_notebook()
     nb.metadata.kernelspec = {"display_name": "Python (analisis-textos)", "language": "python", "name": "python3"}
-    nb.cells = [nbf.v4.new_markdown_cell("# Análisis y clasificación de textos\n\nProyecto final · 20 Newsgroups\n\nEsta notebook integra los resultados guardados. Para reproducir desde cero, ejecutar python -m proyecto en el entorno Conda. No reajusta modelos ni usa prueba para elegir hiperparámetros."),
+    nb.cells = [nbf.v4.new_markdown_cell("# Análisis y clasificación de textos\n\nProyecto final · 20 Newsgroups\n\n**Pregunta central:** ¿qué aporta la representación léxica, la estructura temática descubierta sin etiquetas y la complejidad de los modelos a la clasificación de documentos?\n\nEl recorrido va de la representación a los grupos, luego a los clasificadores de referencia y culmina en una ablación que combina ambos enfoques.\n\nEsta notebook integra los resultados guardados. Para reproducir desde cero, ejecutar python -m proyecto en el entorno Conda. No reajusta modelos ni usa prueba para elegir hiperparámetros."),
                 nbf.v4.new_code_cell("from pathlib import Path\nimport pandas as pd\nfrom IPython.display import display, Image\nimport seaborn as sns\nsns.set_theme(style='whitegrid', palette='dark')\nRESULTADOS = Path('resultados')")]
     for titulo, parrafos, tablas, n in caps:
         nb.cells.append(nbf.v4.new_markdown_cell("## " + titulo + "\n\n" + "\n\n".join(parrafos)))

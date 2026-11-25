@@ -2,9 +2,8 @@
 from sklearn.ensemble import BaggingClassifier, VotingClassifier, StackingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import GridSearchCV
-from sklearn.pipeline import Pipeline
 from xgboost import XGBClassifier
-from .comun import cv, SEMILLA, vectorizador
+from .comun import cv, SEMILLA
 
 def construir(bases, pipeline):
     """Bases preespecificadas: no usar hiperparámetros elegidos con toda la muestra.
@@ -12,12 +11,10 @@ def construir(bases, pipeline):
     """
     estimadores = [(f"base{i}", pipeline(modelo, reducir))
                    for i, (modelo, _, reducir) in enumerate(bases.values())]
-    bagging = Pipeline([
-        ("texto", vectorizador()),
-        ("modelo", BaggingClassifier(
+    bagging = pipeline(BaggingClassifier(
             estimator=LogisticRegression(max_iter=1000, random_state=SEMILLA),
             n_estimators=20, max_samples=1.0, bootstrap=True,
-            n_jobs=1, random_state=SEMILLA))])
+            n_jobs=1, random_state=SEMILLA), False)
     meta = GridSearchCV(
         XGBClassifier(objective="multi:softprob", eval_metric="mlogloss",
                       tree_method="hist", n_jobs=1, random_state=SEMILLA,

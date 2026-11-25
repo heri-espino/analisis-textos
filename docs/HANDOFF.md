@@ -9,3 +9,5 @@ La primera ejecución 45568371842 falló antes de las pruebas porque no existe p
 La segunda ejecución 45569130565 no generó jobs: corregir la sintaxis YAML de los comandos PowerShell con bloques literales. Las métricas de clasificación se grafican separadas de los tiempos.
 
 La tercera ejecución 45569178773 falló por instalación existente en miniconda3. Se reutiliza la instalación local, se detecta conda.exe y se ejecuta conda env update -n analisis-textos -f environment.yml --prune.
+
+experiment006: conservar la primera ejecución exitosa en c1324670b7bbbf15d9e97c7b1b181c9d7ecb227f. Repetir diez candidatos con 20 indicadores temáticos; comparar por algoritmo y construir ranking global. La prueba ya observada es exploratoria. Validar los resultados nuevos y el PDF antes de entregar. Siguiente investigación: experiment007.

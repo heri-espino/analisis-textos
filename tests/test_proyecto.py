@@ -48,3 +48,19 @@ def test_ensambles():
     assert stack.final_estimator.estimator.__class__.__name__ == "XGBClassifier"
     for candidato in candidatos.values():
         clone(candidato)
+
+def test_caracteristicas_tematicas():
+    from proyecto.temas import caracteristicas
+    from sklearn.base import clone
+    from scipy.sparse import csr_matrix
+    rng = np.random.default_rng(42)
+    X = csr_matrix(rng.random((40, 12)))
+    a = clone(caracteristicas(k=3, componentes=4))
+    Z = a.fit_transform(X)
+    assert Z.shape == (40, 18)
+    assert np.allclose(Z[:, :12].toarray(), X.toarray())
+    assert np.allclose(Z[:, 12:15].sum(axis=1), 1)
+    assert np.allclose(Z[:, 15:].sum(axis=1), 1)
+    assert a.transform(X[:3]).shape == (3, 18)
+    for modelo, _, reducir in modelos().values():
+        clone(pipeline(modelo, reducir, con_grupos=True))

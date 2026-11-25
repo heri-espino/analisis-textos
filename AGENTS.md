@@ -1,3 +1,5 @@
 # Instrucciones para agentes
 
 Leer README.md, docs/HANDOFF.md y experimentos existentes antes de modificar. Mantener código, figuras, documentación y conclusiones en español. Usar scikit-learn, Pipelines y Conda; minimizar código propio. Semilla 42, cinco pliegues estratificados, F1 macro, prueba oficial reservada. No usar etiquetas para elegir agrupamientos ni transferir transformaciones ajustadas sobre prueba al clasificador. No modificar el protocolo a partir de métricas de prueba. No inventar resultados, no publicar datos originales ni secretos. Guardar resultados en experimentos numerados secuencialmente y documentar cambios, limitaciones y reproducción. Trabajar en rama y no fusionar sin autorización. Ejecutar pruebas antes de publicar.
+
+experiment006 es una extensión exploratoria posterior a la primera evaluación. No transferir agrupamientos globales; reajustar las transformaciones dentro de cada pliegue y documentar la reutilización histórica de prueba.
