@@ -7,3 +7,5 @@ Si falla el runner, revisar etiquetas Windows/X64, disponibilidad de Conda, acce
 La primera ejecución 45568371842 falló antes de las pruebas porque no existe pwsh en el runner. Se cambia a Windows PowerShell y se invoca conda.exe directamente. experiment005 está integrado en 003 para congelar el ranking de diez modelos antes de prueba. Revisar los nuevos tiempos y gráficos, sin inferir resultados hasta ejecutarlos.
 
 La segunda ejecución 45569130565 no generó jobs: corregir la sintaxis YAML de los comandos PowerShell con bloques literales. Las métricas de clasificación se grafican separadas de los tiempos.
+
+La tercera ejecución 45569178773 falló por instalación existente en miniconda3. Se reutiliza la instalación local, se detecta conda.exe y se ejecuta conda env update -n analisis-textos -f environment.yml --prune.
