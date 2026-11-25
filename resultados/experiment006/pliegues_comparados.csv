@@ -1,0 +1,101 @@
+modelo,pliegue,F1_validacion,F1_entrenamiento,representacion
+Regresión logística,1,0.8861171103516741,0.995318081257872,Léxica
+Regresión logística,2,0.8958792590014312,0.9948045787572548,Léxica
+Regresión logística,3,0.9003169600940915,0.9968757897034956,Léxica
+Regresión logística,4,0.9040534187487466,0.994795673522267,Léxica
+Regresión logística,5,0.9058503982225432,0.9953156853503288,Léxica
+SGD,1,0.8877099102517955,1.0,Léxica
+SGD,2,0.9060487459668272,1.0,Léxica
+SGD,3,0.8959403649032138,1.0,Léxica
+SGD,4,0.9081008268591936,1.0,Léxica
+SGD,5,0.9060147398927728,1.0,Léxica
+Árbol de decisión,1,0.6980322990358662,1.0,Léxica
+Árbol de decisión,2,0.7075389925854614,1.0,Léxica
+Árbol de decisión,3,0.7027755348940915,1.0,Léxica
+Árbol de decisión,4,0.6996123142172609,1.0,Léxica
+Árbol de decisión,5,0.6890538990918736,1.0,Léxica
+Random Forest,1,0.8322507419899942,1.0,Léxica
+Random Forest,2,0.8451215271684779,1.0,Léxica
+Random Forest,3,0.8411257479277904,1.0,Léxica
+Random Forest,4,0.8107695808223729,1.0,Léxica
+Random Forest,5,0.8315688246667311,1.0,Léxica
+AdaBoost,1,0.6821544300140227,0.6827472689315849,Léxica
+AdaBoost,2,0.6714810206180752,0.676274106442141,Léxica
+AdaBoost,3,0.6664115844598929,0.6657157192250325,Léxica
+AdaBoost,4,0.6276520253046131,0.6773611531910914,Léxica
+AdaBoost,5,0.6338413292318951,0.6744730417072159,Léxica
+Gradient Boosting,1,0.8267857132924963,0.9163439785851306,Léxica
+Gradient Boosting,2,0.850149005131741,0.9126987799732156,Léxica
+Gradient Boosting,3,0.8425115087930103,0.9095673480295005,Léxica
+Gradient Boosting,4,0.8582686919403658,0.9111104002363358,Léxica
+Gradient Boosting,5,0.8477359644550306,0.916209788573673,Léxica
+SVM RBF,1,0.8825430775823144,1.0,Léxica
+SVM RBF,2,0.9006391221781435,1.0,Léxica
+SVM RBF,3,0.8983947468197097,1.0,Léxica
+SVM RBF,4,0.8964374330808219,1.0,Léxica
+SVM RBF,5,0.9041331109701938,1.0,Léxica
+Bagging (regresión logística),1,0.8817914055769842,0.9953197293189268,Léxica
+Bagging (regresión logística),2,0.8893172423532656,0.995317315525449,Léxica
+Bagging (regresión logística),3,0.9023324391555424,0.9958413097694748,Léxica
+Bagging (regresión logística),4,0.8958489216983315,0.9932387514140016,Léxica
+Bagging (regresión logística),5,0.9123254124794818,0.9953180331602712,Léxica
+Votación (7 modelos),1,0.8796797329066322,1.0,Léxica
+Votación (7 modelos),2,0.8939106336099432,1.0,Léxica
+Votación (7 modelos),3,0.8897487049962353,1.0,Léxica
+Votación (7 modelos),4,0.8964089299439136,1.0,Léxica
+Votación (7 modelos),5,0.9019290326078956,1.0,Léxica
+Stacking (XGBoost),1,0.8878310032809705,1.0,Léxica
+Stacking (XGBoost),2,0.9000714595682714,1.0,Léxica
+Stacking (XGBoost),3,0.8998747768849406,1.0,Léxica
+Stacking (XGBoost),4,0.906574539612968,1.0,Léxica
+Stacking (XGBoost),5,0.9061579301585476,1.0,Léxica
+Regresión logística,1,0.8636120247638432,1.0,Léxica + grupos
+Regresión logística,2,0.862997895092056,1.0,Léxica + grupos
+Regresión logística,3,0.8653941307810723,1.0,Léxica + grupos
+Regresión logística,4,0.8526130643033332,1.0,Léxica + grupos
+Regresión logística,5,0.8596501920080506,1.0,Léxica + grupos
+SGD,1,0.8733665747265648,1.0,Léxica + grupos
+SGD,2,0.8658354020370704,1.0,Léxica + grupos
+SGD,3,0.8690382389777908,1.0,Léxica + grupos
+SGD,4,0.8611709290354779,1.0,Léxica + grupos
+SGD,5,0.8859623846422918,1.0,Léxica + grupos
+Árbol de decisión,1,0.7836124111074558,0.9229671603702331,Léxica + grupos
+Árbol de decisión,2,0.769875197684926,0.9426504911165242,Léxica + grupos
+Árbol de decisión,3,0.7957003641857598,0.898887496580595,Léxica + grupos
+Árbol de decisión,4,0.756219153447971,0.8761274738677035,Léxica + grupos
+Árbol de decisión,5,0.7831318853405215,0.882228888111476,Léxica + grupos
+Random Forest,1,0.8451209264392482,1.0,Léxica + grupos
+Random Forest,2,0.8366100521342457,1.0,Léxica + grupos
+Random Forest,3,0.8288845384126303,1.0,Léxica + grupos
+Random Forest,4,0.8299878193998153,1.0,Léxica + grupos
+Random Forest,5,0.828406594253257,1.0,Léxica + grupos
+AdaBoost,1,0.7821360746777613,0.7821525588694277,Léxica + grupos
+AdaBoost,2,0.7814791206974441,0.7836213502529542,Léxica + grupos
+AdaBoost,3,0.7995248539594764,0.7793928625171088,Léxica + grupos
+AdaBoost,4,0.773858645338895,0.7738859848945207,Léxica + grupos
+AdaBoost,5,0.7838227829733836,0.7908422898243596,Léxica + grupos
+Gradient Boosting,1,0.8445804284602878,0.9692685876166512,Léxica + grupos
+Gradient Boosting,2,0.8561649327943469,0.9614668557156411,Léxica + grupos
+Gradient Boosting,3,0.8560655125764026,0.9676536049615915,Léxica + grupos
+Gradient Boosting,4,0.8463196769120068,0.9656369630374774,Léxica + grupos
+Gradient Boosting,5,0.8511512117883776,0.9624941387261572,Léxica + grupos
+SVM RBF,1,0.8556963304676368,1.0,Léxica + grupos
+SVM RBF,2,0.8504987725714191,1.0,Léxica + grupos
+SVM RBF,3,0.852979267420329,1.0,Léxica + grupos
+SVM RBF,4,0.8410609034168942,1.0,Léxica + grupos
+SVM RBF,5,0.8454959329645996,1.0,Léxica + grupos
+Bagging (regresión logística),1,0.8357318895546171,0.9049057055592907,Léxica + grupos
+Bagging (regresión logística),2,0.8128976016179271,0.9179516536178909,Léxica + grupos
+Bagging (regresión logística),3,0.8449829542484489,0.9136388453899299,Léxica + grupos
+Bagging (regresión logística),4,0.8055160658658423,0.9176579605931572,Léxica + grupos
+Bagging (regresión logística),5,0.8206460845828163,0.8923905337952346,Léxica + grupos
+Votación (7 modelos),1,0.8378521178217593,0.9927025693942851,Léxica + grupos
+Votación (7 modelos),2,0.8292133511911807,0.993748368577153,Léxica + grupos
+Votación (7 modelos),3,0.841321812954818,0.9901185953661322,Léxica + grupos
+Votación (7 modelos),4,0.8340306577954769,0.9927091103213256,Léxica + grupos
+Votación (7 modelos),5,0.8281019899618824,0.9947891782178088,Léxica + grupos
+Stacking (XGBoost),1,0.8492105175403494,0.9953083392932819,Léxica + grupos
+Stacking (XGBoost),2,0.8703282646372852,0.9979166539509036,Léxica + grupos
+Stacking (XGBoost),3,0.8712564019214231,0.9979182714458013,Léxica + grupos
+Stacking (XGBoost),4,0.8564266691268729,0.998958323160708,Léxica + grupos
+Stacking (XGBoost),5,0.874624458659197,0.996873357132959,Léxica + grupos
