@@ -25,3 +25,5 @@ Notebook autónoma: código fuente embebido, módulos locales generados por celd
 Reorganización de la notebook autónoma: fragmentos fuente pequeños, ensamblado reproducible y celdas separadas para ajuste, tablas y figuras. No cambia el protocolo de los experimentos. El flujo de verificación comprueba el ensamblado y carga/EDA en un directorio independiente.
 
 Compatibilidad Colab: instalación condicional de dependencias, aviso de reinicio cuando se sustituyen módulos cargados, límite de procesos y descarga ZIP final. Protocolo experimental intacto. La ejecución de Colab real debe comprobarse aparte de las pruebas de la VM Windows.
+
+Entrega rápida: notebook_resultados.ipynb, resultados históricos inmutables, métricas verificadas mediante predicciones, pipelines originales léxico e híbrido. No se han guardado otros estimadores. El flujo dedicado prohíbe ajustes y descarga del corpus, verifica los hashes y empaqueta los outputs. La notebook autónoma completa se conserva.

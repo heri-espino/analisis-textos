@@ -1,0 +1,29 @@
+name: Entrega rápida LDS1071
+on:
+  push:
+    branches: [proyecto/experimentos]
+    paths: ['notebook_resultados.ipynb', 'scripts/verificar_entrega_rapida.py', 'requirements_resultados.txt', 'LEEME_ENTREGA.md', '.github/workflows/entrega-rapida.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 15
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ejecutar notebook sin entrenar
+        run: |
+          $conda = @("$env:USERPROFILE\miniconda3\Scripts\conda.exe", "$env:USERPROFILE\miniforge3\Scripts\conda.exe", "$env:USERPROFILE\anaconda3\Scripts\conda.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $conda) { $conda = (Get-Command conda.exe).Source }
+          & $conda run --no-capture-output -n analisis-textos python scripts/verificar_entrega_rapida.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: entrega-rapida
+          path: |
+            LDS1071_entrega_rapida.zip
+            notebook_resultados.ipynb

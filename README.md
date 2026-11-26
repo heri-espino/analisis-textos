@@ -62,3 +62,6 @@ La notebook se organiza en celdas breves con Markdown contextual. Las celdas de 
 
 ## Google Colab
 Abrir directamente: https://colab.research.google.com/github/heri-espino/analisis-textos/blob/proyecto/experimentos/notebook_autonoma.ipynb . Seleccionar CPU. La notebook instala automáticamente las versiones de dependencias en Colab; si solicita reinicio, reiniciar la sesión y ejecutar todo otra vez. Se limita el paralelismo a dos procesos en Colab para controlar memoria, sin reducir las rejillas, pliegues ni corpus. Descargar el ZIP de resultados antes de desconectar. Los tiempos dependen del hardware.
+
+## Entrega rápida sin entrenamiento
+`notebook_resultados.ipynb` carga `outputs/` o `resultados/`, reproduce visualizaciones a partir de CSV y verifica las métricas de predicciones históricas. Carga los dos pipelines serializados para inferencia. No descarga el corpus ni reentrena. `notebook_autonoma.ipynb` se conserva para reproducir los experimentos. El flujo Entrega rápida LDS1071 ejecuta la notebook en una carpeta independiente y empaqueta el ZIP para entrega.
