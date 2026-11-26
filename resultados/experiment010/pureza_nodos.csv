@@ -1,0 +1,6600 @@
+nodo,n,categoria_dominante,pureza_gini
+0,1,Gráficos,1
+1,1,Automóviles,1
+2,1,Medicina,1
+3,1,Oriente Medio,1
+4,1,Gráficos,1
+5,1,Gráficos,1
+6,1,Oriente Medio,1
+7,1,Medicina,1
+8,1,Espacio,1
+9,1,Automóviles,1
+10,1,Medicina,1
+11,1,Automóviles,1
+12,1,Espacio,1
+13,1,Automóviles,1
+14,1,Gráficos,1
+15,1,Espacio,1
+16,1,Oriente Medio,1
+17,1,Hockey,1
+18,1,Medicina,1
+19,1,Medicina,1
+20,1,Medicina,1
+21,1,Medicina,1
+22,1,Oriente Medio,1
+23,1,Hockey,1
+24,1,Medicina,1
+25,1,Medicina,1
+26,1,Oriente Medio,1
+27,1,Hockey,1
+28,1,Gráficos,1
+29,1,Medicina,1
+30,1,Oriente Medio,1
+31,1,Automóviles,1
+32,1,Gráficos,1
+33,1,Gráficos,1
+34,1,Oriente Medio,1
+35,1,Automóviles,1
+36,1,Automóviles,1
+37,1,Oriente Medio,1
+38,1,Espacio,1
+39,1,Medicina,1
+40,1,Gráficos,1
+41,1,Oriente Medio,1
+42,1,Gráficos,1
+43,1,Oriente Medio,1
+44,1,Espacio,1
+45,1,Oriente Medio,1
+46,1,Automóviles,1
+47,1,Automóviles,1
+48,1,Automóviles,1
+49,1,Gráficos,1
+50,1,Espacio,1
+51,1,Espacio,1
+52,1,Espacio,1
+53,1,Espacio,1
+54,1,Oriente Medio,1
+55,1,Espacio,1
+56,1,Oriente Medio,1
+57,1,Espacio,1
+58,1,Oriente Medio,1
+59,1,Hockey,1
+60,1,Espacio,1
+61,1,Hockey,1
+62,1,Espacio,1
+63,1,Medicina,1
+64,1,Gráficos,1
+65,1,Medicina,1
+66,1,Gráficos,1
+67,1,Gráficos,1
+68,1,Hockey,1
+69,1,Automóviles,1
+70,1,Hockey,1
+71,1,Automóviles,1
+72,1,Hockey,1
+73,1,Oriente Medio,1
+74,1,Oriente Medio,1
+75,1,Oriente Medio,1
+76,1,Espacio,1
+77,1,Hockey,1
+78,1,Automóviles,1
+79,1,Automóviles,1
+80,1,Hockey,1
+81,1,Gráficos,1
+82,1,Gráficos,1
+83,1,Automóviles,1
+84,1,Hockey,1
+85,1,Hockey,1
+86,1,Gráficos,1
+87,1,Automóviles,1
+88,1,Medicina,1
+89,1,Oriente Medio,1
+90,1,Hockey,1
+91,1,Gráficos,1
+92,1,Medicina,1
+93,1,Espacio,1
+94,1,Oriente Medio,1
+95,1,Espacio,1
+96,1,Hockey,1
+97,1,Automóviles,1
+98,1,Gráficos,1
+99,1,Medicina,1
+100,1,Oriente Medio,1
+101,1,Gráficos,1
+102,1,Medicina,1
+103,1,Gráficos,1
+104,1,Espacio,1
+105,1,Hockey,1
+106,1,Automóviles,1
+107,1,Hockey,1
+108,1,Gráficos,1
+109,1,Espacio,1
+110,1,Gráficos,1
+111,1,Gráficos,1
+112,1,Hockey,1
+113,1,Gráficos,1
+114,1,Medicina,1
+115,1,Medicina,1
+116,1,Gráficos,1
+117,1,Espacio,1
+118,1,Automóviles,1
+119,1,Gráficos,1
+120,1,Hockey,1
+121,1,Medicina,1
+122,1,Espacio,1
+123,1,Gráficos,1
+124,1,Oriente Medio,1
+125,1,Medicina,1
+126,1,Oriente Medio,1
+127,1,Espacio,1
+128,1,Automóviles,1
+129,1,Hockey,1
+130,1,Medicina,1
+131,1,Espacio,1
+132,1,Espacio,1
+133,1,Espacio,1
+134,1,Espacio,1
+135,1,Gráficos,1
+136,1,Gráficos,1
+137,1,Hockey,1
+138,1,Automóviles,1
+139,1,Hockey,1
+140,1,Hockey,1
+141,1,Hockey,1
+142,1,Hockey,1
+143,1,Medicina,1
+144,1,Automóviles,1
+145,1,Automóviles,1
+146,1,Espacio,1
+147,1,Espacio,1
+148,1,Espacio,1
+149,1,Medicina,1
+150,1,Espacio,1
+151,1,Espacio,1
+152,1,Oriente Medio,1
+153,1,Espacio,1
+154,1,Gráficos,1
+155,1,Automóviles,1
+156,1,Medicina,1
+157,1,Medicina,1
+158,1,Espacio,1
+159,1,Oriente Medio,1
+160,1,Automóviles,1
+161,1,Medicina,1
+162,1,Medicina,1
+163,1,Oriente Medio,1
+164,1,Automóviles,1
+165,1,Oriente Medio,1
+166,1,Oriente Medio,1
+167,1,Gráficos,1
+168,1,Hockey,1
+169,1,Gráficos,1
+170,1,Gráficos,1
+171,1,Espacio,1
+172,1,Automóviles,1
+173,1,Medicina,1
+174,1,Oriente Medio,1
+175,1,Espacio,1
+176,1,Hockey,1
+177,1,Gráficos,1
+178,1,Gráficos,1
+179,1,Medicina,1
+180,1,Espacio,1
+181,1,Gráficos,1
+182,1,Gráficos,1
+183,1,Automóviles,1
+184,1,Medicina,1
+185,1,Automóviles,1
+186,1,Espacio,1
+187,1,Gráficos,1
+188,1,Medicina,1
+189,1,Gráficos,1
+190,1,Espacio,1
+191,1,Gráficos,1
+192,1,Oriente Medio,1
+193,1,Medicina,1
+194,1,Automóviles,1
+195,1,Medicina,1
+196,1,Hockey,1
+197,1,Hockey,1
+198,1,Automóviles,1
+199,1,Espacio,1
+200,1,Automóviles,1
+201,1,Automóviles,1
+202,1,Hockey,1
+203,1,Gráficos,1
+204,1,Oriente Medio,1
+205,1,Gráficos,1
+206,1,Automóviles,1
+207,1,Automóviles,1
+208,1,Gráficos,1
+209,1,Gráficos,1
+210,1,Espacio,1
+211,1,Gráficos,1
+212,1,Automóviles,1
+213,1,Gráficos,1
+214,1,Medicina,1
+215,1,Gráficos,1
+216,1,Espacio,1
+217,1,Gráficos,1
+218,1,Hockey,1
+219,1,Medicina,1
+220,1,Hockey,1
+221,1,Automóviles,1
+222,1,Gráficos,1
+223,1,Medicina,1
+224,1,Gráficos,1
+225,1,Oriente Medio,1
+226,1,Hockey,1
+227,1,Oriente Medio,1
+228,1,Oriente Medio,1
+229,1,Espacio,1
+230,1,Automóviles,1
+231,1,Espacio,1
+232,1,Gráficos,1
+233,1,Oriente Medio,1
+234,1,Automóviles,1
+235,1,Automóviles,1
+236,1,Medicina,1
+237,1,Espacio,1
+238,1,Gráficos,1
+239,1,Medicina,1
+240,1,Espacio,1
+241,1,Gráficos,1
+242,1,Gráficos,1
+243,1,Oriente Medio,1
+244,1,Oriente Medio,1
+245,1,Hockey,1
+246,1,Gráficos,1
+247,1,Gráficos,1
+248,1,Oriente Medio,1
+249,1,Automóviles,1
+250,1,Hockey,1
+251,1,Oriente Medio,1
+252,1,Espacio,1
+253,1,Automóviles,1
+254,1,Automóviles,1
+255,1,Espacio,1
+256,1,Espacio,1
+257,1,Hockey,1
+258,1,Gráficos,1
+259,1,Oriente Medio,1
+260,1,Automóviles,1
+261,1,Oriente Medio,1
+262,1,Gráficos,1
+263,1,Gráficos,1
+264,1,Medicina,1
+265,1,Gráficos,1
+266,1,Medicina,1
+267,1,Oriente Medio,1
+268,1,Gráficos,1
+269,1,Automóviles,1
+270,1,Automóviles,1
+271,1,Oriente Medio,1
+272,1,Automóviles,1
+273,1,Hockey,1
+274,1,Espacio,1
+275,1,Oriente Medio,1
+276,1,Oriente Medio,1
+277,1,Hockey,1
+278,1,Espacio,1
+279,1,Gráficos,1
+280,1,Gráficos,1
+281,1,Medicina,1
+282,1,Hockey,1
+283,1,Automóviles,1
+284,1,Medicina,1
+285,1,Automóviles,1
+286,1,Espacio,1
+287,1,Gráficos,1
+288,1,Hockey,1
+289,1,Gráficos,1
+290,1,Gráficos,1
+291,1,Espacio,1
+292,1,Gráficos,1
+293,1,Hockey,1
+294,1,Espacio,1
+295,1,Medicina,1
+296,1,Automóviles,1
+297,1,Oriente Medio,1
+298,1,Oriente Medio,1
+299,1,Oriente Medio,1
+300,1,Medicina,1
+301,1,Espacio,1
+302,1,Medicina,1
+303,1,Medicina,1
+304,1,Espacio,1
+305,1,Gráficos,1
+306,1,Automóviles,1
+307,1,Gráficos,1
+308,1,Medicina,1
+309,1,Medicina,1
+310,1,Automóviles,1
+311,1,Espacio,1
+312,1,Hockey,1
+313,1,Espacio,1
+314,1,Gráficos,1
+315,1,Automóviles,1
+316,1,Medicina,1
+317,1,Medicina,1
+318,1,Automóviles,1
+319,1,Oriente Medio,1
+320,1,Gráficos,1
+321,1,Oriente Medio,1
+322,1,Medicina,1
+323,1,Automóviles,1
+324,1,Hockey,1
+325,1,Automóviles,1
+326,1,Oriente Medio,1
+327,1,Oriente Medio,1
+328,1,Espacio,1
+329,1,Gráficos,1
+330,1,Espacio,1
+331,1,Gráficos,1
+332,1,Medicina,1
+333,1,Oriente Medio,1
+334,1,Oriente Medio,1
+335,1,Automóviles,1
+336,1,Hockey,1
+337,1,Hockey,1
+338,1,Medicina,1
+339,1,Espacio,1
+340,1,Gráficos,1
+341,1,Automóviles,1
+342,1,Gráficos,1
+343,1,Medicina,1
+344,1,Automóviles,1
+345,1,Automóviles,1
+346,1,Hockey,1
+347,1,Gráficos,1
+348,1,Automóviles,1
+349,1,Oriente Medio,1
+350,1,Automóviles,1
+351,1,Automóviles,1
+352,1,Medicina,1
+353,1,Gráficos,1
+354,1,Oriente Medio,1
+355,1,Gráficos,1
+356,1,Gráficos,1
+357,1,Automóviles,1
+358,1,Automóviles,1
+359,1,Oriente Medio,1
+360,1,Hockey,1
+361,1,Oriente Medio,1
+362,1,Medicina,1
+363,1,Hockey,1
+364,1,Gráficos,1
+365,1,Medicina,1
+366,1,Oriente Medio,1
+367,1,Medicina,1
+368,1,Automóviles,1
+369,1,Automóviles,1
+370,1,Espacio,1
+371,1,Medicina,1
+372,1,Hockey,1
+373,1,Hockey,1
+374,1,Automóviles,1
+375,1,Hockey,1
+376,1,Gráficos,1
+377,1,Automóviles,1
+378,1,Medicina,1
+379,1,Automóviles,1
+380,1,Oriente Medio,1
+381,1,Espacio,1
+382,1,Hockey,1
+383,1,Automóviles,1
+384,1,Oriente Medio,1
+385,1,Gráficos,1
+386,1,Medicina,1
+387,1,Espacio,1
+388,1,Gráficos,1
+389,1,Automóviles,1
+390,1,Hockey,1
+391,1,Medicina,1
+392,1,Automóviles,1
+393,1,Medicina,1
+394,1,Hockey,1
+395,1,Gráficos,1
+396,1,Espacio,1
+397,1,Espacio,1
+398,1,Automóviles,1
+399,1,Oriente Medio,1
+400,1,Hockey,1
+401,1,Espacio,1
+402,1,Oriente Medio,1
+403,1,Espacio,1
+404,1,Medicina,1
+405,1,Hockey,1
+406,1,Automóviles,1
+407,1,Espacio,1
+408,1,Oriente Medio,1
+409,1,Espacio,1
+410,1,Hockey,1
+411,1,Espacio,1
+412,1,Automóviles,1
+413,1,Gráficos,1
+414,1,Gráficos,1
+415,1,Medicina,1
+416,1,Espacio,1
+417,1,Hockey,1
+418,1,Automóviles,1
+419,1,Medicina,1
+420,1,Oriente Medio,1
+421,1,Automóviles,1
+422,1,Gráficos,1
+423,1,Espacio,1
+424,1,Hockey,1
+425,1,Automóviles,1
+426,1,Medicina,1
+427,1,Espacio,1
+428,1,Hockey,1
+429,1,Automóviles,1
+430,1,Hockey,1
+431,1,Espacio,1
+432,1,Automóviles,1
+433,1,Gráficos,1
+434,1,Hockey,1
+435,1,Espacio,1
+436,1,Espacio,1
+437,1,Medicina,1
+438,1,Gráficos,1
+439,1,Automóviles,1
+440,1,Medicina,1
+441,1,Automóviles,1
+442,1,Medicina,1
+443,1,Medicina,1
+444,1,Oriente Medio,1
+445,1,Espacio,1
+446,1,Gráficos,1
+447,1,Hockey,1
+448,1,Medicina,1
+449,1,Medicina,1
+450,1,Gráficos,1
+451,1,Gráficos,1
+452,1,Medicina,1
+453,1,Gráficos,1
+454,1,Automóviles,1
+455,1,Medicina,1
+456,1,Hockey,1
+457,1,Oriente Medio,1
+458,1,Gráficos,1
+459,1,Gráficos,1
+460,1,Automóviles,1
+461,1,Gráficos,1
+462,1,Espacio,1
+463,1,Oriente Medio,1
+464,1,Medicina,1
+465,1,Oriente Medio,1
+466,1,Espacio,1
+467,1,Oriente Medio,1
+468,1,Oriente Medio,1
+469,1,Medicina,1
+470,1,Gráficos,1
+471,1,Automóviles,1
+472,1,Automóviles,1
+473,1,Oriente Medio,1
+474,1,Gráficos,1
+475,1,Gráficos,1
+476,1,Hockey,1
+477,1,Medicina,1
+478,1,Medicina,1
+479,1,Medicina,1
+480,1,Automóviles,1
+481,1,Automóviles,1
+482,1,Espacio,1
+483,1,Hockey,1
+484,1,Espacio,1
+485,1,Medicina,1
+486,1,Automóviles,1
+487,1,Hockey,1
+488,1,Espacio,1
+489,1,Espacio,1
+490,1,Espacio,1
+491,1,Espacio,1
+492,1,Hockey,1
+493,1,Gráficos,1
+494,1,Medicina,1
+495,1,Medicina,1
+496,1,Oriente Medio,1
+497,1,Oriente Medio,1
+498,1,Oriente Medio,1
+499,1,Gráficos,1
+500,1,Espacio,1
+501,1,Oriente Medio,1
+502,1,Hockey,1
+503,1,Oriente Medio,1
+504,1,Gráficos,1
+505,1,Oriente Medio,1
+506,1,Medicina,1
+507,1,Gráficos,1
+508,1,Automóviles,1
+509,1,Espacio,1
+510,1,Automóviles,1
+511,1,Medicina,1
+512,1,Gráficos,1
+513,1,Oriente Medio,1
+514,1,Hockey,1
+515,1,Hockey,1
+516,1,Oriente Medio,1
+517,1,Hockey,1
+518,1,Automóviles,1
+519,1,Automóviles,1
+520,1,Gráficos,1
+521,1,Gráficos,1
+522,1,Medicina,1
+523,1,Medicina,1
+524,1,Oriente Medio,1
+525,1,Gráficos,1
+526,1,Automóviles,1
+527,1,Hockey,1
+528,1,Hockey,1
+529,1,Oriente Medio,1
+530,1,Gráficos,1
+531,1,Espacio,1
+532,1,Hockey,1
+533,1,Gráficos,1
+534,1,Hockey,1
+535,1,Medicina,1
+536,1,Hockey,1
+537,1,Oriente Medio,1
+538,1,Gráficos,1
+539,1,Medicina,1
+540,1,Oriente Medio,1
+541,1,Espacio,1
+542,1,Hockey,1
+543,1,Medicina,1
+544,1,Medicina,1
+545,1,Automóviles,1
+546,1,Gráficos,1
+547,1,Medicina,1
+548,1,Espacio,1
+549,1,Medicina,1
+550,1,Automóviles,1
+551,1,Hockey,1
+552,1,Espacio,1
+553,1,Oriente Medio,1
+554,1,Oriente Medio,1
+555,1,Hockey,1
+556,1,Gráficos,1
+557,1,Automóviles,1
+558,1,Espacio,1
+559,1,Espacio,1
+560,1,Espacio,1
+561,1,Automóviles,1
+562,1,Gráficos,1
+563,1,Hockey,1
+564,1,Automóviles,1
+565,1,Medicina,1
+566,1,Espacio,1
+567,1,Gráficos,1
+568,1,Hockey,1
+569,1,Hockey,1
+570,1,Automóviles,1
+571,1,Espacio,1
+572,1,Automóviles,1
+573,1,Medicina,1
+574,1,Automóviles,1
+575,1,Medicina,1
+576,1,Hockey,1
+577,1,Oriente Medio,1
+578,1,Hockey,1
+579,1,Medicina,1
+580,1,Automóviles,1
+581,1,Espacio,1
+582,1,Automóviles,1
+583,1,Gráficos,1
+584,1,Gráficos,1
+585,1,Espacio,1
+586,1,Medicina,1
+587,1,Oriente Medio,1
+588,1,Medicina,1
+589,1,Espacio,1
+590,1,Hockey,1
+591,1,Hockey,1
+592,1,Medicina,1
+593,1,Hockey,1
+594,1,Automóviles,1
+595,1,Hockey,1
+596,1,Hockey,1
+597,1,Medicina,1
+598,1,Medicina,1
+599,1,Oriente Medio,1
+600,1,Medicina,1
+601,1,Oriente Medio,1
+602,1,Espacio,1
+603,1,Automóviles,1
+604,1,Espacio,1
+605,1,Espacio,1
+606,1,Medicina,1
+607,1,Medicina,1
+608,1,Espacio,1
+609,1,Oriente Medio,1
+610,1,Espacio,1
+611,1,Automóviles,1
+612,1,Automóviles,1
+613,1,Espacio,1
+614,1,Espacio,1
+615,1,Medicina,1
+616,1,Hockey,1
+617,1,Automóviles,1
+618,1,Oriente Medio,1
+619,1,Espacio,1
+620,1,Espacio,1
+621,1,Oriente Medio,1
+622,1,Gráficos,1
+623,1,Gráficos,1
+624,1,Hockey,1
+625,1,Gráficos,1
+626,1,Hockey,1
+627,1,Automóviles,1
+628,1,Gráficos,1
+629,1,Oriente Medio,1
+630,1,Hockey,1
+631,1,Espacio,1
+632,1,Hockey,1
+633,1,Oriente Medio,1
+634,1,Automóviles,1
+635,1,Medicina,1
+636,1,Medicina,1
+637,1,Medicina,1
+638,1,Oriente Medio,1
+639,1,Hockey,1
+640,1,Espacio,1
+641,1,Medicina,1
+642,1,Automóviles,1
+643,1,Automóviles,1
+644,1,Hockey,1
+645,1,Medicina,1
+646,1,Gráficos,1
+647,1,Automóviles,1
+648,1,Espacio,1
+649,1,Oriente Medio,1
+650,1,Automóviles,1
+651,1,Automóviles,1
+652,1,Espacio,1
+653,1,Hockey,1
+654,1,Automóviles,1
+655,1,Gráficos,1
+656,1,Espacio,1
+657,1,Gráficos,1
+658,1,Hockey,1
+659,1,Oriente Medio,1
+660,1,Oriente Medio,1
+661,1,Gráficos,1
+662,1,Gráficos,1
+663,1,Medicina,1
+664,1,Medicina,1
+665,1,Hockey,1
+666,1,Automóviles,1
+667,1,Oriente Medio,1
+668,1,Hockey,1
+669,1,Medicina,1
+670,1,Gráficos,1
+671,1,Automóviles,1
+672,1,Automóviles,1
+673,1,Gráficos,1
+674,1,Automóviles,1
+675,1,Gráficos,1
+676,1,Automóviles,1
+677,1,Automóviles,1
+678,1,Medicina,1
+679,1,Oriente Medio,1
+680,1,Gráficos,1
+681,1,Medicina,1
+682,1,Hockey,1
+683,1,Medicina,1
+684,1,Hockey,1
+685,1,Oriente Medio,1
+686,1,Automóviles,1
+687,1,Hockey,1
+688,1,Espacio,1
+689,1,Espacio,1
+690,1,Medicina,1
+691,1,Espacio,1
+692,1,Automóviles,1
+693,1,Espacio,1
+694,1,Hockey,1
+695,1,Hockey,1
+696,1,Automóviles,1
+697,1,Medicina,1
+698,1,Gráficos,1
+699,1,Gráficos,1
+700,1,Medicina,1
+701,1,Oriente Medio,1
+702,1,Hockey,1
+703,1,Gráficos,1
+704,1,Gráficos,1
+705,1,Oriente Medio,1
+706,1,Gráficos,1
+707,1,Hockey,1
+708,1,Gráficos,1
+709,1,Medicina,1
+710,1,Oriente Medio,1
+711,1,Hockey,1
+712,1,Medicina,1
+713,1,Automóviles,1
+714,1,Hockey,1
+715,1,Automóviles,1
+716,1,Automóviles,1
+717,1,Automóviles,1
+718,1,Hockey,1
+719,1,Automóviles,1
+720,1,Gráficos,1
+721,1,Gráficos,1
+722,1,Medicina,1
+723,1,Medicina,1
+724,1,Medicina,1
+725,1,Automóviles,1
+726,1,Gráficos,1
+727,1,Gráficos,1
+728,1,Automóviles,1
+729,1,Hockey,1
+730,1,Espacio,1
+731,1,Gráficos,1
+732,1,Automóviles,1
+733,1,Hockey,1
+734,1,Automóviles,1
+735,1,Hockey,1
+736,1,Oriente Medio,1
+737,1,Automóviles,1
+738,1,Automóviles,1
+739,1,Espacio,1
+740,1,Oriente Medio,1
+741,1,Espacio,1
+742,1,Oriente Medio,1
+743,1,Hockey,1
+744,1,Oriente Medio,1
+745,1,Hockey,1
+746,1,Automóviles,1
+747,1,Medicina,1
+748,1,Hockey,1
+749,1,Automóviles,1
+750,1,Espacio,1
+751,1,Gráficos,1
+752,1,Hockey,1
+753,1,Espacio,1
+754,1,Espacio,1
+755,1,Gráficos,1
+756,1,Automóviles,1
+757,1,Hockey,1
+758,1,Gráficos,1
+759,1,Automóviles,1
+760,1,Medicina,1
+761,1,Espacio,1
+762,1,Oriente Medio,1
+763,1,Medicina,1
+764,1,Automóviles,1
+765,1,Medicina,1
+766,1,Hockey,1
+767,1,Medicina,1
+768,1,Oriente Medio,1
+769,1,Hockey,1
+770,1,Gráficos,1
+771,1,Gráficos,1
+772,1,Automóviles,1
+773,1,Automóviles,1
+774,1,Espacio,1
+775,1,Automóviles,1
+776,1,Hockey,1
+777,1,Gráficos,1
+778,1,Medicina,1
+779,1,Automóviles,1
+780,1,Oriente Medio,1
+781,1,Hockey,1
+782,1,Automóviles,1
+783,1,Automóviles,1
+784,1,Hockey,1
+785,1,Medicina,1
+786,1,Medicina,1
+787,1,Medicina,1
+788,1,Espacio,1
+789,1,Automóviles,1
+790,1,Automóviles,1
+791,1,Espacio,1
+792,1,Automóviles,1
+793,1,Gráficos,1
+794,1,Hockey,1
+795,1,Hockey,1
+796,1,Espacio,1
+797,1,Espacio,1
+798,1,Automóviles,1
+799,1,Hockey,1
+800,1,Espacio,1
+801,1,Medicina,1
+802,1,Hockey,1
+803,1,Oriente Medio,1
+804,1,Gráficos,1
+805,1,Gráficos,1
+806,1,Gráficos,1
+807,1,Gráficos,1
+808,1,Automóviles,1
+809,1,Gráficos,1
+810,1,Oriente Medio,1
+811,1,Espacio,1
+812,1,Gráficos,1
+813,1,Automóviles,1
+814,1,Automóviles,1
+815,1,Oriente Medio,1
+816,1,Automóviles,1
+817,1,Automóviles,1
+818,1,Medicina,1
+819,1,Automóviles,1
+820,1,Automóviles,1
+821,1,Espacio,1
+822,1,Gráficos,1
+823,1,Medicina,1
+824,1,Hockey,1
+825,1,Automóviles,1
+826,1,Gráficos,1
+827,1,Gráficos,1
+828,1,Espacio,1
+829,1,Hockey,1
+830,1,Gráficos,1
+831,1,Oriente Medio,1
+832,1,Espacio,1
+833,1,Oriente Medio,1
+834,1,Medicina,1
+835,1,Gráficos,1
+836,1,Automóviles,1
+837,1,Gráficos,1
+838,1,Oriente Medio,1
+839,1,Hockey,1
+840,1,Espacio,1
+841,1,Hockey,1
+842,1,Automóviles,1
+843,1,Oriente Medio,1
+844,1,Hockey,1
+845,1,Gráficos,1
+846,1,Hockey,1
+847,1,Medicina,1
+848,1,Hockey,1
+849,1,Automóviles,1
+850,1,Hockey,1
+851,1,Hockey,1
+852,1,Espacio,1
+853,1,Hockey,1
+854,1,Gráficos,1
+855,1,Oriente Medio,1
+856,1,Hockey,1
+857,1,Hockey,1
+858,1,Espacio,1
+859,1,Automóviles,1
+860,1,Gráficos,1
+861,1,Espacio,1
+862,1,Gráficos,1
+863,1,Hockey,1
+864,1,Oriente Medio,1
+865,1,Medicina,1
+866,1,Gráficos,1
+867,1,Espacio,1
+868,1,Oriente Medio,1
+869,1,Oriente Medio,1
+870,1,Oriente Medio,1
+871,1,Espacio,1
+872,1,Hockey,1
+873,1,Espacio,1
+874,1,Espacio,1
+875,1,Espacio,1
+876,1,Espacio,1
+877,1,Gráficos,1
+878,1,Gráficos,1
+879,1,Medicina,1
+880,1,Hockey,1
+881,1,Medicina,1
+882,1,Hockey,1
+883,1,Espacio,1
+884,1,Automóviles,1
+885,1,Automóviles,1
+886,1,Automóviles,1
+887,1,Gráficos,1
+888,1,Hockey,1
+889,1,Hockey,1
+890,1,Hockey,1
+891,1,Gráficos,1
+892,1,Espacio,1
+893,1,Espacio,1
+894,1,Espacio,1
+895,1,Hockey,1
+896,1,Medicina,1
+897,1,Medicina,1
+898,1,Medicina,1
+899,1,Hockey,1
+900,1,Medicina,1
+901,1,Hockey,1
+902,1,Medicina,1
+903,1,Espacio,1
+904,1,Automóviles,1
+905,1,Automóviles,1
+906,1,Hockey,1
+907,1,Medicina,1
+908,1,Medicina,1
+909,1,Espacio,1
+910,1,Medicina,1
+911,1,Oriente Medio,1
+912,1,Automóviles,1
+913,1,Oriente Medio,1
+914,1,Gráficos,1
+915,1,Gráficos,1
+916,1,Oriente Medio,1
+917,1,Hockey,1
+918,1,Automóviles,1
+919,1,Hockey,1
+920,1,Espacio,1
+921,1,Gráficos,1
+922,1,Medicina,1
+923,1,Espacio,1
+924,1,Espacio,1
+925,1,Automóviles,1
+926,1,Medicina,1
+927,1,Oriente Medio,1
+928,1,Espacio,1
+929,1,Medicina,1
+930,1,Medicina,1
+931,1,Espacio,1
+932,1,Automóviles,1
+933,1,Automóviles,1
+934,1,Automóviles,1
+935,1,Hockey,1
+936,1,Oriente Medio,1
+937,1,Espacio,1
+938,1,Hockey,1
+939,1,Medicina,1
+940,1,Automóviles,1
+941,1,Oriente Medio,1
+942,1,Automóviles,1
+943,1,Automóviles,1
+944,1,Oriente Medio,1
+945,1,Medicina,1
+946,1,Medicina,1
+947,1,Gráficos,1
+948,1,Medicina,1
+949,1,Automóviles,1
+950,1,Espacio,1
+951,1,Gráficos,1
+952,1,Medicina,1
+953,1,Automóviles,1
+954,1,Gráficos,1
+955,1,Hockey,1
+956,1,Oriente Medio,1
+957,1,Gráficos,1
+958,1,Gráficos,1
+959,1,Medicina,1
+960,1,Automóviles,1
+961,1,Espacio,1
+962,1,Espacio,1
+963,1,Gráficos,1
+964,1,Espacio,1
+965,1,Medicina,1
+966,1,Medicina,1
+967,1,Automóviles,1
+968,1,Medicina,1
+969,1,Espacio,1
+970,1,Oriente Medio,1
+971,1,Automóviles,1
+972,1,Medicina,1
+973,1,Espacio,1
+974,1,Gráficos,1
+975,1,Medicina,1
+976,1,Oriente Medio,1
+977,1,Automóviles,1
+978,1,Automóviles,1
+979,1,Automóviles,1
+980,1,Espacio,1
+981,1,Hockey,1
+982,1,Hockey,1
+983,1,Oriente Medio,1
+984,1,Espacio,1
+985,1,Gráficos,1
+986,1,Espacio,1
+987,1,Medicina,1
+988,1,Automóviles,1
+989,1,Hockey,1
+990,1,Oriente Medio,1
+991,1,Hockey,1
+992,1,Automóviles,1
+993,1,Oriente Medio,1
+994,1,Automóviles,1
+995,1,Gráficos,1
+996,1,Hockey,1
+997,1,Medicina,1
+998,1,Medicina,1
+999,1,Oriente Medio,1
+1000,1,Espacio,1
+1001,1,Automóviles,1
+1002,1,Gráficos,1
+1003,1,Hockey,1
+1004,1,Espacio,1
+1005,1,Automóviles,1
+1006,1,Espacio,1
+1007,1,Hockey,1
+1008,1,Automóviles,1
+1009,1,Medicina,1
+1010,1,Medicina,1
+1011,1,Espacio,1
+1012,1,Oriente Medio,1
+1013,1,Hockey,1
+1014,1,Hockey,1
+1015,1,Oriente Medio,1
+1016,1,Automóviles,1
+1017,1,Espacio,1
+1018,1,Espacio,1
+1019,1,Automóviles,1
+1020,1,Medicina,1
+1021,1,Espacio,1
+1022,1,Medicina,1
+1023,1,Oriente Medio,1
+1024,1,Oriente Medio,1
+1025,1,Oriente Medio,1
+1026,1,Hockey,1
+1027,1,Medicina,1
+1028,1,Hockey,1
+1029,1,Gráficos,1
+1030,1,Hockey,1
+1031,1,Oriente Medio,1
+1032,1,Oriente Medio,1
+1033,1,Espacio,1
+1034,1,Gráficos,1
+1035,1,Medicina,1
+1036,1,Gráficos,1
+1037,1,Medicina,1
+1038,1,Espacio,1
+1039,1,Hockey,1
+1040,1,Medicina,1
+1041,1,Gráficos,1
+1042,1,Medicina,1
+1043,1,Medicina,1
+1044,1,Automóviles,1
+1045,1,Espacio,1
+1046,1,Oriente Medio,1
+1047,1,Automóviles,1
+1048,1,Hockey,1
+1049,1,Automóviles,1
+1050,1,Gráficos,1
+1051,1,Oriente Medio,1
+1052,1,Oriente Medio,1
+1053,1,Medicina,1
+1054,1,Gráficos,1
+1055,1,Hockey,1
+1056,1,Espacio,1
+1057,1,Hockey,1
+1058,1,Gráficos,1
+1059,1,Hockey,1
+1060,1,Hockey,1
+1061,1,Automóviles,1
+1062,1,Medicina,1
+1063,1,Gráficos,1
+1064,1,Hockey,1
+1065,1,Gráficos,1
+1066,1,Medicina,1
+1067,1,Automóviles,1
+1068,1,Oriente Medio,1
+1069,1,Automóviles,1
+1070,1,Automóviles,1
+1071,1,Oriente Medio,1
+1072,1,Medicina,1
+1073,1,Automóviles,1
+1074,1,Hockey,1
+1075,1,Oriente Medio,1
+1076,1,Automóviles,1
+1077,1,Medicina,1
+1078,1,Oriente Medio,1
+1079,1,Hockey,1
+1080,1,Oriente Medio,1
+1081,1,Oriente Medio,1
+1082,1,Medicina,1
+1083,1,Hockey,1
+1084,1,Automóviles,1
+1085,1,Gráficos,1
+1086,1,Oriente Medio,1
+1087,1,Gráficos,1
+1088,1,Hockey,1
+1089,1,Hockey,1
+1090,1,Medicina,1
+1091,1,Hockey,1
+1092,1,Oriente Medio,1
+1093,1,Automóviles,1
+1094,1,Automóviles,1
+1095,1,Automóviles,1
+1096,1,Automóviles,1
+1097,1,Gráficos,1
+1098,1,Gráficos,1
+1099,1,Medicina,1
+1100,1,Medicina,1
+1101,1,Medicina,1
+1102,1,Oriente Medio,1
+1103,1,Oriente Medio,1
+1104,1,Gráficos,1
+1105,1,Automóviles,1
+1106,1,Hockey,1
+1107,1,Espacio,1
+1108,1,Oriente Medio,1
+1109,1,Gráficos,1
+1110,1,Medicina,1
+1111,1,Espacio,1
+1112,1,Gráficos,1
+1113,1,Hockey,1
+1114,1,Oriente Medio,1
+1115,1,Espacio,1
+1116,1,Oriente Medio,1
+1117,1,Medicina,1
+1118,1,Medicina,1
+1119,1,Medicina,1
+1120,1,Automóviles,1
+1121,1,Automóviles,1
+1122,1,Oriente Medio,1
+1123,1,Automóviles,1
+1124,1,Hockey,1
+1125,1,Automóviles,1
+1126,1,Gráficos,1
+1127,1,Medicina,1
+1128,1,Medicina,1
+1129,1,Hockey,1
+1130,1,Hockey,1
+1131,1,Automóviles,1
+1132,1,Espacio,1
+1133,1,Automóviles,1
+1134,1,Gráficos,1
+1135,1,Medicina,1
+1136,1,Espacio,1
+1137,1,Hockey,1
+1138,1,Espacio,1
+1139,1,Medicina,1
+1140,1,Espacio,1
+1141,1,Oriente Medio,1
+1142,1,Espacio,1
+1143,1,Automóviles,1
+1144,1,Automóviles,1
+1145,1,Hockey,1
+1146,1,Automóviles,1
+1147,1,Oriente Medio,1
+1148,1,Automóviles,1
+1149,1,Espacio,1
+1150,1,Automóviles,1
+1151,1,Medicina,1
+1152,1,Espacio,1
+1153,1,Oriente Medio,1
+1154,1,Automóviles,1
+1155,1,Medicina,1
+1156,1,Hockey,1
+1157,1,Automóviles,1
+1158,1,Espacio,1
+1159,1,Hockey,1
+1160,1,Oriente Medio,1
+1161,1,Medicina,1
+1162,1,Oriente Medio,1
+1163,1,Oriente Medio,1
+1164,1,Hockey,1
+1165,1,Espacio,1
+1166,1,Automóviles,1
+1167,1,Oriente Medio,1
+1168,1,Gráficos,1
+1169,1,Hockey,1
+1170,1,Hockey,1
+1171,1,Automóviles,1
+1172,1,Medicina,1
+1173,1,Medicina,1
+1174,1,Gráficos,1
+1175,1,Medicina,1
+1176,1,Espacio,1
+1177,1,Oriente Medio,1
+1178,1,Medicina,1
+1179,1,Gráficos,1
+1180,1,Oriente Medio,1
+1181,1,Oriente Medio,1
+1182,1,Medicina,1
+1183,1,Automóviles,1
+1184,1,Automóviles,1
+1185,1,Oriente Medio,1
+1186,1,Medicina,1
+1187,1,Medicina,1
+1188,1,Espacio,1
+1189,1,Gráficos,1
+1190,1,Medicina,1
+1191,1,Espacio,1
+1192,1,Hockey,1
+1193,1,Medicina,1
+1194,1,Espacio,1
+1195,1,Espacio,1
+1196,1,Espacio,1
+1197,1,Gráficos,1
+1198,1,Oriente Medio,1
+1199,1,Automóviles,1
+1200,1,Medicina,1
+1201,1,Medicina,1
+1202,1,Automóviles,1
+1203,1,Medicina,1
+1204,1,Hockey,1
+1205,1,Medicina,1
+1206,1,Hockey,1
+1207,1,Oriente Medio,1
+1208,1,Medicina,1
+1209,1,Medicina,1
+1210,1,Espacio,1
+1211,1,Espacio,1
+1212,1,Automóviles,1
+1213,1,Medicina,1
+1214,1,Gráficos,1
+1215,1,Automóviles,1
+1216,1,Espacio,1
+1217,1,Hockey,1
+1218,1,Automóviles,1
+1219,1,Espacio,1
+1220,1,Automóviles,1
+1221,1,Espacio,1
+1222,1,Medicina,1
+1223,1,Espacio,1
+1224,1,Gráficos,1
+1225,1,Automóviles,1
+1226,1,Automóviles,1
+1227,1,Espacio,1
+1228,1,Medicina,1
+1229,1,Medicina,1
+1230,1,Medicina,1
+1231,1,Espacio,1
+1232,1,Automóviles,1
+1233,1,Gráficos,1
+1234,1,Oriente Medio,1
+1235,1,Gráficos,1
+1236,1,Automóviles,1
+1237,1,Espacio,1
+1238,1,Gráficos,1
+1239,1,Hockey,1
+1240,1,Oriente Medio,1
+1241,1,Automóviles,1
+1242,1,Hockey,1
+1243,1,Oriente Medio,1
+1244,1,Espacio,1
+1245,1,Medicina,1
+1246,1,Oriente Medio,1
+1247,1,Gráficos,1
+1248,1,Gráficos,1
+1249,1,Hockey,1
+1250,1,Hockey,1
+1251,1,Hockey,1
+1252,1,Espacio,1
+1253,1,Hockey,1
+1254,1,Espacio,1
+1255,1,Medicina,1
+1256,1,Gráficos,1
+1257,1,Oriente Medio,1
+1258,1,Medicina,1
+1259,1,Automóviles,1
+1260,1,Oriente Medio,1
+1261,1,Hockey,1
+1262,1,Oriente Medio,1
+1263,1,Oriente Medio,1
+1264,1,Hockey,1
+1265,1,Hockey,1
+1266,1,Oriente Medio,1
+1267,1,Oriente Medio,1
+1268,1,Hockey,1
+1269,1,Hockey,1
+1270,1,Hockey,1
+1271,1,Espacio,1
+1272,1,Gráficos,1
+1273,1,Automóviles,1
+1274,1,Hockey,1
+1275,1,Oriente Medio,1
+1276,1,Oriente Medio,1
+1277,1,Espacio,1
+1278,1,Medicina,1
+1279,1,Espacio,1
+1280,1,Espacio,1
+1281,1,Espacio,1
+1282,1,Espacio,1
+1283,1,Gráficos,1
+1284,1,Oriente Medio,1
+1285,1,Espacio,1
+1286,1,Hockey,1
+1287,1,Automóviles,1
+1288,1,Gráficos,1
+1289,1,Espacio,1
+1290,1,Oriente Medio,1
+1291,1,Medicina,1
+1292,1,Hockey,1
+1293,1,Espacio,1
+1294,1,Espacio,1
+1295,1,Gráficos,1
+1296,1,Hockey,1
+1297,1,Espacio,1
+1298,1,Automóviles,1
+1299,1,Espacio,1
+1300,1,Medicina,1
+1301,1,Gráficos,1
+1302,1,Medicina,1
+1303,1,Medicina,1
+1304,1,Hockey,1
+1305,1,Espacio,1
+1306,1,Medicina,1
+1307,1,Hockey,1
+1308,1,Gráficos,1
+1309,1,Oriente Medio,1
+1310,1,Automóviles,1
+1311,1,Hockey,1
+1312,1,Gráficos,1
+1313,1,Oriente Medio,1
+1314,1,Medicina,1
+1315,1,Hockey,1
+1316,1,Oriente Medio,1
+1317,1,Gráficos,1
+1318,1,Gráficos,1
+1319,1,Gráficos,1
+1320,1,Medicina,1
+1321,1,Oriente Medio,1
+1322,1,Oriente Medio,1
+1323,1,Automóviles,1
+1324,1,Automóviles,1
+1325,1,Medicina,1
+1326,1,Espacio,1
+1327,1,Espacio,1
+1328,1,Medicina,1
+1329,1,Automóviles,1
+1330,1,Gráficos,1
+1331,1,Medicina,1
+1332,1,Medicina,1
+1333,1,Medicina,1
+1334,1,Espacio,1
+1335,1,Gráficos,1
+1336,1,Automóviles,1
+1337,1,Oriente Medio,1
+1338,1,Medicina,1
+1339,1,Automóviles,1
+1340,1,Espacio,1
+1341,1,Espacio,1
+1342,1,Espacio,1
+1343,1,Oriente Medio,1
+1344,1,Gráficos,1
+1345,1,Oriente Medio,1
+1346,1,Hockey,1
+1347,1,Gráficos,1
+1348,1,Hockey,1
+1349,1,Espacio,1
+1350,1,Gráficos,1
+1351,1,Espacio,1
+1352,1,Medicina,1
+1353,1,Automóviles,1
+1354,1,Hockey,1
+1355,1,Medicina,1
+1356,1,Medicina,1
+1357,1,Espacio,1
+1358,1,Espacio,1
+1359,1,Gráficos,1
+1360,1,Gráficos,1
+1361,1,Oriente Medio,1
+1362,1,Hockey,1
+1363,1,Espacio,1
+1364,1,Espacio,1
+1365,1,Gráficos,1
+1366,1,Medicina,1
+1367,1,Espacio,1
+1368,1,Automóviles,1
+1369,1,Espacio,1
+1370,1,Hockey,1
+1371,1,Medicina,1
+1372,1,Medicina,1
+1373,1,Espacio,1
+1374,1,Oriente Medio,1
+1375,1,Espacio,1
+1376,1,Hockey,1
+1377,1,Espacio,1
+1378,1,Gráficos,1
+1379,1,Automóviles,1
+1380,1,Hockey,1
+1381,1,Gráficos,1
+1382,1,Medicina,1
+1383,1,Gráficos,1
+1384,1,Gráficos,1
+1385,1,Espacio,1
+1386,1,Oriente Medio,1
+1387,1,Oriente Medio,1
+1388,1,Espacio,1
+1389,1,Gráficos,1
+1390,1,Gráficos,1
+1391,1,Hockey,1
+1392,1,Oriente Medio,1
+1393,1,Espacio,1
+1394,1,Oriente Medio,1
+1395,1,Medicina,1
+1396,1,Gráficos,1
+1397,1,Automóviles,1
+1398,1,Oriente Medio,1
+1399,1,Espacio,1
+1400,1,Medicina,1
+1401,1,Medicina,1
+1402,1,Hockey,1
+1403,1,Hockey,1
+1404,1,Gráficos,1
+1405,1,Gráficos,1
+1406,1,Medicina,1
+1407,1,Oriente Medio,1
+1408,1,Gráficos,1
+1409,1,Hockey,1
+1410,1,Medicina,1
+1411,1,Oriente Medio,1
+1412,1,Automóviles,1
+1413,1,Gráficos,1
+1414,1,Oriente Medio,1
+1415,1,Hockey,1
+1416,1,Hockey,1
+1417,1,Hockey,1
+1418,1,Automóviles,1
+1419,1,Medicina,1
+1420,1,Oriente Medio,1
+1421,1,Automóviles,1
+1422,1,Medicina,1
+1423,1,Gráficos,1
+1424,1,Oriente Medio,1
+1425,1,Medicina,1
+1426,1,Espacio,1
+1427,1,Hockey,1
+1428,1,Espacio,1
+1429,1,Gráficos,1
+1430,1,Oriente Medio,1
+1431,1,Automóviles,1
+1432,1,Medicina,1
+1433,1,Oriente Medio,1
+1434,1,Automóviles,1
+1435,1,Espacio,1
+1436,1,Gráficos,1
+1437,1,Automóviles,1
+1438,1,Oriente Medio,1
+1439,1,Espacio,1
+1440,1,Oriente Medio,1
+1441,1,Automóviles,1
+1442,1,Espacio,1
+1443,1,Espacio,1
+1444,1,Espacio,1
+1445,1,Gráficos,1
+1446,1,Oriente Medio,1
+1447,1,Gráficos,1
+1448,1,Hockey,1
+1449,1,Oriente Medio,1
+1450,1,Hockey,1
+1451,1,Gráficos,1
+1452,1,Medicina,1
+1453,1,Medicina,1
+1454,1,Automóviles,1
+1455,1,Oriente Medio,1
+1456,1,Automóviles,1
+1457,1,Hockey,1
+1458,1,Oriente Medio,1
+1459,1,Oriente Medio,1
+1460,1,Gráficos,1
+1461,1,Medicina,1
+1462,1,Automóviles,1
+1463,1,Oriente Medio,1
+1464,1,Oriente Medio,1
+1465,1,Gráficos,1
+1466,1,Gráficos,1
+1467,1,Automóviles,1
+1468,1,Gráficos,1
+1469,1,Automóviles,1
+1470,1,Hockey,1
+1471,1,Automóviles,1
+1472,1,Oriente Medio,1
+1473,1,Oriente Medio,1
+1474,1,Automóviles,1
+1475,1,Medicina,1
+1476,1,Hockey,1
+1477,1,Gráficos,1
+1478,1,Automóviles,1
+1479,1,Medicina,1
+1480,1,Hockey,1
+1481,1,Hockey,1
+1482,1,Gráficos,1
+1483,1,Hockey,1
+1484,1,Hockey,1
+1485,1,Hockey,1
+1486,1,Automóviles,1
+1487,1,Hockey,1
+1488,1,Automóviles,1
+1489,1,Oriente Medio,1
+1490,1,Medicina,1
+1491,1,Medicina,1
+1492,1,Medicina,1
+1493,1,Gráficos,1
+1494,1,Oriente Medio,1
+1495,1,Espacio,1
+1496,1,Espacio,1
+1497,1,Gráficos,1
+1498,1,Espacio,1
+1499,1,Gráficos,1
+1500,1,Medicina,1
+1501,1,Medicina,1
+1502,1,Oriente Medio,1
+1503,1,Oriente Medio,1
+1504,1,Oriente Medio,1
+1505,1,Medicina,1
+1506,1,Automóviles,1
+1507,1,Gráficos,1
+1508,1,Gráficos,1
+1509,1,Oriente Medio,1
+1510,1,Hockey,1
+1511,1,Medicina,1
+1512,1,Gráficos,1
+1513,1,Oriente Medio,1
+1514,1,Gráficos,1
+1515,1,Medicina,1
+1516,1,Automóviles,1
+1517,1,Oriente Medio,1
+1518,1,Gráficos,1
+1519,1,Espacio,1
+1520,1,Gráficos,1
+1521,1,Gráficos,1
+1522,1,Automóviles,1
+1523,1,Espacio,1
+1524,1,Hockey,1
+1525,1,Oriente Medio,1
+1526,1,Medicina,1
+1527,1,Espacio,1
+1528,1,Gráficos,1
+1529,1,Espacio,1
+1530,1,Medicina,1
+1531,1,Oriente Medio,1
+1532,1,Espacio,1
+1533,1,Oriente Medio,1
+1534,1,Espacio,1
+1535,1,Gráficos,1
+1536,1,Automóviles,1
+1537,1,Espacio,1
+1538,1,Gráficos,1
+1539,1,Oriente Medio,1
+1540,1,Automóviles,1
+1541,1,Oriente Medio,1
+1542,1,Gráficos,1
+1543,1,Hockey,1
+1544,1,Oriente Medio,1
+1545,1,Oriente Medio,1
+1546,1,Automóviles,1
+1547,1,Gráficos,1
+1548,1,Automóviles,1
+1549,1,Oriente Medio,1
+1550,1,Medicina,1
+1551,1,Oriente Medio,1
+1552,1,Hockey,1
+1553,1,Hockey,1
+1554,1,Espacio,1
+1555,1,Oriente Medio,1
+1556,1,Gráficos,1
+1557,1,Medicina,1
+1558,1,Medicina,1
+1559,1,Espacio,1
+1560,1,Medicina,1
+1561,1,Medicina,1
+1562,1,Gráficos,1
+1563,1,Gráficos,1
+1564,1,Automóviles,1
+1565,1,Hockey,1
+1566,1,Gráficos,1
+1567,1,Automóviles,1
+1568,1,Espacio,1
+1569,1,Oriente Medio,1
+1570,1,Oriente Medio,1
+1571,1,Automóviles,1
+1572,1,Oriente Medio,1
+1573,1,Oriente Medio,1
+1574,1,Oriente Medio,1
+1575,1,Espacio,1
+1576,1,Espacio,1
+1577,1,Medicina,1
+1578,1,Espacio,1
+1579,1,Medicina,1
+1580,1,Gráficos,1
+1581,1,Automóviles,1
+1582,1,Espacio,1
+1583,1,Automóviles,1
+1584,1,Automóviles,1
+1585,1,Oriente Medio,1
+1586,1,Hockey,1
+1587,1,Gráficos,1
+1588,1,Medicina,1
+1589,1,Oriente Medio,1
+1590,1,Medicina,1
+1591,1,Espacio,1
+1592,1,Gráficos,1
+1593,1,Gráficos,1
+1594,1,Oriente Medio,1
+1595,1,Hockey,1
+1596,1,Automóviles,1
+1597,1,Automóviles,1
+1598,1,Oriente Medio,1
+1599,1,Oriente Medio,1
+1600,1,Automóviles,1
+1601,1,Hockey,1
+1602,1,Espacio,1
+1603,1,Gráficos,1
+1604,1,Automóviles,1
+1605,1,Espacio,1
+1606,1,Hockey,1
+1607,1,Oriente Medio,1
+1608,1,Automóviles,1
+1609,1,Hockey,1
+1610,1,Hockey,1
+1611,1,Hockey,1
+1612,1,Espacio,1
+1613,1,Oriente Medio,1
+1614,1,Espacio,1
+1615,1,Gráficos,1
+1616,1,Medicina,1
+1617,1,Medicina,1
+1618,1,Medicina,1
+1619,1,Gráficos,1
+1620,1,Automóviles,1
+1621,1,Gráficos,1
+1622,1,Gráficos,1
+1623,1,Espacio,1
+1624,1,Espacio,1
+1625,1,Espacio,1
+1626,1,Medicina,1
+1627,1,Medicina,1
+1628,1,Medicina,1
+1629,1,Oriente Medio,1
+1630,1,Medicina,1
+1631,1,Espacio,1
+1632,1,Hockey,1
+1633,1,Espacio,1
+1634,1,Hockey,1
+1635,1,Hockey,1
+1636,1,Gráficos,1
+1637,1,Automóviles,1
+1638,1,Hockey,1
+1639,1,Oriente Medio,1
+1640,1,Espacio,1
+1641,1,Medicina,1
+1642,1,Hockey,1
+1643,1,Espacio,1
+1644,1,Hockey,1
+1645,1,Oriente Medio,1
+1646,1,Espacio,1
+1647,1,Medicina,1
+1648,1,Medicina,1
+1649,1,Espacio,1
+1650,1,Medicina,1
+1651,1,Automóviles,1
+1652,1,Gráficos,1
+1653,1,Gráficos,1
+1654,1,Oriente Medio,1
+1655,1,Hockey,1
+1656,1,Hockey,1
+1657,1,Oriente Medio,1
+1658,1,Gráficos,1
+1659,1,Medicina,1
+1660,1,Gráficos,1
+1661,1,Hockey,1
+1662,1,Oriente Medio,1
+1663,1,Oriente Medio,1
+1664,1,Automóviles,1
+1665,1,Medicina,1
+1666,1,Automóviles,1
+1667,1,Hockey,1
+1668,1,Medicina,1
+1669,1,Gráficos,1
+1670,1,Gráficos,1
+1671,1,Espacio,1
+1672,1,Gráficos,1
+1673,1,Oriente Medio,1
+1674,1,Medicina,1
+1675,1,Hockey,1
+1676,1,Espacio,1
+1677,1,Hockey,1
+1678,1,Automóviles,1
+1679,1,Oriente Medio,1
+1680,1,Gráficos,1
+1681,1,Oriente Medio,1
+1682,1,Oriente Medio,1
+1683,1,Medicina,1
+1684,1,Automóviles,1
+1685,1,Hockey,1
+1686,1,Medicina,1
+1687,1,Gráficos,1
+1688,1,Hockey,1
+1689,1,Espacio,1
+1690,1,Medicina,1
+1691,1,Espacio,1
+1692,1,Automóviles,1
+1693,1,Medicina,1
+1694,1,Hockey,1
+1695,1,Espacio,1
+1696,1,Medicina,1
+1697,1,Automóviles,1
+1698,1,Oriente Medio,1
+1699,1,Espacio,1
+1700,1,Oriente Medio,1
+1701,1,Medicina,1
+1702,1,Hockey,1
+1703,1,Automóviles,1
+1704,1,Oriente Medio,1
+1705,1,Hockey,1
+1706,1,Automóviles,1
+1707,1,Espacio,1
+1708,1,Oriente Medio,1
+1709,1,Espacio,1
+1710,1,Gráficos,1
+1711,1,Espacio,1
+1712,1,Automóviles,1
+1713,1,Oriente Medio,1
+1714,1,Espacio,1
+1715,1,Medicina,1
+1716,1,Hockey,1
+1717,1,Medicina,1
+1718,1,Gráficos,1
+1719,1,Medicina,1
+1720,1,Automóviles,1
+1721,1,Medicina,1
+1722,1,Espacio,1
+1723,1,Oriente Medio,1
+1724,1,Gráficos,1
+1725,1,Oriente Medio,1
+1726,1,Oriente Medio,1
+1727,1,Espacio,1
+1728,1,Gráficos,1
+1729,1,Medicina,1
+1730,1,Automóviles,1
+1731,1,Automóviles,1
+1732,1,Hockey,1
+1733,1,Gráficos,1
+1734,1,Hockey,1
+1735,1,Espacio,1
+1736,1,Gráficos,1
+1737,1,Gráficos,1
+1738,1,Medicina,1
+1739,1,Automóviles,1
+1740,1,Espacio,1
+1741,1,Medicina,1
+1742,1,Oriente Medio,1
+1743,1,Oriente Medio,1
+1744,1,Espacio,1
+1745,1,Medicina,1
+1746,1,Automóviles,1
+1747,1,Oriente Medio,1
+1748,1,Espacio,1
+1749,1,Oriente Medio,1
+1750,1,Medicina,1
+1751,1,Oriente Medio,1
+1752,1,Automóviles,1
+1753,1,Gráficos,1
+1754,1,Gráficos,1
+1755,1,Oriente Medio,1
+1756,1,Hockey,1
+1757,1,Hockey,1
+1758,1,Espacio,1
+1759,1,Medicina,1
+1760,1,Oriente Medio,1
+1761,1,Espacio,1
+1762,1,Espacio,1
+1763,1,Medicina,1
+1764,1,Espacio,1
+1765,1,Automóviles,1
+1766,1,Hockey,1
+1767,1,Gráficos,1
+1768,1,Oriente Medio,1
+1769,1,Automóviles,1
+1770,1,Automóviles,1
+1771,1,Oriente Medio,1
+1772,1,Hockey,1
+1773,1,Oriente Medio,1
+1774,1,Espacio,1
+1775,1,Espacio,1
+1776,1,Espacio,1
+1777,1,Espacio,1
+1778,1,Medicina,1
+1779,1,Espacio,1
+1780,1,Automóviles,1
+1781,1,Hockey,1
+1782,1,Oriente Medio,1
+1783,1,Hockey,1
+1784,1,Medicina,1
+1785,1,Oriente Medio,1
+1786,1,Gráficos,1
+1787,1,Hockey,1
+1788,1,Espacio,1
+1789,1,Hockey,1
+1790,1,Medicina,1
+1791,1,Automóviles,1
+1792,1,Medicina,1
+1793,1,Medicina,1
+1794,1,Oriente Medio,1
+1795,1,Gráficos,1
+1796,1,Medicina,1
+1797,1,Oriente Medio,1
+1798,1,Gráficos,1
+1799,1,Medicina,1
+1800,1,Automóviles,1
+1801,1,Medicina,1
+1802,1,Medicina,1
+1803,1,Espacio,1
+1804,1,Medicina,1
+1805,1,Oriente Medio,1
+1806,1,Automóviles,1
+1807,1,Espacio,1
+1808,1,Medicina,1
+1809,1,Espacio,1
+1810,1,Medicina,1
+1811,1,Espacio,1
+1812,1,Medicina,1
+1813,1,Automóviles,1
+1814,1,Gráficos,1
+1815,1,Oriente Medio,1
+1816,1,Hockey,1
+1817,1,Hockey,1
+1818,1,Automóviles,1
+1819,1,Espacio,1
+1820,1,Gráficos,1
+1821,1,Espacio,1
+1822,1,Oriente Medio,1
+1823,1,Medicina,1
+1824,1,Gráficos,1
+1825,1,Hockey,1
+1826,1,Oriente Medio,1
+1827,1,Oriente Medio,1
+1828,1,Espacio,1
+1829,1,Medicina,1
+1830,1,Espacio,1
+1831,1,Hockey,1
+1832,1,Hockey,1
+1833,1,Medicina,1
+1834,1,Medicina,1
+1835,1,Gráficos,1
+1836,1,Hockey,1
+1837,1,Gráficos,1
+1838,1,Oriente Medio,1
+1839,1,Automóviles,1
+1840,1,Espacio,1
+1841,1,Gráficos,1
+1842,1,Automóviles,1
+1843,1,Automóviles,1
+1844,1,Oriente Medio,1
+1845,1,Gráficos,1
+1846,1,Hockey,1
+1847,1,Espacio,1
+1848,1,Oriente Medio,1
+1849,1,Gráficos,1
+1850,1,Medicina,1
+1851,1,Hockey,1
+1852,1,Medicina,1
+1853,1,Hockey,1
+1854,1,Oriente Medio,1
+1855,1,Medicina,1
+1856,1,Oriente Medio,1
+1857,1,Espacio,1
+1858,1,Oriente Medio,1
+1859,1,Automóviles,1
+1860,1,Espacio,1
+1861,1,Espacio,1
+1862,1,Hockey,1
+1863,1,Medicina,1
+1864,1,Hockey,1
+1865,1,Oriente Medio,1
+1866,1,Hockey,1
+1867,1,Medicina,1
+1868,1,Oriente Medio,1
+1869,1,Oriente Medio,1
+1870,1,Hockey,1
+1871,1,Oriente Medio,1
+1872,1,Medicina,1
+1873,1,Oriente Medio,1
+1874,1,Oriente Medio,1
+1875,1,Oriente Medio,1
+1876,1,Oriente Medio,1
+1877,1,Hockey,1
+1878,1,Hockey,1
+1879,1,Oriente Medio,1
+1880,1,Oriente Medio,1
+1881,1,Gráficos,1
+1882,1,Automóviles,1
+1883,1,Hockey,1
+1884,1,Automóviles,1
+1885,1,Automóviles,1
+1886,1,Espacio,1
+1887,1,Gráficos,1
+1888,1,Gráficos,1
+1889,1,Gráficos,1
+1890,1,Hockey,1
+1891,1,Medicina,1
+1892,1,Hockey,1
+1893,1,Medicina,1
+1894,1,Gráficos,1
+1895,1,Espacio,1
+1896,1,Automóviles,1
+1897,1,Gráficos,1
+1898,1,Gráficos,1
+1899,1,Medicina,1
+1900,1,Espacio,1
+1901,1,Hockey,1
+1902,1,Gráficos,1
+1903,1,Gráficos,1
+1904,1,Automóviles,1
+1905,1,Espacio,1
+1906,1,Medicina,1
+1907,1,Gráficos,1
+1908,1,Automóviles,1
+1909,1,Oriente Medio,1
+1910,1,Gráficos,1
+1911,1,Espacio,1
+1912,1,Automóviles,1
+1913,1,Hockey,1
+1914,1,Gráficos,1
+1915,1,Hockey,1
+1916,1,Oriente Medio,1
+1917,1,Espacio,1
+1918,1,Oriente Medio,1
+1919,1,Espacio,1
+1920,1,Espacio,1
+1921,1,Oriente Medio,1
+1922,1,Hockey,1
+1923,1,Espacio,1
+1924,1,Oriente Medio,1
+1925,1,Gráficos,1
+1926,1,Automóviles,1
+1927,1,Automóviles,1
+1928,1,Hockey,1
+1929,1,Automóviles,1
+1930,1,Gráficos,1
+1931,1,Gráficos,1
+1932,1,Hockey,1
+1933,1,Hockey,1
+1934,1,Medicina,1
+1935,1,Oriente Medio,1
+1936,1,Gráficos,1
+1937,1,Oriente Medio,1
+1938,1,Automóviles,1
+1939,1,Medicina,1
+1940,1,Medicina,1
+1941,1,Hockey,1
+1942,1,Oriente Medio,1
+1943,1,Medicina,1
+1944,1,Hockey,1
+1945,1,Espacio,1
+1946,1,Medicina,1
+1947,1,Automóviles,1
+1948,1,Gráficos,1
+1949,1,Hockey,1
+1950,1,Gráficos,1
+1951,1,Hockey,1
+1952,1,Gráficos,1
+1953,1,Hockey,1
+1954,1,Oriente Medio,1
+1955,1,Oriente Medio,1
+1956,1,Hockey,1
+1957,1,Gráficos,1
+1958,1,Gráficos,1
+1959,1,Automóviles,1
+1960,1,Oriente Medio,1
+1961,1,Hockey,1
+1962,1,Hockey,1
+1963,1,Automóviles,1
+1964,1,Gráficos,1
+1965,1,Automóviles,1
+1966,1,Medicina,1
+1967,1,Medicina,1
+1968,1,Automóviles,1
+1969,1,Hockey,1
+1970,1,Hockey,1
+1971,1,Gráficos,1
+1972,1,Oriente Medio,1
+1973,1,Oriente Medio,1
+1974,1,Automóviles,1
+1975,1,Oriente Medio,1
+1976,1,Automóviles,1
+1977,1,Hockey,1
+1978,1,Oriente Medio,1
+1979,1,Oriente Medio,1
+1980,1,Automóviles,1
+1981,1,Gráficos,1
+1982,1,Gráficos,1
+1983,1,Automóviles,1
+1984,1,Automóviles,1
+1985,1,Gráficos,1
+1986,1,Espacio,1
+1987,1,Gráficos,1
+1988,1,Gráficos,1
+1989,1,Hockey,1
+1990,1,Medicina,1
+1991,1,Espacio,1
+1992,1,Oriente Medio,1
+1993,1,Medicina,1
+1994,1,Automóviles,1
+1995,1,Hockey,1
+1996,1,Oriente Medio,1
+1997,1,Hockey,1
+1998,1,Medicina,1
+1999,1,Medicina,1
+2000,1,Oriente Medio,1
+2001,1,Espacio,1
+2002,1,Espacio,1
+2003,1,Medicina,1
+2004,1,Espacio,1
+2005,1,Hockey,1
+2006,1,Hockey,1
+2007,1,Automóviles,1
+2008,1,Medicina,1
+2009,1,Medicina,1
+2010,1,Oriente Medio,1
+2011,1,Oriente Medio,1
+2012,1,Automóviles,1
+2013,1,Medicina,1
+2014,1,Espacio,1
+2015,1,Hockey,1
+2016,1,Automóviles,1
+2017,1,Oriente Medio,1
+2018,1,Medicina,1
+2019,1,Gráficos,1
+2020,1,Gráficos,1
+2021,1,Espacio,1
+2022,1,Medicina,1
+2023,1,Hockey,1
+2024,1,Automóviles,1
+2025,1,Espacio,1
+2026,1,Espacio,1
+2027,1,Medicina,1
+2028,1,Hockey,1
+2029,1,Gráficos,1
+2030,1,Medicina,1
+2031,1,Hockey,1
+2032,1,Espacio,1
+2033,1,Hockey,1
+2034,1,Oriente Medio,1
+2035,1,Gráficos,1
+2036,1,Gráficos,1
+2037,1,Hockey,1
+2038,1,Gráficos,1
+2039,1,Medicina,1
+2040,1,Oriente Medio,1
+2041,1,Gráficos,1
+2042,1,Gráficos,1
+2043,1,Oriente Medio,1
+2044,1,Medicina,1
+2045,1,Oriente Medio,1
+2046,1,Espacio,1
+2047,1,Hockey,1
+2048,1,Oriente Medio,1
+2049,1,Oriente Medio,1
+2050,1,Oriente Medio,1
+2051,1,Espacio,1
+2052,1,Automóviles,1
+2053,1,Hockey,1
+2054,1,Hockey,1
+2055,1,Medicina,1
+2056,1,Hockey,1
+2057,1,Automóviles,1
+2058,1,Oriente Medio,1
+2059,1,Hockey,1
+2060,1,Espacio,1
+2061,1,Automóviles,1
+2062,1,Hockey,1
+2063,1,Gráficos,1
+2064,1,Automóviles,1
+2065,1,Automóviles,1
+2066,1,Oriente Medio,1
+2067,1,Gráficos,1
+2068,1,Medicina,1
+2069,1,Automóviles,1
+2070,1,Espacio,1
+2071,1,Oriente Medio,1
+2072,1,Oriente Medio,1
+2073,1,Oriente Medio,1
+2074,1,Gráficos,1
+2075,1,Gráficos,1
+2076,1,Gráficos,1
+2077,1,Oriente Medio,1
+2078,1,Automóviles,1
+2079,1,Medicina,1
+2080,1,Espacio,1
+2081,1,Oriente Medio,1
+2082,1,Medicina,1
+2083,1,Automóviles,1
+2084,1,Espacio,1
+2085,1,Automóviles,1
+2086,1,Oriente Medio,1
+2087,1,Oriente Medio,1
+2088,1,Automóviles,1
+2089,1,Gráficos,1
+2090,1,Automóviles,1
+2091,1,Oriente Medio,1
+2092,1,Medicina,1
+2093,1,Oriente Medio,1
+2094,1,Espacio,1
+2095,1,Automóviles,1
+2096,1,Medicina,1
+2097,1,Espacio,1
+2098,1,Gráficos,1
+2099,1,Automóviles,1
+2100,1,Medicina,1
+2101,1,Oriente Medio,1
+2102,1,Oriente Medio,1
+2103,1,Hockey,1
+2104,1,Automóviles,1
+2105,1,Automóviles,1
+2106,1,Oriente Medio,1
+2107,1,Medicina,1
+2108,1,Hockey,1
+2109,1,Medicina,1
+2110,1,Gráficos,1
+2111,1,Automóviles,1
+2112,1,Automóviles,1
+2113,1,Medicina,1
+2114,1,Oriente Medio,1
+2115,1,Automóviles,1
+2116,1,Medicina,1
+2117,1,Medicina,1
+2118,1,Oriente Medio,1
+2119,1,Medicina,1
+2120,1,Espacio,1
+2121,1,Hockey,1
+2122,1,Medicina,1
+2123,1,Medicina,1
+2124,1,Oriente Medio,1
+2125,1,Oriente Medio,1
+2126,1,Espacio,1
+2127,1,Oriente Medio,1
+2128,1,Automóviles,1
+2129,1,Automóviles,1
+2130,1,Medicina,1
+2131,1,Automóviles,1
+2132,1,Espacio,1
+2133,1,Oriente Medio,1
+2134,1,Automóviles,1
+2135,1,Gráficos,1
+2136,1,Medicina,1
+2137,1,Hockey,1
+2138,1,Hockey,1
+2139,1,Espacio,1
+2140,1,Automóviles,1
+2141,1,Gráficos,1
+2142,1,Oriente Medio,1
+2143,1,Oriente Medio,1
+2144,1,Hockey,1
+2145,1,Hockey,1
+2146,1,Hockey,1
+2147,1,Gráficos,1
+2148,1,Gráficos,1
+2149,1,Medicina,1
+2150,1,Automóviles,1
+2151,1,Medicina,1
+2152,1,Hockey,1
+2153,1,Hockey,1
+2154,1,Medicina,1
+2155,1,Gráficos,1
+2156,1,Espacio,1
+2157,1,Espacio,1
+2158,1,Oriente Medio,1
+2159,1,Espacio,1
+2160,1,Gráficos,1
+2161,1,Hockey,1
+2162,1,Medicina,1
+2163,1,Gráficos,1
+2164,1,Oriente Medio,1
+2165,1,Oriente Medio,1
+2166,1,Medicina,1
+2167,1,Medicina,1
+2168,1,Automóviles,1
+2169,1,Automóviles,1
+2170,1,Gráficos,1
+2171,1,Espacio,1
+2172,1,Hockey,1
+2173,1,Oriente Medio,1
+2174,1,Espacio,1
+2175,1,Oriente Medio,1
+2176,1,Espacio,1
+2177,1,Hockey,1
+2178,1,Oriente Medio,1
+2179,1,Medicina,1
+2180,1,Automóviles,1
+2181,1,Medicina,1
+2182,1,Gráficos,1
+2183,1,Medicina,1
+2184,1,Automóviles,1
+2185,1,Oriente Medio,1
+2186,1,Automóviles,1
+2187,1,Hockey,1
+2188,1,Hockey,1
+2189,1,Espacio,1
+2190,1,Espacio,1
+2191,1,Gráficos,1
+2192,1,Medicina,1
+2193,1,Espacio,1
+2194,1,Hockey,1
+2195,1,Gráficos,1
+2196,1,Gráficos,1
+2197,1,Automóviles,1
+2198,1,Hockey,1
+2199,1,Hockey,1
+2200,1,Hockey,1
+2201,1,Hockey,1
+2202,1,Automóviles,1
+2203,1,Hockey,1
+2204,1,Automóviles,1
+2205,1,Oriente Medio,1
+2206,1,Medicina,1
+2207,1,Espacio,1
+2208,1,Espacio,1
+2209,1,Medicina,1
+2210,1,Espacio,1
+2211,1,Gráficos,1
+2212,1,Espacio,1
+2213,1,Oriente Medio,1
+2214,1,Oriente Medio,1
+2215,1,Gráficos,1
+2216,1,Hockey,1
+2217,1,Medicina,1
+2218,1,Hockey,1
+2219,1,Hockey,1
+2220,1,Oriente Medio,1
+2221,1,Gráficos,1
+2222,1,Gráficos,1
+2223,1,Hockey,1
+2224,1,Gráficos,1
+2225,1,Oriente Medio,1
+2226,1,Hockey,1
+2227,1,Hockey,1
+2228,1,Oriente Medio,1
+2229,1,Medicina,1
+2230,1,Espacio,1
+2231,1,Hockey,1
+2232,1,Automóviles,1
+2233,1,Espacio,1
+2234,1,Automóviles,1
+2235,1,Espacio,1
+2236,1,Oriente Medio,1
+2237,1,Espacio,1
+2238,1,Medicina,1
+2239,1,Automóviles,1
+2240,1,Hockey,1
+2241,1,Espacio,1
+2242,1,Hockey,1
+2243,1,Gráficos,1
+2244,1,Oriente Medio,1
+2245,1,Medicina,1
+2246,1,Gráficos,1
+2247,1,Hockey,1
+2248,1,Espacio,1
+2249,1,Hockey,1
+2250,1,Oriente Medio,1
+2251,1,Gráficos,1
+2252,1,Gráficos,1
+2253,1,Oriente Medio,1
+2254,1,Hockey,1
+2255,1,Automóviles,1
+2256,1,Oriente Medio,1
+2257,1,Gráficos,1
+2258,1,Automóviles,1
+2259,1,Oriente Medio,1
+2260,1,Espacio,1
+2261,1,Automóviles,1
+2262,1,Espacio,1
+2263,1,Gráficos,1
+2264,1,Gráficos,1
+2265,1,Gráficos,1
+2266,1,Oriente Medio,1
+2267,1,Oriente Medio,1
+2268,1,Espacio,1
+2269,1,Automóviles,1
+2270,1,Espacio,1
+2271,1,Oriente Medio,1
+2272,1,Espacio,1
+2273,1,Espacio,1
+2274,1,Automóviles,1
+2275,1,Espacio,1
+2276,1,Oriente Medio,1
+2277,1,Medicina,1
+2278,1,Hockey,1
+2279,1,Hockey,1
+2280,1,Oriente Medio,1
+2281,1,Automóviles,1
+2282,1,Hockey,1
+2283,1,Gráficos,1
+2284,1,Automóviles,1
+2285,1,Oriente Medio,1
+2286,1,Gráficos,1
+2287,1,Espacio,1
+2288,1,Gráficos,1
+2289,1,Medicina,1
+2290,1,Medicina,1
+2291,1,Espacio,1
+2292,1,Espacio,1
+2293,1,Espacio,1
+2294,1,Oriente Medio,1
+2295,1,Hockey,1
+2296,1,Espacio,1
+2297,1,Oriente Medio,1
+2298,1,Medicina,1
+2299,1,Gráficos,1
+2300,1,Medicina,1
+2301,1,Oriente Medio,1
+2302,1,Medicina,1
+2303,1,Hockey,1
+2304,1,Espacio,1
+2305,1,Automóviles,1
+2306,1,Medicina,1
+2307,1,Oriente Medio,1
+2308,1,Oriente Medio,1
+2309,1,Hockey,1
+2310,1,Espacio,1
+2311,1,Oriente Medio,1
+2312,1,Gráficos,1
+2313,1,Gráficos,1
+2314,1,Oriente Medio,1
+2315,1,Automóviles,1
+2316,1,Medicina,1
+2317,1,Espacio,1
+2318,1,Oriente Medio,1
+2319,1,Gráficos,1
+2320,1,Medicina,1
+2321,1,Medicina,1
+2322,1,Espacio,1
+2323,1,Medicina,1
+2324,1,Oriente Medio,1
+2325,1,Gráficos,1
+2326,1,Gráficos,1
+2327,1,Espacio,1
+2328,1,Gráficos,1
+2329,1,Gráficos,1
+2330,1,Gráficos,1
+2331,1,Espacio,1
+2332,1,Hockey,1
+2333,1,Espacio,1
+2334,1,Espacio,1
+2335,1,Gráficos,1
+2336,1,Hockey,1
+2337,1,Medicina,1
+2338,1,Gráficos,1
+2339,1,Espacio,1
+2340,1,Automóviles,1
+2341,1,Oriente Medio,1
+2342,1,Oriente Medio,1
+2343,1,Espacio,1
+2344,1,Espacio,1
+2345,1,Gráficos,1
+2346,1,Automóviles,1
+2347,1,Oriente Medio,1
+2348,1,Automóviles,1
+2349,1,Hockey,1
+2350,1,Oriente Medio,1
+2351,1,Oriente Medio,1
+2352,1,Gráficos,1
+2353,1,Espacio,1
+2354,1,Espacio,1
+2355,1,Medicina,1
+2356,1,Gráficos,1
+2357,1,Automóviles,1
+2358,1,Oriente Medio,1
+2359,1,Oriente Medio,1
+2360,1,Automóviles,1
+2361,1,Oriente Medio,1
+2362,1,Gráficos,1
+2363,1,Automóviles,1
+2364,1,Gráficos,1
+2365,1,Automóviles,1
+2366,1,Automóviles,1
+2367,1,Hockey,1
+2368,1,Medicina,1
+2369,1,Automóviles,1
+2370,1,Oriente Medio,1
+2371,1,Medicina,1
+2372,1,Medicina,1
+2373,1,Hockey,1
+2374,1,Gráficos,1
+2375,1,Medicina,1
+2376,1,Hockey,1
+2377,1,Oriente Medio,1
+2378,1,Espacio,1
+2379,1,Gráficos,1
+2380,1,Automóviles,1
+2381,1,Espacio,1
+2382,1,Gráficos,1
+2383,1,Gráficos,1
+2384,1,Espacio,1
+2385,1,Automóviles,1
+2386,1,Gráficos,1
+2387,1,Medicina,1
+2388,1,Hockey,1
+2389,1,Gráficos,1
+2390,1,Hockey,1
+2391,1,Gráficos,1
+2392,1,Espacio,1
+2393,1,Hockey,1
+2394,1,Hockey,1
+2395,1,Medicina,1
+2396,1,Espacio,1
+2397,1,Espacio,1
+2398,1,Oriente Medio,1
+2399,1,Automóviles,1
+2400,1,Hockey,1
+2401,1,Espacio,1
+2402,1,Automóviles,1
+2403,1,Oriente Medio,1
+2404,1,Espacio,1
+2405,1,Espacio,1
+2406,1,Medicina,1
+2407,1,Medicina,1
+2408,1,Automóviles,1
+2409,1,Gráficos,1
+2410,1,Medicina,1
+2411,1,Gráficos,1
+2412,1,Oriente Medio,1
+2413,1,Gráficos,1
+2414,1,Hockey,1
+2415,1,Hockey,1
+2416,1,Gráficos,1
+2417,1,Gráficos,1
+2418,1,Medicina,1
+2419,1,Oriente Medio,1
+2420,1,Oriente Medio,1
+2421,1,Automóviles,1
+2422,1,Gráficos,1
+2423,1,Oriente Medio,1
+2424,1,Medicina,1
+2425,1,Oriente Medio,1
+2426,1,Espacio,1
+2427,1,Hockey,1
+2428,1,Automóviles,1
+2429,1,Oriente Medio,1
+2430,1,Automóviles,1
+2431,1,Espacio,1
+2432,1,Medicina,1
+2433,1,Automóviles,1
+2434,1,Automóviles,1
+2435,1,Espacio,1
+2436,1,Gráficos,1
+2437,1,Hockey,1
+2438,1,Espacio,1
+2439,1,Hockey,1
+2440,1,Hockey,1
+2441,1,Hockey,1
+2442,1,Medicina,1
+2443,1,Gráficos,1
+2444,1,Gráficos,1
+2445,1,Oriente Medio,1
+2446,1,Gráficos,1
+2447,1,Automóviles,1
+2448,1,Automóviles,1
+2449,1,Automóviles,1
+2450,1,Gráficos,1
+2451,1,Automóviles,1
+2452,1,Gráficos,1
+2453,1,Medicina,1
+2454,1,Medicina,1
+2455,1,Medicina,1
+2456,1,Automóviles,1
+2457,1,Oriente Medio,1
+2458,1,Medicina,1
+2459,1,Hockey,1
+2460,1,Gráficos,1
+2461,1,Gráficos,1
+2462,1,Gráficos,1
+2463,1,Oriente Medio,1
+2464,1,Hockey,1
+2465,1,Oriente Medio,1
+2466,1,Oriente Medio,1
+2467,1,Hockey,1
+2468,1,Automóviles,1
+2469,1,Oriente Medio,1
+2470,1,Espacio,1
+2471,1,Espacio,1
+2472,1,Hockey,1
+2473,1,Espacio,1
+2474,1,Espacio,1
+2475,1,Automóviles,1
+2476,1,Oriente Medio,1
+2477,1,Medicina,1
+2478,1,Medicina,1
+2479,1,Automóviles,1
+2480,1,Medicina,1
+2481,1,Automóviles,1
+2482,1,Gráficos,1
+2483,1,Espacio,1
+2484,1,Automóviles,1
+2485,1,Gráficos,1
+2486,1,Automóviles,1
+2487,1,Espacio,1
+2488,1,Gráficos,1
+2489,1,Espacio,1
+2490,1,Gráficos,1
+2491,1,Hockey,1
+2492,1,Espacio,1
+2493,1,Espacio,1
+2494,1,Hockey,1
+2495,1,Automóviles,1
+2496,1,Oriente Medio,1
+2497,1,Medicina,1
+2498,1,Gráficos,1
+2499,1,Oriente Medio,1
+2500,1,Gráficos,1
+2501,1,Medicina,1
+2502,1,Oriente Medio,1
+2503,1,Gráficos,1
+2504,1,Espacio,1
+2505,1,Medicina,1
+2506,1,Oriente Medio,1
+2507,1,Gráficos,1
+2508,1,Automóviles,1
+2509,1,Oriente Medio,1
+2510,1,Oriente Medio,1
+2511,1,Automóviles,1
+2512,1,Automóviles,1
+2513,1,Hockey,1
+2514,1,Hockey,1
+2515,1,Gráficos,1
+2516,1,Gráficos,1
+2517,1,Medicina,1
+2518,1,Oriente Medio,1
+2519,1,Automóviles,1
+2520,1,Gráficos,1
+2521,1,Medicina,1
+2522,1,Oriente Medio,1
+2523,1,Medicina,1
+2524,1,Oriente Medio,1
+2525,1,Oriente Medio,1
+2526,1,Automóviles,1
+2527,1,Oriente Medio,1
+2528,1,Automóviles,1
+2529,1,Automóviles,1
+2530,1,Espacio,1
+2531,1,Gráficos,1
+2532,1,Espacio,1
+2533,1,Automóviles,1
+2534,1,Gráficos,1
+2535,1,Gráficos,1
+2536,1,Medicina,1
+2537,1,Espacio,1
+2538,1,Gráficos,1
+2539,1,Automóviles,1
+2540,1,Oriente Medio,1
+2541,1,Automóviles,1
+2542,1,Automóviles,1
+2543,1,Gráficos,1
+2544,1,Oriente Medio,1
+2545,1,Medicina,1
+2546,1,Oriente Medio,1
+2547,1,Oriente Medio,1
+2548,1,Medicina,1
+2549,1,Hockey,1
+2550,1,Espacio,1
+2551,1,Automóviles,1
+2552,1,Medicina,1
+2553,1,Automóviles,1
+2554,1,Automóviles,1
+2555,1,Medicina,1
+2556,1,Oriente Medio,1
+2557,1,Espacio,1
+2558,1,Hockey,1
+2559,1,Hockey,1
+2560,1,Gráficos,1
+2561,1,Automóviles,1
+2562,1,Medicina,1
+2563,1,Espacio,1
+2564,1,Espacio,1
+2565,1,Oriente Medio,1
+2566,1,Automóviles,1
+2567,1,Automóviles,1
+2568,1,Automóviles,1
+2569,1,Gráficos,1
+2570,1,Automóviles,1
+2571,1,Oriente Medio,1
+2572,1,Espacio,1
+2573,1,Espacio,1
+2574,1,Automóviles,1
+2575,1,Medicina,1
+2576,1,Gráficos,1
+2577,1,Hockey,1
+2578,1,Espacio,1
+2579,1,Hockey,1
+2580,1,Medicina,1
+2581,1,Gráficos,1
+2582,1,Oriente Medio,1
+2583,1,Gráficos,1
+2584,1,Espacio,1
+2585,1,Hockey,1
+2586,1,Oriente Medio,1
+2587,1,Oriente Medio,1
+2588,1,Medicina,1
+2589,1,Gráficos,1
+2590,1,Gráficos,1
+2591,1,Espacio,1
+2592,1,Espacio,1
+2593,1,Automóviles,1
+2594,1,Gráficos,1
+2595,1,Espacio,1
+2596,1,Gráficos,1
+2597,1,Medicina,1
+2598,1,Hockey,1
+2599,1,Gráficos,1
+2600,1,Oriente Medio,1
+2601,1,Automóviles,1
+2602,1,Medicina,1
+2603,1,Gráficos,1
+2604,1,Espacio,1
+2605,1,Automóviles,1
+2606,1,Gráficos,1
+2607,1,Hockey,1
+2608,1,Automóviles,1
+2609,1,Hockey,1
+2610,1,Medicina,1
+2611,1,Hockey,1
+2612,1,Hockey,1
+2613,1,Gráficos,1
+2614,1,Automóviles,1
+2615,1,Gráficos,1
+2616,1,Hockey,1
+2617,1,Medicina,1
+2618,1,Hockey,1
+2619,1,Automóviles,1
+2620,1,Medicina,1
+2621,1,Oriente Medio,1
+2622,1,Medicina,1
+2623,1,Medicina,1
+2624,1,Oriente Medio,1
+2625,1,Medicina,1
+2626,1,Hockey,1
+2627,1,Medicina,1
+2628,1,Espacio,1
+2629,1,Medicina,1
+2630,1,Oriente Medio,1
+2631,1,Gráficos,1
+2632,1,Hockey,1
+2633,1,Hockey,1
+2634,1,Espacio,1
+2635,1,Oriente Medio,1
+2636,1,Oriente Medio,1
+2637,1,Oriente Medio,1
+2638,1,Gráficos,1
+2639,1,Hockey,1
+2640,1,Hockey,1
+2641,1,Hockey,1
+2642,1,Hockey,1
+2643,1,Medicina,1
+2644,1,Medicina,1
+2645,1,Automóviles,1
+2646,1,Oriente Medio,1
+2647,1,Oriente Medio,1
+2648,1,Espacio,1
+2649,1,Gráficos,1
+2650,1,Espacio,1
+2651,1,Medicina,1
+2652,1,Hockey,1
+2653,1,Hockey,1
+2654,1,Oriente Medio,1
+2655,1,Gráficos,1
+2656,1,Espacio,1
+2657,1,Hockey,1
+2658,1,Hockey,1
+2659,1,Hockey,1
+2660,1,Automóviles,1
+2661,1,Gráficos,1
+2662,1,Gráficos,1
+2663,1,Espacio,1
+2664,1,Automóviles,1
+2665,1,Gráficos,1
+2666,1,Oriente Medio,1
+2667,1,Medicina,1
+2668,1,Hockey,1
+2669,1,Hockey,1
+2670,1,Espacio,1
+2671,1,Hockey,1
+2672,1,Medicina,1
+2673,1,Gráficos,1
+2674,1,Automóviles,1
+2675,1,Espacio,1
+2676,1,Automóviles,1
+2677,1,Hockey,1
+2678,1,Espacio,1
+2679,1,Medicina,1
+2680,1,Medicina,1
+2681,1,Oriente Medio,1
+2682,1,Medicina,1
+2683,1,Oriente Medio,1
+2684,1,Medicina,1
+2685,1,Medicina,1
+2686,1,Automóviles,1
+2687,1,Medicina,1
+2688,1,Oriente Medio,1
+2689,1,Hockey,1
+2690,1,Espacio,1
+2691,1,Hockey,1
+2692,1,Medicina,1
+2693,1,Gráficos,1
+2694,1,Hockey,1
+2695,1,Automóviles,1
+2696,1,Automóviles,1
+2697,1,Gráficos,1
+2698,1,Automóviles,1
+2699,1,Oriente Medio,1
+2700,1,Hockey,1
+2701,1,Hockey,1
+2702,1,Gráficos,1
+2703,1,Medicina,1
+2704,1,Hockey,1
+2705,1,Oriente Medio,1
+2706,1,Hockey,1
+2707,1,Automóviles,1
+2708,1,Hockey,1
+2709,1,Medicina,1
+2710,1,Hockey,1
+2711,1,Hockey,1
+2712,1,Gráficos,1
+2713,1,Oriente Medio,1
+2714,1,Hockey,1
+2715,1,Automóviles,1
+2716,1,Espacio,1
+2717,1,Gráficos,1
+2718,1,Gráficos,1
+2719,1,Gráficos,1
+2720,1,Gráficos,1
+2721,1,Gráficos,1
+2722,1,Espacio,1
+2723,1,Oriente Medio,1
+2724,1,Espacio,1
+2725,1,Gráficos,1
+2726,1,Medicina,1
+2727,1,Hockey,1
+2728,1,Espacio,1
+2729,1,Automóviles,1
+2730,1,Oriente Medio,1
+2731,1,Medicina,1
+2732,1,Espacio,1
+2733,1,Hockey,1
+2734,1,Oriente Medio,1
+2735,1,Oriente Medio,1
+2736,1,Medicina,1
+2737,1,Gráficos,1
+2738,1,Hockey,1
+2739,1,Hockey,1
+2740,1,Oriente Medio,1
+2741,1,Hockey,1
+2742,1,Hockey,1
+2743,1,Medicina,1
+2744,1,Hockey,1
+2745,1,Oriente Medio,1
+2746,1,Gráficos,1
+2747,1,Espacio,1
+2748,1,Automóviles,1
+2749,1,Automóviles,1
+2750,1,Automóviles,1
+2751,1,Medicina,1
+2752,1,Espacio,1
+2753,1,Hockey,1
+2754,1,Automóviles,1
+2755,1,Gráficos,1
+2756,1,Automóviles,1
+2757,1,Espacio,1
+2758,1,Automóviles,1
+2759,1,Oriente Medio,1
+2760,1,Gráficos,1
+2761,1,Oriente Medio,1
+2762,1,Automóviles,1
+2763,1,Gráficos,1
+2764,1,Espacio,1
+2765,1,Gráficos,1
+2766,1,Gráficos,1
+2767,1,Gráficos,1
+2768,1,Hockey,1
+2769,1,Hockey,1
+2770,1,Medicina,1
+2771,1,Espacio,1
+2772,1,Espacio,1
+2773,1,Hockey,1
+2774,1,Medicina,1
+2775,1,Medicina,1
+2776,1,Gráficos,1
+2777,1,Hockey,1
+2778,1,Hockey,1
+2779,1,Espacio,1
+2780,1,Hockey,1
+2781,1,Oriente Medio,1
+2782,1,Hockey,1
+2783,1,Automóviles,1
+2784,1,Oriente Medio,1
+2785,1,Espacio,1
+2786,1,Gráficos,1
+2787,1,Automóviles,1
+2788,1,Medicina,1
+2789,1,Hockey,1
+2790,1,Espacio,1
+2791,1,Espacio,1
+2792,1,Espacio,1
+2793,1,Automóviles,1
+2794,1,Espacio,1
+2795,1,Oriente Medio,1
+2796,1,Gráficos,1
+2797,1,Oriente Medio,1
+2798,1,Medicina,1
+2799,1,Espacio,1
+2800,1,Automóviles,1
+2801,1,Oriente Medio,1
+2802,1,Gráficos,1
+2803,1,Gráficos,1
+2804,1,Oriente Medio,1
+2805,1,Medicina,1
+2806,1,Espacio,1
+2807,1,Hockey,1
+2808,1,Espacio,1
+2809,1,Oriente Medio,1
+2810,1,Hockey,1
+2811,1,Hockey,1
+2812,1,Medicina,1
+2813,1,Hockey,1
+2814,1,Hockey,1
+2815,1,Espacio,1
+2816,1,Gráficos,1
+2817,1,Espacio,1
+2818,1,Automóviles,1
+2819,1,Medicina,1
+2820,1,Automóviles,1
+2821,1,Medicina,1
+2822,1,Hockey,1
+2823,1,Automóviles,1
+2824,1,Automóviles,1
+2825,1,Hockey,1
+2826,1,Hockey,1
+2827,1,Automóviles,1
+2828,1,Automóviles,1
+2829,1,Hockey,1
+2830,1,Espacio,1
+2831,1,Hockey,1
+2832,1,Espacio,1
+2833,1,Hockey,1
+2834,1,Espacio,1
+2835,1,Gráficos,1
+2836,1,Automóviles,1
+2837,1,Espacio,1
+2838,1,Espacio,1
+2839,1,Hockey,1
+2840,1,Espacio,1
+2841,1,Hockey,1
+2842,1,Gráficos,1
+2843,1,Automóviles,1
+2844,1,Oriente Medio,1
+2845,1,Medicina,1
+2846,1,Oriente Medio,1
+2847,1,Automóviles,1
+2848,1,Gráficos,1
+2849,1,Gráficos,1
+2850,1,Hockey,1
+2851,1,Gráficos,1
+2852,1,Hockey,1
+2853,1,Hockey,1
+2854,1,Automóviles,1
+2855,1,Medicina,1
+2856,1,Hockey,1
+2857,1,Gráficos,1
+2858,1,Medicina,1
+2859,1,Oriente Medio,1
+2860,1,Oriente Medio,1
+2861,1,Gráficos,1
+2862,1,Hockey,1
+2863,1,Hockey,1
+2864,1,Automóviles,1
+2865,1,Espacio,1
+2866,1,Oriente Medio,1
+2867,1,Automóviles,1
+2868,1,Oriente Medio,1
+2869,1,Oriente Medio,1
+2870,1,Hockey,1
+2871,1,Automóviles,1
+2872,1,Gráficos,1
+2873,1,Hockey,1
+2874,1,Espacio,1
+2875,1,Hockey,1
+2876,1,Espacio,1
+2877,1,Hockey,1
+2878,1,Hockey,1
+2879,1,Hockey,1
+2880,1,Gráficos,1
+2881,1,Espacio,1
+2882,1,Hockey,1
+2883,1,Hockey,1
+2884,1,Gráficos,1
+2885,1,Automóviles,1
+2886,1,Oriente Medio,1
+2887,1,Gráficos,1
+2888,1,Automóviles,1
+2889,1,Gráficos,1
+2890,1,Espacio,1
+2891,1,Medicina,1
+2892,1,Automóviles,1
+2893,1,Gráficos,1
+2894,1,Hockey,1
+2895,1,Espacio,1
+2896,1,Espacio,1
+2897,1,Automóviles,1
+2898,1,Hockey,1
+2899,1,Espacio,1
+2900,1,Oriente Medio,1
+2901,1,Gráficos,1
+2902,1,Automóviles,1
+2903,1,Medicina,1
+2904,1,Gráficos,1
+2905,1,Gráficos,1
+2906,1,Espacio,1
+2907,1,Medicina,1
+2908,1,Automóviles,1
+2909,1,Hockey,1
+2910,1,Oriente Medio,1
+2911,1,Medicina,1
+2912,1,Automóviles,1
+2913,1,Oriente Medio,1
+2914,1,Espacio,1
+2915,1,Espacio,1
+2916,1,Oriente Medio,1
+2917,1,Gráficos,1
+2918,1,Oriente Medio,1
+2919,1,Oriente Medio,1
+2920,1,Hockey,1
+2921,1,Oriente Medio,1
+2922,1,Gráficos,1
+2923,1,Hockey,1
+2924,1,Hockey,1
+2925,1,Automóviles,1
+2926,1,Automóviles,1
+2927,1,Gráficos,1
+2928,1,Gráficos,1
+2929,1,Gráficos,1
+2930,1,Espacio,1
+2931,1,Hockey,1
+2932,1,Espacio,1
+2933,1,Oriente Medio,1
+2934,1,Automóviles,1
+2935,1,Hockey,1
+2936,1,Gráficos,1
+2937,1,Oriente Medio,1
+2938,1,Medicina,1
+2939,1,Gráficos,1
+2940,1,Oriente Medio,1
+2941,1,Automóviles,1
+2942,1,Automóviles,1
+2943,1,Medicina,1
+2944,1,Espacio,1
+2945,1,Medicina,1
+2946,1,Hockey,1
+2947,1,Medicina,1
+2948,1,Oriente Medio,1
+2949,1,Automóviles,1
+2950,1,Gráficos,1
+2951,1,Oriente Medio,1
+2952,1,Espacio,1
+2953,1,Gráficos,1
+2954,1,Oriente Medio,1
+2955,1,Oriente Medio,1
+2956,1,Oriente Medio,1
+2957,1,Espacio,1
+2958,1,Hockey,1
+2959,1,Hockey,1
+2960,1,Automóviles,1
+2961,1,Hockey,1
+2962,1,Oriente Medio,1
+2963,1,Hockey,1
+2964,1,Automóviles,1
+2965,1,Espacio,1
+2966,1,Medicina,1
+2967,1,Hockey,1
+2968,1,Medicina,1
+2969,1,Medicina,1
+2970,1,Medicina,1
+2971,1,Oriente Medio,1
+2972,1,Medicina,1
+2973,1,Espacio,1
+2974,1,Hockey,1
+2975,1,Espacio,1
+2976,1,Gráficos,1
+2977,1,Espacio,1
+2978,1,Hockey,1
+2979,1,Medicina,1
+2980,1,Oriente Medio,1
+2981,1,Hockey,1
+2982,1,Espacio,1
+2983,1,Medicina,1
+2984,1,Espacio,1
+2985,1,Oriente Medio,1
+2986,1,Gráficos,1
+2987,1,Espacio,1
+2988,1,Automóviles,1
+2989,1,Gráficos,1
+2990,1,Gráficos,1
+2991,1,Medicina,1
+2992,1,Medicina,1
+2993,1,Espacio,1
+2994,1,Automóviles,1
+2995,1,Automóviles,1
+2996,1,Espacio,1
+2997,1,Oriente Medio,1
+2998,1,Oriente Medio,1
+2999,1,Automóviles,1
+3000,1,Hockey,1
+3001,1,Oriente Medio,1
+3002,1,Medicina,1
+3003,1,Espacio,1
+3004,1,Oriente Medio,1
+3005,1,Espacio,1
+3006,1,Automóviles,1
+3007,1,Oriente Medio,1
+3008,1,Medicina,1
+3009,1,Medicina,1
+3010,1,Oriente Medio,1
+3011,1,Hockey,1
+3012,1,Oriente Medio,1
+3013,1,Automóviles,1
+3014,1,Oriente Medio,1
+3015,1,Espacio,1
+3016,1,Espacio,1
+3017,1,Gráficos,1
+3018,1,Espacio,1
+3019,1,Medicina,1
+3020,1,Oriente Medio,1
+3021,1,Espacio,1
+3022,1,Gráficos,1
+3023,1,Espacio,1
+3024,1,Automóviles,1
+3025,1,Oriente Medio,1
+3026,1,Oriente Medio,1
+3027,1,Automóviles,1
+3028,1,Espacio,1
+3029,1,Espacio,1
+3030,1,Medicina,1
+3031,1,Automóviles,1
+3032,1,Espacio,1
+3033,1,Espacio,1
+3034,1,Medicina,1
+3035,1,Gráficos,1
+3036,1,Medicina,1
+3037,1,Espacio,1
+3038,1,Medicina,1
+3039,1,Gráficos,1
+3040,1,Oriente Medio,1
+3041,1,Espacio,1
+3042,1,Hockey,1
+3043,1,Automóviles,1
+3044,1,Espacio,1
+3045,1,Gráficos,1
+3046,1,Gráficos,1
+3047,1,Hockey,1
+3048,1,Automóviles,1
+3049,1,Oriente Medio,1
+3050,1,Hockey,1
+3051,1,Espacio,1
+3052,1,Espacio,1
+3053,1,Gráficos,1
+3054,1,Medicina,1
+3055,1,Oriente Medio,1
+3056,1,Gráficos,1
+3057,1,Automóviles,1
+3058,1,Automóviles,1
+3059,1,Gráficos,1
+3060,1,Gráficos,1
+3061,1,Hockey,1
+3062,1,Oriente Medio,1
+3063,1,Medicina,1
+3064,1,Espacio,1
+3065,1,Espacio,1
+3066,1,Oriente Medio,1
+3067,1,Espacio,1
+3068,1,Oriente Medio,1
+3069,1,Hockey,1
+3070,1,Espacio,1
+3071,1,Gráficos,1
+3072,1,Espacio,1
+3073,1,Hockey,1
+3074,1,Medicina,1
+3075,1,Oriente Medio,1
+3076,1,Automóviles,1
+3077,1,Gráficos,1
+3078,1,Oriente Medio,1
+3079,1,Automóviles,1
+3080,1,Medicina,1
+3081,1,Espacio,1
+3082,1,Medicina,1
+3083,1,Espacio,1
+3084,1,Gráficos,1
+3085,1,Medicina,1
+3086,1,Espacio,1
+3087,1,Hockey,1
+3088,1,Oriente Medio,1
+3089,1,Espacio,1
+3090,1,Espacio,1
+3091,1,Automóviles,1
+3092,1,Automóviles,1
+3093,1,Medicina,1
+3094,1,Gráficos,1
+3095,1,Automóviles,1
+3096,1,Medicina,1
+3097,1,Medicina,1
+3098,1,Automóviles,1
+3099,1,Medicina,1
+3100,1,Espacio,1
+3101,1,Hockey,1
+3102,1,Automóviles,1
+3103,1,Automóviles,1
+3104,1,Medicina,1
+3105,1,Medicina,1
+3106,1,Medicina,1
+3107,1,Oriente Medio,1
+3108,1,Medicina,1
+3109,1,Oriente Medio,1
+3110,1,Medicina,1
+3111,1,Espacio,1
+3112,1,Medicina,1
+3113,1,Oriente Medio,1
+3114,1,Oriente Medio,1
+3115,1,Espacio,1
+3116,1,Hockey,1
+3117,1,Automóviles,1
+3118,1,Automóviles,1
+3119,1,Espacio,1
+3120,1,Medicina,1
+3121,1,Automóviles,1
+3122,1,Hockey,1
+3123,1,Automóviles,1
+3124,1,Espacio,1
+3125,1,Espacio,1
+3126,1,Hockey,1
+3127,1,Automóviles,1
+3128,1,Hockey,1
+3129,1,Automóviles,1
+3130,1,Espacio,1
+3131,1,Hockey,1
+3132,1,Oriente Medio,1
+3133,1,Gráficos,1
+3134,1,Espacio,1
+3135,1,Espacio,1
+3136,1,Gráficos,1
+3137,1,Hockey,1
+3138,1,Automóviles,1
+3139,1,Hockey,1
+3140,1,Hockey,1
+3141,1,Medicina,1
+3142,1,Medicina,1
+3143,1,Espacio,1
+3144,1,Hockey,1
+3145,1,Gráficos,1
+3146,1,Gráficos,1
+3147,1,Hockey,1
+3148,1,Hockey,1
+3149,1,Gráficos,1
+3150,1,Hockey,1
+3151,1,Oriente Medio,1
+3152,1,Hockey,1
+3153,1,Automóviles,1
+3154,1,Medicina,1
+3155,1,Automóviles,1
+3156,1,Hockey,1
+3157,1,Medicina,1
+3158,1,Hockey,1
+3159,1,Espacio,1
+3160,1,Hockey,1
+3161,1,Oriente Medio,1
+3162,1,Hockey,1
+3163,1,Espacio,1
+3164,1,Gráficos,1
+3165,1,Automóviles,1
+3166,1,Espacio,1
+3167,1,Espacio,1
+3168,1,Medicina,1
+3169,1,Automóviles,1
+3170,1,Espacio,1
+3171,1,Gráficos,1
+3172,1,Oriente Medio,1
+3173,1,Espacio,1
+3174,1,Oriente Medio,1
+3175,1,Espacio,1
+3176,1,Oriente Medio,1
+3177,1,Espacio,1
+3178,1,Gráficos,1
+3179,1,Oriente Medio,1
+3180,1,Automóviles,1
+3181,1,Espacio,1
+3182,1,Gráficos,1
+3183,1,Automóviles,1
+3184,1,Medicina,1
+3185,1,Hockey,1
+3186,1,Espacio,1
+3187,1,Medicina,1
+3188,1,Automóviles,1
+3189,1,Oriente Medio,1
+3190,1,Hockey,1
+3191,1,Medicina,1
+3192,1,Automóviles,1
+3193,1,Gráficos,1
+3194,1,Oriente Medio,1
+3195,1,Hockey,1
+3196,1,Espacio,1
+3197,1,Automóviles,1
+3198,1,Gráficos,1
+3199,1,Oriente Medio,1
+3200,1,Automóviles,1
+3201,1,Oriente Medio,1
+3202,1,Automóviles,1
+3203,1,Hockey,1
+3204,1,Hockey,1
+3205,1,Gráficos,1
+3206,1,Hockey,1
+3207,1,Oriente Medio,1
+3208,1,Hockey,1
+3209,1,Medicina,1
+3210,1,Automóviles,1
+3211,1,Hockey,1
+3212,1,Oriente Medio,1
+3213,1,Hockey,1
+3214,1,Espacio,1
+3215,1,Gráficos,1
+3216,1,Gráficos,1
+3217,1,Medicina,1
+3218,1,Hockey,1
+3219,1,Gráficos,1
+3220,1,Automóviles,1
+3221,1,Medicina,1
+3222,1,Hockey,1
+3223,1,Automóviles,1
+3224,1,Hockey,1
+3225,1,Espacio,1
+3226,1,Medicina,1
+3227,1,Espacio,1
+3228,1,Oriente Medio,1
+3229,1,Oriente Medio,1
+3230,1,Gráficos,1
+3231,1,Automóviles,1
+3232,1,Automóviles,1
+3233,1,Medicina,1
+3234,1,Espacio,1
+3235,1,Medicina,1
+3236,1,Oriente Medio,1
+3237,1,Medicina,1
+3238,1,Medicina,1
+3239,1,Automóviles,1
+3240,1,Hockey,1
+3241,1,Oriente Medio,1
+3242,1,Gráficos,1
+3243,1,Oriente Medio,1
+3244,1,Oriente Medio,1
+3245,1,Automóviles,1
+3246,1,Gráficos,1
+3247,1,Medicina,1
+3248,1,Oriente Medio,1
+3249,1,Medicina,1
+3250,1,Oriente Medio,1
+3251,1,Automóviles,1
+3252,1,Oriente Medio,1
+3253,1,Medicina,1
+3254,1,Medicina,1
+3255,1,Medicina,1
+3256,1,Espacio,1
+3257,1,Automóviles,1
+3258,1,Oriente Medio,1
+3259,1,Hockey,1
+3260,1,Espacio,1
+3261,1,Gráficos,1
+3262,1,Espacio,1
+3263,1,Hockey,1
+3264,1,Hockey,1
+3265,1,Oriente Medio,1
+3266,1,Automóviles,1
+3267,1,Hockey,1
+3268,1,Automóviles,1
+3269,1,Medicina,1
+3270,1,Automóviles,1
+3271,1,Oriente Medio,1
+3272,1,Gráficos,1
+3273,1,Automóviles,1
+3274,1,Hockey,1
+3275,1,Oriente Medio,1
+3276,1,Hockey,1
+3277,1,Medicina,1
+3278,1,Gráficos,1
+3279,1,Medicina,1
+3280,1,Medicina,1
+3281,1,Oriente Medio,1
+3282,1,Automóviles,1
+3283,1,Espacio,1
+3284,1,Gráficos,1
+3285,1,Medicina,1
+3286,1,Oriente Medio,1
+3287,1,Oriente Medio,1
+3288,1,Medicina,1
+3289,1,Gráficos,1
+3290,1,Medicina,1
+3291,1,Automóviles,1
+3292,1,Oriente Medio,1
+3293,1,Espacio,1
+3294,1,Espacio,1
+3295,1,Hockey,1
+3296,1,Hockey,1
+3297,1,Medicina,1
+3298,1,Hockey,1
+3299,1,Oriente Medio,1
+3300,2,Oriente Medio,1
+3301,2,Gráficos,1
+3302,2,Oriente Medio,1
+3303,2,Hockey,1
+3304,2,Hockey,1
+3305,2,Gráficos,1
+3306,2,Espacio,1
+3307,2,Medicina,1
+3308,2,Oriente Medio,1
+3309,3,Medicina,1
+3310,2,Hockey,1
+3311,2,Hockey,1
+3312,3,Gráficos,1
+3313,2,Hockey,1
+3314,2,Gráficos,1
+3315,2,Hockey,1
+3316,2,Oriente Medio,1
+3317,4,Gráficos,1
+3318,2,Gráficos,1
+3319,2,Gráficos,1
+3320,2,Hockey,1
+3321,2,Automóviles,1
+3322,2,Oriente Medio,1
+3323,2,Oriente Medio,1
+3324,2,Hockey,1
+3325,2,Oriente Medio,1
+3326,4,Medicina,1
+3327,2,Automóviles,1
+3328,2,Medicina,1
+3329,2,Oriente Medio,1
+3330,2,Medicina,1
+3331,2,Oriente Medio,1
+3332,2,Oriente Medio,1
+3333,2,Oriente Medio,1
+3334,2,Oriente Medio,1
+3335,2,Medicina,1
+3336,2,Medicina,1
+3337,2,Hockey,1
+3338,2,Medicina,1
+3339,2,Hockey,1
+3340,6,Gráficos,1
+3341,3,Hockey,1
+3342,2,Gráficos,1
+3343,3,Medicina,1
+3344,3,Hockey,1
+3345,2,Hockey,1
+3346,3,Gráficos,1
+3347,2,Medicina,1
+3348,2,Oriente Medio,1
+3349,3,Medicina,1
+3350,4,Medicina,1
+3351,7,Medicina,1
+3352,3,Oriente Medio,1
+3353,2,Oriente Medio,1
+3354,2,Medicina,1
+3355,2,Oriente Medio,1
+3356,2,Oriente Medio,1
+3357,2,Hockey,0.4
+3358,8,Medicina,1
+3359,2,Medicina,1
+3360,3,Oriente Medio,1
+3361,2,Gráficos,1
+3362,2,Oriente Medio,1
+3363,3,Oriente Medio,1
+3364,9,Medicina,1
+3365,2,Automóviles,1
+3366,5,Medicina,1
+3367,2,Espacio,0.4
+3368,3,Medicina,1
+3369,2,Medicina,1
+3370,2,Oriente Medio,1
+3371,2,Hockey,1
+3372,2,Oriente Medio,1
+3373,2,Medicina,1
+3374,2,Oriente Medio,1
+3375,4,Oriente Medio,1
+3376,6,Medicina,1
+3377,3,Oriente Medio,1
+3378,2,Oriente Medio,1
+3379,4,Hockey,1
+3380,3,Oriente Medio,1
+3381,3,Medicina,1
+3382,10,Medicina,1
+3383,3,Hockey,1
+3384,2,Oriente Medio,1
+3385,2,Oriente Medio,1
+3386,2,Oriente Medio,1
+3387,13,Medicina,1
+3388,3,Hockey,1
+3389,2,Oriente Medio,1
+3390,3,Oriente Medio,1
+3391,2,Medicina,1
+3392,2,Oriente Medio,1
+3393,3,Oriente Medio,1
+3394,14,Medicina,1
+3395,8,Medicina,1
+3396,2,Automóviles,1
+3397,2,Oriente Medio,1
+3398,2,Medicina,1
+3399,3,Hockey,1
+3400,5,Oriente Medio,1
+3401,2,Oriente Medio,1
+3402,2,Oriente Medio,1
+3403,2,Espacio,1
+3404,4,Hockey,1
+3405,2,Oriente Medio,1
+3406,2,Oriente Medio,1
+3407,3,Oriente Medio,1
+3408,16,Medicina,1
+3409,4,Oriente Medio,1
+3410,2,Oriente Medio,1
+3411,2,Gráficos,1
+3412,2,Oriente Medio,1
+3413,2,Espacio,1
+3414,2,Medicina,1
+3415,2,Medicina,1
+3416,2,Oriente Medio,1
+3417,4,Gráficos,1
+3418,2,Espacio,1
+3419,3,Oriente Medio,1
+3420,2,Medicina,1
+3421,2,Hockey,1
+3422,2,Automóviles,0.4
+3423,2,Gráficos,1
+3424,2,Automóviles,1
+3425,2,Espacio,1
+3426,19,Medicina,1
+3427,3,Hockey,1
+3428,2,Oriente Medio,1
+3429,4,Oriente Medio,1
+3430,2,Automóviles,1
+3431,21,Medicina,1
+3432,3,Oriente Medio,1
+3433,3,Oriente Medio,1
+3434,7,Oriente Medio,1
+3435,2,Hockey,1
+3436,3,Medicina,1
+3437,3,Medicina,1
+3438,5,Hockey,1
+3439,2,Hockey,1
+3440,2,Oriente Medio,1
+3441,5,Oriente Medio,1
+3442,2,Hockey,1
+3443,22,Medicina,1
+3444,3,Espacio,0.46666666666666673
+3445,2,Hockey,1
+3446,2,Medicina,1
+3447,2,Medicina,1
+3448,2,Gráficos,1
+3449,3,Hockey,1
+3450,2,Oriente Medio,1
+3451,24,Medicina,1
+3452,3,Oriente Medio,1
+3453,3,Oriente Medio,1
+3454,11,Medicina,1
+3455,2,Oriente Medio,1
+3456,3,Hockey,1
+3457,2,Gráficos,1
+3458,2,Automóviles,1
+3459,2,Hockey,1
+3460,3,Medicina,1
+3461,2,Medicina,1
+3462,3,Oriente Medio,1
+3463,2,Medicina,1
+3464,3,Espacio,1
+3465,2,Espacio,1
+3466,4,Medicina,1
+3467,6,Oriente Medio,1
+3468,3,Automóviles,1
+3469,2,Espacio,1
+3470,2,Oriente Medio,1
+3471,25,Medicina,1
+3472,2,Oriente Medio,1
+3473,5,Oriente Medio,1
+3474,2,Espacio,1
+3475,4,Oriente Medio,1
+3476,2,Hockey,1
+3477,3,Oriente Medio,1
+3478,2,Espacio,1
+3479,2,Espacio,1
+3480,5,Hockey,1
+3481,4,Hockey,1
+3482,2,Espacio,1
+3483,2,Hockey,1
+3484,2,Automóviles,1
+3485,3,Oriente Medio,1
+3486,26,Medicina,1
+3487,2,Hockey,1
+3488,7,Oriente Medio,1
+3489,2,Oriente Medio,1
+3490,2,Hockey,1
+3491,3,Espacio,1
+3492,5,Oriente Medio,1
+3493,2,Gráficos,1
+3494,2,Medicina,1
+3495,5,Oriente Medio,1
+3496,2,Automóviles,1
+3497,2,Automóviles,1
+3498,2,Hockey,1
+3499,12,Medicina,1
+3500,2,Medicina,0.4
+3501,29,Medicina,1
+3502,2,Medicina,1
+3503,2,Gráficos,1
+3504,4,Medicina,1
+3505,2,Oriente Medio,1
+3506,4,Espacio,1
+3507,2,Medicina,1
+3508,2,Gráficos,1
+3509,2,Oriente Medio,1
+3510,2,Hockey,1
+3511,14,Medicina,1
+3512,2,Hockey,1
+3513,6,Hockey,1
+3514,9,Oriente Medio,1
+3515,2,Gráficos,1
+3516,3,Oriente Medio,1
+3517,4,Hockey,1
+3518,2,Gráficos,1
+3519,2,Espacio,1
+3520,2,Automóviles,1
+3521,4,Hockey,1
+3522,2,Hockey,1
+3523,2,Espacio,1
+3524,7,Oriente Medio,1
+3525,2,Medicina,1
+3526,3,Oriente Medio,1
+3527,2,Espacio,1
+3528,2,Oriente Medio,1
+3529,2,Oriente Medio,1
+3530,2,Automóviles,1
+3531,2,Medicina,1
+3532,3,Automóviles,1
+3533,6,Oriente Medio,1
+3534,2,Automóviles,1
+3535,2,Espacio,1
+3536,2,Medicina,1
+3537,12,Oriente Medio,1
+3538,9,Oriente Medio,1
+3539,2,Medicina,1
+3540,2,Oriente Medio,1
+3541,2,Oriente Medio,1
+3542,4,Espacio,0.55
+3543,31,Medicina,1
+3544,10,Oriente Medio,1
+3545,2,Oriente Medio,1
+3546,2,Hockey,1
+3547,2,Oriente Medio,1
+3548,3,Hockey,1
+3549,3,Oriente Medio,1
+3550,2,Gráficos,1
+3551,2,Oriente Medio,1
+3552,3,Medicina,1
+3553,2,Gráficos,1
+3554,2,Gráficos,0.4
+3555,2,Hockey,1
+3556,2,Oriente Medio,1
+3557,3,Oriente Medio,1
+3558,32,Medicina,1
+3559,2,Hockey,1
+3560,4,Medicina,1
+3561,15,Oriente Medio,1
+3562,4,Oriente Medio,1
+3563,2,Gráficos,1
+3564,2,Oriente Medio,1
+3565,4,Oriente Medio,1
+3566,3,Oriente Medio,1
+3567,2,Oriente Medio,1
+3568,4,Oriente Medio,1
+3569,2,Medicina,1
+3570,3,Automóviles,1
+3571,7,Hockey,0.7061224489795918
+3572,2,Oriente Medio,1
+3573,34,Medicina,1
+3574,3,Espacio,1
+3575,8,Oriente Medio,1
+3576,3,Automóviles,1
+3577,2,Automóviles,0.4
+3578,2,Medicina,1
+3579,4,Oriente Medio,1
+3580,5,Espacio,1
+3581,2,Automóviles,1
+3582,3,Oriente Medio,1
+3583,2,Oriente Medio,1
+3584,3,Automóviles,1
+3585,2,Oriente Medio,1
+3586,2,Medicina,1
+3587,2,Automóviles,0.4
+3588,3,Medicina,1
+3589,2,Hockey,1
+3590,2,Automóviles,1
+3591,2,Hockey,1
+3592,3,Espacio,1
+3593,2,Medicina,1
+3594,3,Medicina,1
+3595,3,Oriente Medio,1
+3596,4,Espacio,1
+3597,3,Gráficos,1
+3598,2,Automóviles,0.4
+3599,2,Oriente Medio,1
+3600,2,Espacio,1
+3601,3,Oriente Medio,1
+3602,2,Medicina,1
+3603,2,Espacio,1
+3604,3,Automóviles,1
+3605,2,Espacio,1
+3606,2,Oriente Medio,1
+3607,2,Medicina,1
+3608,5,Espacio,0.6160000000000002
+3609,6,Automóviles,1
+3610,2,Hockey,1
+3611,2,Gráficos,1
+3612,2,Oriente Medio,1
+3613,16,Oriente Medio,1
+3614,5,Medicina,1
+3615,7,Oriente Medio,1
+3616,2,Automóviles,1
+3617,3,Espacio,1
+3618,3,Hockey,1
+3619,2,Oriente Medio,1
+3620,4,Hockey,0.55
+3621,3,Automóviles,1
+3622,4,Automóviles,1
+3623,6,Oriente Medio,1
+3624,16,Medicina,1
+3625,2,Automóviles,1
+3626,2,Hockey,1
+3627,5,Hockey,1
+3628,2,Oriente Medio,1
+3629,5,Oriente Medio,1
+3630,2,Oriente Medio,1
+3631,3,Hockey,1
+3632,4,Espacio,1
+3633,2,Medicina,1
+3634,2,Hockey,1
+3635,2,Medicina,1
+3636,2,Hockey,1
+3637,3,Hockey,1
+3638,2,Medicina,1
+3639,2,Hockey,1
+3640,2,Medicina,1
+3641,3,Hockey,1
+3642,5,Medicina,1
+3643,3,Gráficos,1
+3644,2,Automóviles,1
+3645,2,Medicina,0.4
+3646,3,Gráficos,1
+3647,6,Medicina,1
+3648,2,Espacio,1
+3649,35,Medicina,1
+3650,2,Espacio,1
+3651,2,Espacio,1
+3652,2,Gráficos,1
+3653,2,Medicina,1
+3654,3,Oriente Medio,1
+3655,2,Hockey,1
+3656,2,Oriente Medio,1
+3657,3,Oriente Medio,1
+3658,2,Oriente Medio,1
+3659,6,Automóviles,1
+3660,4,Gráficos,1
+3661,5,Espacio,1
+3662,17,Oriente Medio,1
+3663,2,Espacio,1
+3664,3,Espacio,1
+3665,3,Espacio,0.19999999999999998
+3666,2,Oriente Medio,1
+3667,2,Oriente Medio,1
+3668,6,Oriente Medio,1
+3669,6,Medicina,1
+3670,2,Oriente Medio,1
+3671,2,Espacio,1
+3672,2,Gráficos,1
+3673,3,Medicina,1
+3674,2,Automóviles,0.4
+3675,5,Oriente Medio,1
+3676,3,Oriente Medio,1
+3677,4,Gráficos,1
+3678,2,Oriente Medio,1
+3679,2,Oriente Medio,1
+3680,19,Oriente Medio,1
+3681,2,Automóviles,1
+3682,3,Oriente Medio,1
+3683,2,Oriente Medio,1
+3684,6,Espacio,1
+3685,7,Automóviles,1
+3686,2,Espacio,1
+3687,2,Hockey,1
+3688,36,Medicina,1
+3689,2,Hockey,1
+3690,3,Espacio,1
+3691,2,Espacio,1
+3692,2,Medicina,1
+3693,2,Medicina,1
+3694,2,Oriente Medio,1
+3695,2,Hockey,1
+3696,3,Automóviles,1
+3697,2,Espacio,0.4
+3698,2,Gráficos,1
+3699,2,Medicina,1
+3700,8,Oriente Medio,1
+3701,2,Oriente Medio,1
+3702,2,Medicina,1
+3703,4,Hockey,1
+3704,3,Oriente Medio,1
+3705,2,Hockey,1
+3706,4,Oriente Medio,1
+3707,3,Espacio,1
+3708,2,Hockey,1
+3709,18,Medicina,1
+3710,2,Automóviles,1
+3711,2,Medicina,1
+3712,2,Oriente Medio,1
+3713,2,Oriente Medio,1
+3714,2,Hockey,1
+3715,2,Automóviles,1
+3716,3,Gráficos,1
+3717,2,Automóviles,0.4
+3718,4,Espacio,1
+3719,2,Gráficos,1
+3720,6,Oriente Medio,1
+3721,37,Medicina,1
+3722,6,Hockey,1
+3723,19,Oriente Medio,1
+3724,3,Hockey,0.46666666666666673
+3725,2,Medicina,1
+3726,4,Espacio,0.25
+3727,2,Hockey,1
+3728,2,Medicina,1
+3729,2,Hockey,1
+3730,2,Espacio,1
+3731,2,Gráficos,1
+3732,2,Espacio,1
+3733,7,Medicina,1
+3734,6,Hockey,1
+3735,2,Espacio,1
+3736,5,Oriente Medio,1
+3737,3,Medicina,0.46666666666666673
+3738,6,Espacio,1
+3739,2,Hockey,1
+3740,2,Oriente Medio,1
+3741,2,Hockey,1
+3742,2,Hockey,0.4
+3743,2,Automóviles,1
+3744,2,Hockey,1
+3745,2,Automóviles,1
+3746,39,Medicina,1
+3747,2,Gráficos,1
+3748,2,Automóviles,1
+3749,2,Oriente Medio,1
+3750,3,Automóviles,1
+3751,2,Hockey,1
+3752,7,Oriente Medio,1
+3753,3,Automóviles,1
+3754,4,Hockey,1
+3755,2,Gráficos,1
+3756,2,Medicina,1
+3757,5,Medicina,1
+3758,3,Oriente Medio,1
+3759,2,Hockey,1
+3760,2,Gráficos,1
+3761,2,Hockey,1
+3762,7,Espacio,1
+3763,2,Medicina,1
+3764,6,Espacio,0.6666666666666669
+3765,3,Espacio,1
+3766,2,Hockey,1
+3767,2,Oriente Medio,1
+3768,6,Oriente Medio,1
+3769,2,Oriente Medio,1
+3770,5,Hockey,1
+3771,2,Automóviles,1
+3772,2,Oriente Medio,1
+3773,8,Medicina,1
+3774,2,Automóviles,1
+3775,2,Gráficos,1
+3776,4,Hockey,1
+3777,2,Espacio,1
+3778,2,Hockey,1
+3779,2,Hockey,1
+3780,23,Medicina,1
+3781,5,Oriente Medio,1
+3782,2,Hockey,0.4
+3783,2,Espacio,0.4
+3784,3,Espacio,1
+3785,3,Espacio,1
+3786,4,Espacio,1
+3787,5,Gráficos,1
+3788,2,Hockey,1
+3789,2,Oriente Medio,1
+3790,2,Medicina,1
+3791,2,Oriente Medio,1
+3792,3,Automóviles,1
+3793,3,Hockey,1
+3794,3,Hockey,1
+3795,2,Medicina,1
+3796,2,Automóviles,1
+3797,2,Hockey,1
+3798,2,Medicina,1
+3799,3,Automóviles,0.19999999999999998
+3800,22,Oriente Medio,1
+3801,3,Hockey,1
+3802,2,Automóviles,1
+3803,8,Hockey,1
+3804,2,Hockey,1
+3805,5,Oriente Medio,1
+3806,3,Automóviles,1
+3807,2,Espacio,1
+3808,2,Hockey,1
+3809,3,Hockey,1
+3810,2,Gráficos,1
+3811,2,Oriente Medio,1
+3812,2,Gráficos,1
+3813,9,Automóviles,1
+3814,2,Hockey,1
+3815,5,Gráficos,1
+3816,8,Automóviles,1
+3817,10,Oriente Medio,1
+3818,13,Oriente Medio,1
+3819,2,Hockey,1
+3820,2,Medicina,1
+3821,4,Automóviles,1
+3822,3,Gráficos,0.46666666666666673
+3823,2,Automóviles,1
+3824,2,Espacio,1
+3825,3,Hockey,1
+3826,6,Oriente Medio,1
+3827,3,Oriente Medio,1
+3828,3,Automóviles,1
+3829,10,Automóviles,1
+3830,3,Medicina,1
+3831,3,Medicina,1
+3832,2,Hockey,1
+3833,2,Gráficos,0.4
+3834,2,Hockey,1
+3835,2,Gráficos,1
+3836,3,Hockey,1
+3837,2,Hockey,1
+3838,2,Hockey,1
+3839,2,Hockey,1
+3840,2,Gráficos,1
+3841,2,Espacio,1
+3842,7,Espacio,0.5102040816326531
+3843,7,Oriente Medio,1
+3844,2,Gráficos,1
+3845,6,Gráficos,1
+3846,3,Espacio,1
+3847,3,Automóviles,1
+3848,4,Gráficos,1
+3849,2,Automóviles,1
+3850,6,Oriente Medio,1
+3851,4,Medicina,1
+3852,8,Oriente Medio,1
+3853,2,Espacio,1
+3854,3,Hockey,0.46666666666666673
+3855,2,Automóviles,1
+3856,2,Medicina,1
+3857,6,Oriente Medio,1
+3858,3,Espacio,0.19999999999999998
+3859,2,Automóviles,1
+3860,3,Oriente Medio,0.46666666666666673
+3861,4,Medicina,0.55
+3862,2,Espacio,1
+3863,2,Automóviles,1
+3864,3,Gráficos,1
+3865,3,Espacio,1
+3866,3,Hockey,1
+3867,3,Automóviles,0.19999999999999998
+3868,2,Medicina,1
+3869,2,Automóviles,0.4
+3870,2,Medicina,1
+3871,3,Espacio,1
+3872,3,Espacio,1
+3873,2,Hockey,1
+3874,4,Automóviles,1
+3875,2,Hockey,1
+3876,2,Automóviles,1
+3877,2,Automóviles,1
+3878,3,Hockey,1
+3879,5,Gráficos,1
+3880,7,Oriente Medio,1
+3881,4,Oriente Medio,1
+3882,3,Oriente Medio,1
+3883,4,Oriente Medio,1
+3884,2,Oriente Medio,1
+3885,12,Oriente Medio,1
+3886,5,Medicina,1
+3887,2,Hockey,1
+3888,2,Automóviles,1
+3889,2,Medicina,1
+3890,2,Oriente Medio,1
+3891,3,Automóviles,1
+3892,2,Gráficos,0.4
+3893,2,Espacio,1
+3894,3,Espacio,1
+3895,4,Espacio,1
+3896,4,Hockey,1
+3897,4,Espacio,1
+3898,2,Oriente Medio,1
+3899,2,Gráficos,1
+3900,3,Automóviles,1
+3901,25,Oriente Medio,1
+3902,5,Medicina,1
+3903,2,Espacio,1
+3904,8,Espacio,1
+3905,2,Gráficos,1
+3906,3,Hockey,1
+3907,3,Gráficos,0.19999999999999998
+3908,4,Hockey,1
+3909,3,Hockey,1
+3910,7,Automóviles,1
+3911,2,Gráficos,1
+3912,10,Oriente Medio,1
+3913,9,Espacio,1
+3914,6,Hockey,1
+3915,4,Medicina,1
+3916,2,Gráficos,1
+3917,2,Automóviles,1
+3918,7,Hockey,1
+3919,2,Automóviles,1
+3920,4,Automóviles,1
+3921,2,Gráficos,1
+3922,6,Hockey,1
+3923,6,Espacio,1
+3924,3,Espacio,1
+3925,14,Oriente Medio,1
+3926,2,Automóviles,0.4
+3927,2,Oriente Medio,1
+3928,9,Medicina,0.762962962962963
+3929,2,Gráficos,1
+3930,40,Medicina,1
+3931,3,Gráficos,1
+3932,2,Oriente Medio,1
+3933,24,Medicina,1
+3934,12,Oriente Medio,1
+3935,2,Hockey,1
+3936,2,Medicina,1
+3937,6,Gráficos,1
+3938,2,Hockey,1
+3939,2,Automóviles,1
+3940,2,Hockey,1
+3941,2,Gráficos,1
+3942,3,Espacio,1
+3943,29,Oriente Medio,1
+3944,3,Oriente Medio,1
+3945,3,Automóviles,1
+3946,2,Automóviles,1
+3947,2,Medicina,1
+3948,3,Medicina,1
+3949,30,Oriente Medio,1
+3950,41,Medicina,1
+3951,4,Hockey,0.25
+3952,11,Automóviles,1
+3953,2,Espacio,1
+3954,13,Espacio,1
+3955,2,Medicina,1
+3956,8,Espacio,1
+3957,2,Espacio,1
+3958,6,Gráficos,1
+3959,5,Hockey,1
+3960,2,Gráficos,1
+3961,2,Gráficos,1
+3962,2,Oriente Medio,1
+3963,2,Oriente Medio,1
+3964,3,Automóviles,1
+3965,6,Hockey,1
+3966,4,Oriente Medio,1
+3967,8,Hockey,1
+3968,3,Gráficos,1
+3969,6,Hockey,0.6666666666666669
+3970,2,Medicina,1
+3971,10,Hockey,1
+3972,2,Gráficos,1
+3973,5,Medicina,0.3280000000000001
+3974,4,Oriente Medio,0.25
+3975,2,Gráficos,0.4
+3976,3,Hockey,1
+3977,6,Automóviles,1
+3978,5,Espacio,0.13600000000000004
+3979,5,Gráficos,1
+3980,6,Medicina,1
+3981,3,Oriente Medio,1
+3982,3,Automóviles,1
+3983,2,Espacio,1
+3984,3,Oriente Medio,0.46666666666666673
+3985,4,Automóviles,0.1
+3986,3,Hockey,1
+3987,2,Espacio,1
+3988,2,Hockey,1
+3989,2,Automóviles,0.4
+3990,2,Gráficos,0.4
+3991,14,Oriente Medio,1
+3992,4,Espacio,1
+3993,4,Oriente Medio,1
+3994,2,Oriente Medio,1
+3995,4,Automóviles,1
+3996,45,Medicina,1
+3997,5,Espacio,1
+3998,2,Espacio,1
+3999,2,Espacio,1
+4000,3,Automóviles,1
+4001,7,Oriente Medio,1
+4002,2,Oriente Medio,1
+4003,2,Oriente Medio,1
+4004,46,Medicina,1
+4005,3,Automóviles,1
+4006,2,Espacio,0.4
+4007,3,Hockey,1
+4008,4,Oriente Medio,1
+4009,6,Gráficos,1
+4010,3,Hockey,1
+4011,3,Oriente Medio,1
+4012,2,Gráficos,1
+4013,2,Automóviles,0.4
+4014,5,Automóviles,1
+4015,3,Hockey,1
+4016,3,Oriente Medio,1
+4017,2,Espacio,1
+4018,6,Medicina,0.20000000000000004
+4019,3,Gráficos,1
+4020,3,Medicina,1
+4021,31,Oriente Medio,1
+4022,2,Oriente Medio,1
+4023,3,Oriente Medio,1
+4024,15,Oriente Medio,1
+4025,2,Medicina,1
+4026,2,Espacio,1
+4027,6,Gráficos,1
+4028,4,Automóviles,0.1
+4029,3,Medicina,1
+4030,11,Hockey,1
+4031,6,Hockey,1
+4032,32,Oriente Medio,1
+4033,3,Gráficos,1
+4034,2,Hockey,1
+4035,2,Automóviles,1
+4036,2,Hockey,1
+4037,3,Oriente Medio,1
+4038,10,Automóviles,1
+4039,2,Espacio,1
+4040,5,Automóviles,1
+4041,2,Espacio,1
+4042,4,Gráficos,1
+4043,2,Automóviles,1
+4044,3,Hockey,1
+4045,5,Hockey,1
+4046,2,Automóviles,1
+4047,15,Espacio,1
+4048,2,Oriente Medio,1
+4049,2,Automóviles,0.4
+4050,3,Automóviles,0.19999999999999998
+4051,15,Oriente Medio,1
+4052,2,Oriente Medio,1
+4053,2,Gráficos,1
+4054,2,Oriente Medio,1
+4055,5,Oriente Medio,1
+4056,6,Oriente Medio,0.06666666666666667
+4057,2,Hockey,0.4
+4058,3,Medicina,1
+4059,3,Gráficos,1
+4060,4,Automóviles,1
+4061,2,Automóviles,1
+4062,13,Automóviles,1
+4063,2,Gráficos,1
+4064,2,Hockey,1
+4065,4,Gráficos,1
+4066,3,Gráficos,0.46666666666666673
+4067,3,Automóviles,1
+4068,16,Oriente Medio,0.859375
+4069,35,Oriente Medio,1
+4070,2,Automóviles,1
+4071,2,Espacio,0.4
+4072,2,Hockey,1
+4073,2,Oriente Medio,1
+4074,47,Medicina,1
+4075,3,Hockey,1
+4076,4,Espacio,1
+4077,9,Espacio,1
+4078,2,Medicina,1
+4079,3,Oriente Medio,1
+4080,2,Gráficos,1
+4081,6,Hockey,1
+4082,3,Hockey,1
+4083,5,Espacio,1
+4084,2,Hockey,1
+4085,2,Espacio,1
+4086,9,Hockey,1
+4087,3,Espacio,1
+4088,5,Gráficos,1
+4089,3,Oriente Medio,1
+4090,4,Medicina,1
+4091,2,Medicina,0.4
+4092,2,Gráficos,1
+4093,5,Hockey,0.13600000000000004
+4094,2,Espacio,1
+4095,2,Medicina,1
+4096,2,Medicina,1
+4097,2,Oriente Medio,1
+4098,2,Automóviles,1
+4099,3,Hockey,1
+4100,3,Hockey,1
+4101,16,Automóviles,1
+4102,2,Espacio,1
+4103,5,Hockey,1
+4104,2,Oriente Medio,1
+4105,8,Gráficos,1
+4106,2,Espacio,0.4
+4107,2,Automóviles,0.4
+4108,2,Automóviles,1
+4109,3,Gráficos,1
+4110,4,Automóviles,1
+4111,34,Oriente Medio,1
+4112,4,Hockey,1
+4113,16,Espacio,1
+4114,14,Automóviles,0.5591836734693876
+4115,9,Espacio,0.5851851851851853
+4116,2,Gráficos,1
+4117,2,Gráficos,1
+4118,2,Gráficos,0.4
+4119,8,Hockey,0.7375
+4120,2,Espacio,1
+4121,4,Espacio,1
+4122,3,Automóviles,1
+4123,2,Medicina,1
+4124,2,Gráficos,1
+4125,2,Automóviles,1
+4126,2,Hockey,1
+4127,2,Hockey,0.4
+4128,7,Oriente Medio,1
+4129,4,Medicina,1
+4130,2,Medicina,1
+4131,7,Automóviles,1
+4132,2,Medicina,1
+4133,2,Oriente Medio,1
+4134,2,Medicina,1
+4135,2,Hockey,1
+4136,7,Medicina,0.26530612244897955
+4137,2,Medicina,1
+4138,2,Espacio,1
+4139,7,Automóviles,1
+4140,2,Hockey,1
+4141,2,Espacio,1
+4142,35,Oriente Medio,1
+4143,11,Oriente Medio,1
+4144,2,Espacio,0.4
+4145,3,Espacio,1
+4146,2,Hockey,1
+4147,2,Oriente Medio,1
+4148,6,Oriente Medio,1
+4149,7,Gráficos,1
+4150,6,Espacio,1
+4151,2,Espacio,0.4
+4152,2,Medicina,1
+4153,4,Hockey,1
+4154,3,Gráficos,0.46666666666666673
+4155,2,Gráficos,1
+4156,4,Medicina,0.25
+4157,2,Espacio,0.4
+4158,3,Gráficos,0.46666666666666673
+4159,2,Espacio,1
+4160,4,Hockey,1
+4161,2,Medicina,1
+4162,2,Espacio,1
+4163,4,Automóviles,1
+4164,2,Automóviles,1
+4165,2,Gráficos,1
+4166,5,Gráficos,0.6160000000000002
+4167,36,Oriente Medio,1
+4168,2,Espacio,1
+4169,2,Oriente Medio,1
+4170,2,Gráficos,1
+4171,2,Oriente Medio,1
+4172,2,Gráficos,1
+4173,4,Gráficos,1
+4174,5,Medicina,1
+4175,5,Hockey,1
+4176,2,Hockey,1
+4177,4,Espacio,1
+4178,2,Automóviles,1
+4179,2,Gráficos,1
+4180,4,Hockey,1
+4181,2,Gráficos,1
+4182,2,Hockey,1
+4183,2,Medicina,1
+4184,4,Automóviles,0.4
+4185,2,Automóviles,1
+4186,2,Medicina,0.4
+4187,3,Oriente Medio,1
+4188,2,Medicina,1
+4189,2,Oriente Medio,1
+4190,2,Espacio,1
+4191,5,Hockey,1
+4192,2,Gráficos,1
+4193,3,Hockey,1
+4194,4,Automóviles,1
+4195,3,Espacio,0.19999999999999998
+4196,7,Medicina,1
+4197,2,Hockey,1
+4198,2,Oriente Medio,1
+4199,4,Oriente Medio,1
+4200,3,Automóviles,1
+4201,2,Espacio,0.4
+4202,2,Gráficos,1
+4203,2,Gráficos,1
+4204,3,Oriente Medio,1
+4205,2,Espacio,1
+4206,2,Automóviles,0.4
+4207,4,Medicina,1
+4208,6,Automóviles,1
+4209,3,Hockey,1
+4210,3,Espacio,1
+4211,2,Espacio,1
+4212,3,Hockey,1
+4213,2,Gráficos,1
+4214,2,Automóviles,0.4
+4215,6,Medicina,1
+4216,2,Hockey,1
+4217,13,Hockey,1
+4218,2,Gráficos,1
+4219,8,Medicina,0.2125
+4220,4,Espacio,1
+4221,2,Medicina,1
+4222,2,Espacio,1
+4223,2,Espacio,1
+4224,3,Gráficos,0.46666666666666673
+4225,2,Automóviles,1
+4226,3,Hockey,1
+4227,12,Hockey,1
+4228,8,Gráficos,1
+4229,2,Gráficos,0.4
+4230,17,Espacio,1
+4231,2,Espacio,1
+4232,39,Oriente Medio,1
+4233,7,Gráficos,1
+4234,2,Espacio,1
+4235,9,Oriente Medio,1
+4236,2,Hockey,1
+4237,3,Oriente Medio,1
+4238,5,Gráficos,0.3280000000000001
+4239,13,Oriente Medio,0.8295857988165682
+4240,3,Oriente Medio,1
+4241,2,Automóviles,1
+4242,17,Automóviles,1
+4243,5,Medicina,0.13600000000000004
+4244,2,Espacio,0.4
+4245,3,Gráficos,1
+4246,2,Automóviles,1
+4247,42,Oriente Medio,1
+4248,2,Medicina,1
+4249,2,Gráficos,1
+4250,7,Gráficos,1
+4251,2,Hockey,1
+4252,3,Automóviles,1
+4253,9,Hockey,1
+4254,2,Automóviles,1
+4255,4,Hockey,1
+4256,2,Medicina,1
+4257,2,Oriente Medio,1
+4258,2,Hockey,1
+4259,2,Espacio,1
+4260,2,Medicina,1
+4261,2,Hockey,1
+4262,6,Automóviles,1
+4263,3,Medicina,1
+4264,5,Hockey,1
+4265,2,Automóviles,1
+4266,4,Hockey,1
+4267,2,Automóviles,1
+4268,15,Automóviles,0.47733333333333333
+4269,14,Hockey,1
+4270,3,Espacio,1
+4271,4,Espacio,1
+4272,4,Gráficos,0.55
+4273,2,Hockey,1
+4274,2,Automóviles,1
+4275,5,Automóviles,1
+4276,2,Automóviles,0.4
+4277,3,Espacio,1
+4278,2,Automóviles,1
+4279,9,Espacio,1
+4280,3,Gráficos,1
+4281,6,Espacio,0.06666666666666672
+4282,2,Oriente Medio,1
+4283,14,Medicina,0.8408163265306122
+4284,2,Automóviles,1
+4285,7,Medicina,1
+4286,4,Espacio,1
+4287,2,Hockey,1
+4288,5,Gráficos,1
+4289,2,Automóviles,0.4
+4290,3,Hockey,1
+4291,17,Oriente Medio,1
+4292,2,Hockey,1
+4293,2,Automóviles,1
+4294,2,Hockey,1
+4295,39,Oriente Medio,1
+4296,5,Oriente Medio,1
+4297,3,Medicina,1
+4298,2,Espacio,1
+4299,2,Automóviles,1
+4300,3,Hockey,1
+4301,2,Espacio,0.4
+4302,18,Oriente Medio,1
+4303,2,Automóviles,1
+4304,9,Hockey,0.5555555555555556
+4305,2,Automóviles,1
+4306,2,Hockey,1
+4307,2,Medicina,1
+4308,6,Espacio,1
+4309,3,Gráficos,1
+4310,6,Espacio,1
+4311,2,Espacio,1
+4312,2,Automóviles,0.4
+4313,2,Hockey,1
+4314,3,Automóviles,1
+4315,2,Hockey,1
+4316,2,Hockey,1
+4317,18,Oriente Medio,0.874074074074074
+4318,19,Automóviles,1
+4319,5,Hockey,1
+4320,2,Automóviles,1
+4321,2,Gráficos,1
+4322,6,Hockey,1
+4323,11,Hockey,1
+4324,7,Espacio,1
+4325,6,Medicina,1
+4326,2,Gráficos,1
+4327,4,Gráficos,0.55
+4328,15,Oriente Medio,0.8506666666666668
+4329,3,Hockey,1
+4330,2,Hockey,1
+4331,2,Hockey,1
+4332,4,Gráficos,0.55
+4333,2,Espacio,0.4
+4334,2,Automóviles,0.4
+4335,2,Hockey,1
+4336,2,Oriente Medio,1
+4337,3,Hockey,1
+4338,3,Espacio,1
+4339,2,Espacio,1
+4340,10,Hockey,0.42399999999999993
+4341,3,Hockey,1
+4342,2,Gráficos,1
+4343,2,Medicina,1
+4344,3,Gráficos,1
+4345,3,Medicina,1
+4346,2,Espacio,0.4
+4347,3,Gráficos,1
+4348,2,Espacio,0.4
+4349,4,Automóviles,1
+4350,2,Oriente Medio,1
+4351,2,Oriente Medio,1
+4352,3,Automóviles,0.19999999999999998
+4353,2,Hockey,1
+4354,2,Espacio,1
+4355,2,Gráficos,1
+4356,10,Automóviles,1
+4357,5,Oriente Medio,1
+4358,3,Oriente Medio,1
+4359,4,Gráficos,1
+4360,2,Gráficos,1
+4361,2,Espacio,1
+4362,2,Medicina,1
+4363,4,Oriente Medio,1
+4364,2,Automóviles,1
+4365,7,Espacio,1
+4366,14,Hockey,1
+4367,13,Gráficos,1
+4368,2,Automóviles,1
+4369,3,Medicina,1
+4370,2,Oriente Medio,1
+4371,4,Gráficos,0.25
+4372,4,Oriente Medio,0.25
+4373,2,Gráficos,1
+4374,3,Gráficos,1
+4375,2,Gráficos,1
+4376,2,Automóviles,1
+4377,5,Automóviles,1
+4378,40,Oriente Medio,1
+4379,2,Espacio,1
+4380,5,Gráficos,1
+4381,26,Medicina,1
+4382,2,Hockey,1
+4383,4,Gráficos,1
+4384,2,Medicina,1
+4385,3,Automóviles,1
+4386,11,Hockey,1
+4387,8,Gráficos,1
+4388,5,Medicina,0.32799999999999996
+4389,6,Gráficos,1
+4390,5,Oriente Medio,1
+4391,19,Oriente Medio,0.880332409972299
+4392,3,Automóviles,1
+4393,2,Gráficos,1
+4394,3,Espacio,1
+4395,10,Espacio,0.6160000000000002
+4396,2,Automóviles,0.4
+4397,2,Medicina,1
+4398,5,Oriente Medio,1
+4399,5,Espacio,1
+4400,2,Gráficos,1
+4401,8,Automóviles,1
+4402,3,Hockey,1
+4403,2,Hockey,1
+4404,3,Medicina,0.46666666666666673
+4405,2,Automóviles,0.4
+4406,3,Medicina,1
+4407,2,Medicina,1
+4408,43,Oriente Medio,1
+4409,2,Gráficos,1
+4410,2,Automóviles,0.4
+4411,2,Gráficos,1
+4412,2,Medicina,0.4
+4413,2,Automóviles,0.4
+4414,3,Gráficos,0.46666666666666673
+4415,4,Automóviles,0.55
+4416,3,Oriente Medio,1
+4417,3,Medicina,1
+4418,6,Gráficos,0.6666666666666669
+4419,4,Automóviles,1
+4420,3,Gráficos,1
+4421,3,Gráficos,1
+4422,2,Automóviles,0.4
+4423,2,Automóviles,1
+4424,7,Medicina,0.06938775510204079
+4425,2,Automóviles,1
+4426,19,Espacio,1
+4427,2,Gráficos,1
+4428,8,Medicina,1
+4429,2,Espacio,1
+4430,17,Hockey,1
+4431,3,Gráficos,1
+4432,3,Medicina,1
+4433,2,Hockey,1
+4434,2,Oriente Medio,1
+4435,25,Automóviles,1
+4436,2,Automóviles,1
+4437,2,Hockey,1
+4438,2,Oriente Medio,1
+4439,2,Automóviles,0.4
+4440,2,Automóviles,1
+4441,2,Medicina,1
+4442,2,Hockey,1
+4443,3,Hockey,1
+4444,7,Espacio,0.02040816326530611
+4445,2,Automóviles,1
+4446,3,Automóviles,1
+4447,5,Hockey,1
+4448,10,Gráficos,1
+4449,5,Gráficos,1
+4450,4,Hockey,0.25
+4451,6,Hockey,1
+4452,7,Gráficos,0.7061224489795918
+4453,2,Gráficos,1
+4454,3,Medicina,0.46666666666666673
+4455,2,Automóviles,0.4
+4456,3,Medicina,1
+4457,8,Medicina,1
+4458,2,Oriente Medio,1
+4459,2,Oriente Medio,1
+4460,2,Gráficos,1
+4461,2,Espacio,1
+4462,3,Oriente Medio,1
+4463,2,Automóviles,1
+4464,2,Gráficos,1
+4465,2,Medicina,0.4
+4466,2,Oriente Medio,1
+4467,5,Espacio,1
+4468,3,Oriente Medio,1
+4469,2,Hockey,1
+4470,2,Medicina,1
+4471,8,Oriente Medio,1
+4472,2,Espacio,1
+4473,14,Hockey,1
+4474,11,Espacio,0.6429752066115704
+4475,5,Hockey,1
+4476,2,Gráficos,1
+4477,2,Hockey,1
+4478,2,Espacio,0.4
+4479,2,Medicina,1
+4480,2,Gráficos,1
+4481,4,Oriente Medio,1
+4482,2,Gráficos,0.4
+4483,3,Hockey,1
+4484,17,Automóviles,0.526643598615917
+4485,3,Hockey,1
+4486,8,Hockey,1
+4487,2,Automóviles,1
+4488,3,Gráficos,1
+4489,6,Espacio,0.6666666666666669
+4490,2,Medicina,1
+4491,2,Medicina,1
+4492,2,Automóviles,1
+4493,2,Gráficos,1
+4494,9,Hockey,0.762962962962963
+4495,6,Oriente Medio,1
+4496,4,Automóviles,1
+4497,2,Espacio,1
+4498,4,Espacio,1
+4499,8,Espacio,1
+4500,2,Hockey,1
+4501,3,Oriente Medio,1
+4502,2,Medicina,1
+4503,2,Gráficos,1
+4504,2,Espacio,1
+4505,2,Oriente Medio,1
+4506,8,Medicina,1
+4507,7,Espacio,1
+4508,2,Gráficos,1
+4509,3,Oriente Medio,1
+4510,4,Medicina,1
+4511,21,Espacio,1
+4512,3,Gráficos,1
+4513,3,Espacio,1
+4514,2,Oriente Medio,1
+4515,3,Espacio,1
+4516,2,Gráficos,1
+4517,10,Medicina,0.16000000000000006
+4518,2,Espacio,1
+4519,2,Medicina,1
+4520,4,Oriente Medio,0.25
+4521,2,Hockey,1
+4522,2,Medicina,1
+4523,2,Hockey,1
+4524,2,Automóviles,1
+4525,5,Espacio,1
+4526,2,Automóviles,1
+4527,2,Gráficos,1
+4528,13,Automóviles,1
+4529,3,Automóviles,0.19999999999999998
+4530,2,Medicina,1
+4531,2,Hockey,1
+4532,44,Oriente Medio,1
+4533,2,Medicina,1
+4534,3,Automóviles,1
+4535,15,Hockey,1
+4536,2,Gráficos,1
+4537,3,Medicina,1
+4538,3,Medicina,1
+4539,12,Espacio,1
+4540,2,Gráficos,1
+4541,5,Automóviles,1
+4542,4,Hockey,1
+4543,8,Espacio,0.02500000000000001
+4544,2,Automóviles,0.4
+4545,2,Gráficos,1
+4546,2,Espacio,1
+4547,2,Espacio,0.4
+4548,3,Automóviles,0.46666666666666673
+4549,2,Gráficos,1
+4550,4,Gráficos,0.1
+4551,7,Medicina,0.26530612244897955
+4552,2,Espacio,1
+4553,2,Hockey,1
+4554,5,Medicina,1
+4555,4,Hockey,1
+4556,5,Oriente Medio,0.13600000000000004
+4557,4,Hockey,1
+4558,6,Hockey,1
+4559,4,Espacio,1
+4560,3,Medicina,1
+4561,8,Oriente Medio,1
+4562,5,Gráficos,0.6160000000000002
+4563,2,Gráficos,1
+4564,27,Espacio,1
+4565,4,Oriente Medio,1
+4566,6,Espacio,1
+4567,3,Automóviles,1
+4568,2,Medicina,1
+4569,2,Medicina,1
+4570,8,Gráficos,1
+4571,2,Medicina,1
+4572,2,Medicina,1
+4573,4,Gráficos,1
+4574,3,Espacio,1
+4575,4,Espacio,1
+4576,19,Oriente Medio,1
+4577,3,Espacio,0.19999999999999998
+4578,3,Espacio,0.46666666666666673
+4579,8,Medicina,1
+4580,14,Gráficos,0.8408163265306122
+4581,5,Gráficos,1
+4582,2,Automóviles,0.4
+4583,3,Medicina,1
+4584,2,Gráficos,1
+4585,2,Espacio,1
+4586,3,Hockey,0.19999999999999998
+4587,4,Oriente Medio,1
+4588,2,Medicina,1
+4589,8,Espacio,1
+4590,4,Automóviles,1
+4591,4,Oriente Medio,1
+4592,2,Automóviles,1
+4593,2,Espacio,1
+4594,2,Hockey,1
+4595,3,Hockey,1
+4596,4,Espacio,0.1
+4597,2,Espacio,1
+4598,2,Espacio,1
+4599,2,Oriente Medio,1
+4600,3,Oriente Medio,0.46666666666666673
+4601,2,Gráficos,1
+4602,2,Espacio,0.4
+4603,2,Medicina,1
+4604,8,Gráficos,1
+4605,2,Automóviles,1
+4606,2,Gráficos,1
+4607,2,Espacio,0.4
+4608,2,Hockey,1
+4609,3,Automóviles,1
+4610,10,Hockey,1
+4611,2,Gráficos,0.4
+4612,6,Hockey,1
+4613,2,Medicina,1
+4614,5,Medicina,1
+4615,2,Medicina,1
+4616,4,Espacio,1
+4617,3,Oriente Medio,1
+4618,3,Automóviles,1
+4619,9,Gráficos,1
+4620,2,Gráficos,1
+4621,7,Oriente Medio,1
+4622,4,Automóviles,1
+4623,2,Automóviles,0.4
+4624,2,Medicina,1
+4625,2,Medicina,1
+4626,5,Hockey,1
+4627,15,Medicina,0.8506666666666668
+4628,2,Hockey,1
+4629,3,Medicina,1
+4630,25,Oriente Medio,1
+4631,9,Oriente Medio,1
+4632,2,Automóviles,0.4
+4633,3,Medicina,1
+4634,3,Hockey,0.46666666666666673
+4635,5,Espacio,1
+4636,2,Medicina,1
+4637,20,Oriente Medio,0.8859999999999999
+4638,2,Gráficos,1
+4639,21,Hockey,1
+4640,2,Hockey,1
+4641,45,Oriente Medio,1
+4642,6,Gráficos,0.4
+4643,2,Espacio,1
+4644,2,Automóviles,1
+4645,6,Espacio,1
+4646,8,Espacio,1
+4647,2,Medicina,1
+4648,2,Automóviles,0.4
+4649,2,Automóviles,1
+4650,11,Medicina,1
+4651,13,Hockey,0.5313609467455621
+4652,2,Automóviles,1
+4653,3,Hockey,1
+4654,9,Hockey,1
+4655,2,Gráficos,1
+4656,2,Hockey,1
+4657,6,Espacio,1
+4658,3,Gráficos,1
+4659,7,Gráficos,0.7061224489795918
+4660,11,Hockey,1
+4661,2,Gráficos,1
+4662,4,Espacio,0.25
+4663,2,Automóviles,1
+4664,2,Medicina,1
+4665,5,Automóviles,0.23200000000000012
+4666,9,Oriente Medio,1
+4667,3,Gráficos,1
+4668,2,Automóviles,0.4
+4669,2,Espacio,1
+4670,2,Hockey,1
+4671,8,Gráficos,0.7375
+4672,2,Hockey,1
+4673,3,Medicina,1
+4674,3,Gráficos,0.46666666666666673
+4675,2,Medicina,0.4
+4676,6,Medicina,1
+4677,2,Gráficos,1
+4678,3,Espacio,1
+4679,9,Gráficos,1
+4680,3,Automóviles,1
+4681,2,Espacio,1
+4682,45,Oriente Medio,1
+4683,2,Oriente Medio,1
+4684,2,Oriente Medio,1
+4685,3,Gráficos,1
+4686,13,Espacio,0.6875739644970414
+4687,5,Hockey,1
+4688,2,Automóviles,0.4
+4689,5,Automóviles,1
+4690,6,Gráficos,1
+4691,2,Automóviles,1
+4692,29,Automóviles,1
+4693,3,Automóviles,1
+4694,3,Gráficos,0.46666666666666673
+4695,2,Medicina,1
+4696,8,Espacio,1
+4697,2,Medicina,1
+4698,3,Gráficos,1
+4699,3,Espacio,1
+4700,18,Hockey,1
+4701,2,Automóviles,0.4
+4702,2,Automóviles,1
+4703,2,Espacio,1
+4704,2,Gráficos,1
+4705,3,Hockey,1
+4706,2,Automóviles,0.4
+4707,3,Hockey,1
+4708,2,Oriente Medio,1
+4709,3,Medicina,1
+4710,4,Hockey,1
+4711,2,Espacio,0.4
+4712,7,Medicina,1
+4713,2,Automóviles,0.4
+4714,3,Hockey,1
+4715,2,Espacio,1
+4716,4,Hockey,1
+4717,2,Medicina,1
+4718,2,Medicina,1
+4719,3,Automóviles,1
+4720,2,Espacio,1
+4721,8,Automóviles,1
+4722,19,Oriente Medio,0.880332409972299
+4723,4,Automóviles,1
+4724,5,Oriente Medio,0.13600000000000004
+4725,3,Gráficos,1
+4726,21,Oriente Medio,1
+4727,7,Gráficos,0.7061224489795918
+4728,2,Medicina,1
+4729,3,Medicina,1
+4730,48,Medicina,0.9510416666666666
+4731,5,Espacio,1
+4732,2,Hockey,1
+4733,2,Espacio,1
+4734,2,Hockey,0.4
+4735,3,Medicina,1
+4736,2,Automóviles,1
+4737,2,Hockey,1
+4738,2,Oriente Medio,1
+4739,3,Oriente Medio,1
+4740,2,Automóviles,1
+4741,12,Hockey,1
+4742,3,Espacio,1
+4743,2,Oriente Medio,1
+4744,6,Oriente Medio,1
+4745,6,Hockey,1
+4746,2,Hockey,1
+4747,9,Gráficos,1
+4748,3,Automóviles,1
+4749,2,Medicina,1
+4750,2,Automóviles,0.4
+4751,12,Medicina,1
+4752,4,Gráficos,1
+4753,2,Gráficos,0.4
+4754,6,Hockey,1
+4755,5,Automóviles,1
+4756,3,Hockey,1
+4757,2,Hockey,1
+4758,2,Espacio,1
+4759,8,Gráficos,0.55
+4760,4,Automóviles,0.1
+4761,3,Automóviles,1
+4762,30,Oriente Medio,1
+4763,2,Gráficos,1
+4764,3,Espacio,1
+4765,2,Hockey,1
+4766,4,Gráficos,0.55
+4767,4,Oriente Medio,1
+4768,18,Medicina,0.874074074074074
+4769,3,Automóviles,1
+4770,2,Hockey,1
+4771,15,Automóviles,1
+4772,2,Gráficos,1
+4773,21,Hockey,1
+4774,3,Automóviles,1
+4775,9,Gráficos,0.762962962962963
+4776,3,Medicina,1
+4777,2,Oriente Medio,1
+4778,2,Automóviles,0.4
+4779,2,Gráficos,1
+4780,2,Medicina,1
+4781,2,Gráficos,1
+4782,10,Hockey,1
+4783,2,Gráficos,1
+4784,3,Medicina,0.46666666666666673
+4785,4,Automóviles,0.1
+4786,11,Medicina,0.10743801652892566
+4787,3,Espacio,1
+4788,13,Hockey,1
+4789,4,Hockey,1
+4790,2,Gráficos,1
+4791,2,Espacio,1
+4792,11,Espacio,1
+4793,2,Gráficos,1
+4794,2,Medicina,0.4
+4795,4,Hockey,1
+4796,2,Espacio,0.4
+4797,32,Automóviles,1
+4798,4,Medicina,1
+4799,5,Medicina,1
+4800,2,Gráficos,1
+4801,2,Hockey,1
+4802,2,Gráficos,0.4
+4803,10,Oriente Medio,1
+4804,2,Hockey,1
+4805,3,Espacio,1
+4806,7,Hockey,0.1673469387755102
+4807,2,Gráficos,0.4
+4808,2,Automóviles,0.4
+4809,2,Automóviles,1
+4810,2,Medicina,1
+4811,2,Hockey,1
+4812,3,Hockey,1
+4813,2,Automóviles,0.4
+4814,2,Automóviles,1
+4815,4,Gráficos,1
+4816,3,Gráficos,1
+4817,2,Medicina,1
+4818,9,Espacio,1
+4819,48,Oriente Medio,1
+4820,2,Oriente Medio,1
+4821,11,Gráficos,1
+4822,3,Hockey,1
+4823,2,Espacio,1
+4824,2,Gráficos,1
+4825,2,Gráficos,0.4
+4826,2,Oriente Medio,1
+4827,2,Automóviles,0.4
+4828,2,Hockey,1
+4829,2,Medicina,1
+4830,6,Automóviles,1
+4831,2,Espacio,0.4
+4832,2,Oriente Medio,1
+4833,7,Hockey,1
+4834,2,Automóviles,1
+4835,7,Espacio,1
+4836,2,Oriente Medio,1
+4837,6,Hockey,0.13333333333333336
+4838,8,Hockey,1
+4839,3,Automóviles,0.19999999999999998
+4840,4,Automóviles,1
+4841,4,Gráficos,1
+4842,2,Hockey,1
+4843,7,Oriente Medio,0.16734693877551016
+4844,3,Hockey,1
+4845,4,Gráficos,1
+4846,3,Oriente Medio,1
+4847,2,Automóviles,0.4
+4848,5,Hockey,1
+4849,3,Medicina,1
+4850,2,Gráficos,1
+4851,9,Medicina,0.14074074074074072
+4852,2,Automóviles,0.4
+4853,3,Gráficos,1
+4854,2,Medicina,1
+4855,5,Gráficos,1
+4856,3,Automóviles,0.19999999999999998
+4857,2,Gráficos,0.4
+4858,4,Automóviles,0.1
+4859,2,Espacio,0.4
+4860,2,Oriente Medio,1
+4861,2,Gráficos,1
+4862,2,Medicina,1
+4863,2,Gráficos,1
+4864,2,Espacio,1
+4865,4,Hockey,1
+4866,5,Oriente Medio,1
+4867,3,Automóviles,0.46666666666666673
+4868,3,Hockey,1
+4869,2,Medicina,1
+4870,3,Automóviles,1
+4871,3,Oriente Medio,1
+4872,51,Oriente Medio,1
+4873,49,Oriente Medio,1
+4874,7,Oriente Medio,1
+4875,35,Automóviles,1
+4876,2,Automóviles,0.4
+4877,6,Automóviles,0.4
+4878,2,Hockey,1
+4879,7,Medicina,0.1673469387755102
+4880,6,Medicina,1
+4881,2,Automóviles,0.4
+4882,2,Automóviles,1
+4883,2,Gráficos,1
+4884,2,Automóviles,1
+4885,2,Automóviles,0.4
+4886,3,Automóviles,1
+4887,3,Hockey,1
+4888,2,Oriente Medio,1
+4889,2,Espacio,1
+4890,2,Espacio,0.4
+4891,2,Gráficos,1
+4892,14,Hockey,0.44897959183673475
+4893,5,Hockey,1
+4894,2,Espacio,1
+4895,2,Automóviles,1
+4896,3,Espacio,1
+4897,15,Hockey,1
+4898,19,Automóviles,0.5678670360110804
+4899,2,Automóviles,1
+4900,22,Oriente Medio,1
+4901,20,Automóviles,1
+4902,2,Gráficos,1
+4903,3,Automóviles,1
+4904,5,Automóviles,1
+4905,2,Gráficos,1
+4906,5,Espacio,1
+4907,2,Gráficos,1
+4908,2,Gráficos,1
+4909,2,Automóviles,1
+4910,4,Medicina,1
+4911,2,Medicina,1
+4912,9,Espacio,0.02222222222222222
+4913,2,Gráficos,0.4
+4914,2,Espacio,1
+4915,9,Espacio,1
+4916,2,Automóviles,0.4
+4917,2,Oriente Medio,1
+4918,3,Espacio,1
+4919,2,Hockey,1
+4920,3,Medicina,1
+4921,2,Automóviles,0.4
+4922,3,Hockey,0.46666666666666673
+4923,4,Hockey,1
+4924,2,Espacio,1
+4925,2,Gráficos,0.4
+4926,2,Automóviles,1
+4927,5,Oriente Medio,1
+4928,3,Automóviles,1
+4929,2,Oriente Medio,1
+4930,2,Automóviles,0.4
+4931,12,Hockey,1
+4932,2,Espacio,0.4
+4933,3,Medicina,0.46666666666666673
+4934,2,Medicina,1
+4935,3,Gráficos,0.46666666666666673
+4936,3,Automóviles,1
+4937,2,Gráficos,1
+4938,4,Espacio,1
+4939,3,Oriente Medio,1
+4940,3,Gráficos,0.46666666666666673
+4941,2,Automóviles,1
+4942,12,Medicina,0.0666666666666667
+4943,3,Gráficos,1
+4944,7,Gráficos,1
+4945,4,Oriente Medio,1
+4946,4,Espacio,0.55
+4947,5,Gráficos,1
+4948,4,Gráficos,1
+4949,2,Gráficos,1
+4950,14,Gráficos,1
+4951,3,Gráficos,1
+4952,2,Oriente Medio,1
+4953,4,Gráficos,0.55
+4954,13,Espacio,1
+4955,23,Oriente Medio,0.9001890359168243
+4956,2,Medicina,1
+4957,3,Medicina,0.46666666666666673
+4958,15,Gráficos,0.7120000000000002
+4959,2,Espacio,0.4
+4960,50,Oriente Medio,1
+4961,2,Hockey,1
+4962,3,Hockey,1
+4963,2,Medicina,1
+4964,3,Gráficos,1
+4965,3,Espacio,0.46666666666666673
+4966,3,Oriente Medio,0.46666666666666673
+4967,2,Gráficos,0.4
+4968,2,Espacio,1
+4969,5,Espacio,1
+4970,4,Medicina,1
+4971,12,Gráficos,0.8166666666666665
+4972,5,Automóviles,1
+4973,2,Automóviles,0.4
+4974,3,Gráficos,1
+4975,2,Hockey,1
+4976,10,Automóviles,1
+4977,2,Automóviles,0.4
+4978,2,Hockey,1
+4979,4,Gráficos,1
+4980,3,Automóviles,1
+4981,2,Medicina,1
+4982,2,Espacio,1
+4983,3,Oriente Medio,1
+4984,2,Gráficos,1
+4985,2,Hockey,1
+4986,2,Espacio,1
+4987,2,Espacio,1
+4988,8,Espacio,1
+4989,2,Automóviles,1
+4990,11,Gráficos,0.8016528925619834
+4991,4,Espacio,1
+4992,2,Medicina,1
+4993,3,Hockey,1
+4994,3,Gráficos,0.46666666666666673
+4995,11,Medicina,1
+4996,3,Medicina,1
+4997,3,Gráficos,0.19999999999999998
+4998,50,Medicina,0.9529599999999998
+4999,2,Hockey,1
+5000,5,Medicina,1
+5001,2,Automóviles,1
+5002,18,Espacio,1
+5003,4,Medicina,1
+5004,2,Espacio,1
+5005,4,Oriente Medio,1
+5006,5,Gráficos,0.42400000000000004
+5007,8,Hockey,1
+5008,3,Medicina,0.46666666666666673
+5009,10,Espacio,1
+5010,9,Automóviles,1
+5011,3,Hockey,1
+5012,5,Automóviles,0.040000000000000056
+5013,2,Gráficos,1
+5014,3,Hockey,0.46666666666666673
+5015,2,Automóviles,0.4
+5016,6,Gráficos,1
+5017,2,Medicina,1
+5018,2,Gráficos,1
+5019,22,Automóviles,1
+5020,3,Hockey,1
+5021,12,Hockey,1
+5022,7,Hockey,1
+5023,3,Oriente Medio,1
+5024,4,Automóviles,0.25
+5025,20,Automóviles,0.5860000000000001
+5026,6,Oriente Medio,0.06666666666666667
+5027,2,Automóviles,0.4
+5028,6,Automóviles,1
+5029,4,Medicina,1
+5030,2,Hockey,1
+5031,7,Gráficos,0.46122448979591846
+5032,3,Gráficos,1
+5033,2,Medicina,1
+5034,2,Automóviles,1
+5035,6,Medicina,1
+5036,17,Espacio,0.45190311418685136
+5037,2,Espacio,0.4
+5038,4,Gráficos,1
+5039,3,Espacio,0.46666666666666673
+5040,2,Automóviles,0.4
+5041,5,Automóviles,1
+5042,3,Hockey,1
+5043,3,Espacio,1
+5044,19,Medicina,0.880332409972299
+5045,3,Espacio,1
+5046,2,Hockey,1
+5047,2,Espacio,0.4
+5048,4,Hockey,1
+5049,2,Espacio,1
+5050,2,Oriente Medio,1
+5051,3,Automóviles,1
+5052,2,Automóviles,0.4
+5053,2,Espacio,0.4
+5054,2,Oriente Medio,1
+5055,3,Hockey,0.46666666666666673
+5056,4,Oriente Medio,1
+5057,15,Espacio,1
+5058,2,Automóviles,1
+5059,2,Automóviles,1
+5060,12,Oriente Medio,1
+5061,11,Oriente Medio,0.8016528925619834
+5062,40,Automóviles,1
+5063,2,Oriente Medio,1
+5064,3,Hockey,1
+5065,7,Hockey,1
+5066,8,Gráficos,1
+5067,2,Automóviles,0.4
+5068,4,Medicina,1
+5069,3,Automóviles,1
+5070,2,Oriente Medio,1
+5071,4,Medicina,0.55
+5072,4,Espacio,1
+5073,5,Gráficos,1
+5074,3,Automóviles,0.46666666666666673
+5075,6,Automóviles,0.6666666666666669
+5076,4,Medicina,0.25
+5077,4,Hockey,1
+5078,8,Gráficos,1
+5079,3,Medicina,1
+5080,53,Oriente Medio,1
+5081,11,Medicina,0.028099173553718992
+5082,4,Espacio,0.25
+5083,2,Medicina,1
+5084,3,Hockey,1
+5085,4,Gráficos,1
+5086,3,Automóviles,0.46666666666666673
+5087,3,Espacio,1
+5088,15,Gráficos,1
+5089,12,Hockey,1
+5090,4,Oriente Medio,1
+5091,3,Medicina,0.46666666666666673
+5092,5,Medicina,1
+5093,9,Automóviles,1
+5094,3,Gráficos,0.46666666666666673
+5095,5,Gráficos,1
+5096,2,Espacio,1
+5097,3,Medicina,0.46666666666666673
+5098,21,Automóviles,0.6027210884353743
+5099,2,Espacio,1
+5100,3,Automóviles,1
+5101,8,Gráficos,0.06250000000000001
+5102,3,Oriente Medio,1
+5103,2,Gráficos,1
+5104,3,Gráficos,1
+5105,8,Espacio,1
+5106,3,Espacio,0.46666666666666673
+5107,6,Automóviles,1
+5108,11,Automóviles,1
+5109,3,Automóviles,1
+5110,12,Oriente Medio,0.8166666666666665
+5111,5,Hockey,1
+5112,3,Automóviles,0.19999999999999998
+5113,28,Oriente Medio,0.9173469387755103
+5114,3,Medicina,1
+5115,8,Oriente Medio,1
+5116,3,Medicina,1
+5117,3,Hockey,1
+5118,2,Gráficos,1
+5119,10,Hockey,1
+5120,27,Medicina,1
+5121,2,Espacio,1
+5122,2,Gráficos,1
+5123,6,Gráficos,1
+5124,3,Gráficos,1
+5125,6,Gráficos,0.20000000000000004
+5126,4,Espacio,1
+5127,10,Medicina,1
+5128,2,Automóviles,0.4
+5129,26,Automóviles,1
+5130,2,Gráficos,1
+5131,8,Medicina,0.2125
+5132,2,Automóviles,1
+5133,5,Hockey,0.13600000000000004
+5134,6,Medicina,1
+5135,2,Hockey,1
+5136,8,Automóviles,1
+5137,2,Automóviles,0.4
+5138,24,Hockey,1
+5139,3,Automóviles,1
+5140,9,Medicina,1
+5141,17,Hockey,1
+5142,3,Espacio,1
+5143,4,Espacio,0.55
+5144,2,Automóviles,0.4
+5145,2,Medicina,1
+5146,2,Espacio,1
+5147,2,Espacio,1
+5148,4,Oriente Medio,1
+5149,30,Espacio,1
+5150,2,Espacio,1
+5151,10,Gráficos,1
+5152,25,Automóviles,0.6582399999999999
+5153,8,Hockey,1
+5154,2,Espacio,0.4
+5155,6,Oriente Medio,0.06666666666666667
+5156,5,Hockey,1
+5157,2,Espacio,0.4
+5158,23,Medicina,0.9001890359168243
+5159,6,Hockey,1
+5160,5,Oriente Medio,0.32799999999999996
+5161,2,Automóviles,0.4
+5162,43,Automóviles,1
+5163,2,Gráficos,1
+5164,2,Medicina,1
+5165,5,Gráficos,0.6160000000000002
+5166,28,Medicina,0.9173469387755103
+5167,2,Oriente Medio,1
+5168,2,Automóviles,1
+5169,7,Gráficos,0.06938775510204079
+5170,3,Espacio,0.46666666666666673
+5171,7,Espacio,1
+5172,3,Gráficos,1
+5173,2,Espacio,0.4
+5174,4,Gráficos,0.25
+5175,3,Automóviles,1
+5176,2,Automóviles,0.4
+5177,65,Oriente Medio,1
+5178,2,Automóviles,1
+5179,2,Espacio,0.4
+5180,3,Hockey,1
+5181,3,Medicina,0.46666666666666673
+5182,3,Oriente Medio,0.46666666666666673
+5183,3,Medicina,0.46666666666666673
+5184,2,Automóviles,0.4
+5185,4,Espacio,0.55
+5186,3,Gráficos,1
+5187,3,Automóviles,0.19999999999999998
+5188,9,Medicina,1
+5189,6,Espacio,1
+5190,17,Gráficos,0.742560553633218
+5191,8,Oriente Medio,0.36250000000000004
+5192,4,Medicina,0.25
+5193,6,Hockey,0.6666666666666669
+5194,2,Automóviles,0.4
+5195,2,Espacio,0.4
+5196,15,Espacio,1
+5197,3,Medicina,1
+5198,2,Medicina,1
+5199,2,Automóviles,1
+5200,18,Hockey,1
+5201,3,Automóviles,0.46666666666666673
+5202,3,Gráficos,1
+5203,8,Espacio,0.7375
+5204,2,Hockey,1
+5205,6,Gráficos,0.46666666666666673
+5206,2,Medicina,0.4
+5207,7,Gráficos,0.02040816326530611
+5208,7,Automóviles,1
+5209,2,Automóviles,0.4
+5210,6,Medicina,0.4
+5211,2,Hockey,1
+5212,3,Automóviles,0.46666666666666673
+5213,2,Gráficos,1
+5214,3,Gráficos,1
+5215,25,Hockey,1
+5216,2,Hockey,1
+5217,2,Medicina,1
+5218,7,Medicina,1
+5219,4,Medicina,1
+5220,2,Espacio,0.4
+5221,7,Medicina,1
+5222,2,Automóviles,1
+5223,17,Hockey,1
+5224,2,Automóviles,0.4
+5225,2,Oriente Medio,1
+5226,4,Medicina,1
+5227,2,Espacio,0.4
+5228,7,Automóviles,1
+5229,30,Medicina,0.7786666666666667
+5230,2,Automóviles,0.4
+5231,14,Gráficos,1
+5232,2,Espacio,1
+5233,2,Medicina,1
+5234,15,Gráficos,1
+5235,2,Automóviles,0.4
+5236,2,Oriente Medio,1
+5237,13,Hockey,1
+5238,3,Gráficos,1
+5239,2,Hockey,0.4
+5240,2,Espacio,1
+5241,2,Medicina,0.4
+5242,9,Hockey,1
+5243,2,Medicina,1
+5244,13,Medicina,0.06272189349112431
+5245,2,Gráficos,1
+5246,2,Medicina,1
+5247,2,Hockey,1
+5248,4,Medicina,0.25
+5249,5,Espacio,1
+5250,7,Automóviles,0.46122448979591846
+5251,3,Automóviles,0.19999999999999998
+5252,3,Gráficos,1
+5253,19,Automóviles,1
+5254,9,Hockey,1
+5255,2,Medicina,1
+5256,19,Espacio,0.4149584487534626
+5257,2,Espacio,1
+5258,6,Oriente Medio,1
+5259,18,Hockey,1
+5260,2,Espacio,0.4
+5261,13,Medicina,1
+5262,2,Automóviles,1
+5263,2,Gráficos,1
+5264,3,Espacio,0.46666666666666673
+5265,4,Espacio,1
+5266,4,Espacio,1
+5267,2,Espacio,1
+5268,3,Gráficos,1
+5269,4,Medicina,1
+5270,6,Automóviles,1
+5271,12,Automóviles,0.11666666666666668
+5272,2,Hockey,0.4
+5273,3,Automóviles,1
+5274,10,Gráficos,1
+5275,5,Espacio,0.23200000000000012
+5276,6,Oriente Medio,1
+5277,6,Gráficos,1
+5278,5,Hockey,1
+5279,9,Gráficos,0.40740740740740744
+5280,2,Gráficos,1
+5281,3,Medicina,1
+5282,34,Espacio,1
+5283,3,Espacio,0.19999999999999998
+5284,3,Medicina,0.46666666666666673
+5285,3,Medicina,1
+5286,2,Espacio,0.4
+5287,3,Medicina,0.46666666666666673
+5288,16,Espacio,1
+5289,7,Hockey,1
+5290,3,Medicina,1
+5291,6,Hockey,1
+5292,4,Gráficos,0.25
+5293,2,Automóviles,1
+5294,4,Gráficos,1
+5295,7,Medicina,1
+5296,5,Espacio,1
+5297,2,Hockey,1
+5298,2,Gráficos,1
+5299,10,Oriente Medio,1
+5300,29,Medicina,0.9200951248513676
+5301,4,Espacio,0.4
+5302,9,Oriente Medio,1
+5303,2,Automóviles,1
+5304,2,Automóviles,1
+5305,3,Medicina,1
+5306,2,Automóviles,1
+5307,4,Medicina,1
+5308,2,Espacio,1
+5309,6,Espacio,1
+5310,13,Automóviles,1
+5311,12,Medicina,1
+5312,5,Espacio,1
+5313,2,Automóviles,1
+5314,3,Hockey,1
+5315,4,Gráficos,1
+5316,10,Oriente Medio,0.18400000000000002
+5317,17,Gráficos,1
+5318,16,Gráficos,1
+5319,4,Oriente Medio,1
+5320,24,Espacio,1
+5321,5,Oriente Medio,1
+5322,10,Gráficos,0.040000000000000056
+5323,12,Hockey,1
+5324,29,Hockey,1
+5325,7,Oriente Medio,0.11836734693877547
+5326,4,Gráficos,1
+5327,9,Hockey,1
+5328,2,Oriente Medio,1
+5329,3,Hockey,1
+5330,2,Oriente Medio,1
+5331,2,Medicina,1
+5332,4,Automóviles,0.4
+5333,2,Espacio,0.4
+5334,6,Espacio,0.26666666666666666
+5335,2,Espacio,0.4
+5336,2,Gráficos,1
+5337,5,Hockey,1
+5338,12,Hockey,1
+5339,4,Automóviles,0.55
+5340,2,Gráficos,1
+5341,6,Oriente Medio,1
+5342,2,Automóviles,0.4
+5343,5,Oriente Medio,1
+5344,2,Gráficos,1
+5345,3,Espacio,0.19999999999999998
+5346,5,Medicina,1
+5347,3,Automóviles,1
+5348,2,Automóviles,1
+5349,30,Oriente Medio,0.9226666666666665
+5350,3,Automóviles,0.19999999999999998
+5351,4,Espacio,0.25
+5352,4,Gráficos,1
+5353,6,Espacio,1
+5354,5,Gráficos,1
+5355,3,Hockey,1
+5356,2,Gráficos,1
+5357,3,Medicina,0.46666666666666673
+5358,2,Oriente Medio,1
+5359,2,Medicina,1
+5360,5,Gráficos,1
+5361,16,Hockey,0.40937500000000004
+5362,3,Gráficos,0.46666666666666673
+5363,6,Medicina,1
+5364,34,Oriente Medio,1
+5365,2,Medicina,0.4
+5366,3,Hockey,1
+5367,4,Automóviles,1
+5368,2,Oriente Medio,1
+5369,2,Espacio,0.4
+5370,4,Medicina,1
+5371,2,Oriente Medio,1
+5372,7,Automóviles,1
+5373,3,Oriente Medio,0.46666666666666673
+5374,2,Gráficos,1
+5375,2,Gráficos,1
+5376,12,Espacio,1
+5377,2,Oriente Medio,1
+5378,17,Gráficos,1
+5379,12,Gráficos,0.65
+5380,16,Gráficos,0.615625
+5381,5,Espacio,0.3280000000000001
+5382,2,Medicina,1
+5383,4,Hockey,1
+5384,3,Automóviles,0.19999999999999998
+5385,2,Automóviles,0.4
+5386,5,Hockey,1
+5387,2,Automóviles,0.4
+5388,6,Automóviles,0.6666666666666669
+5389,3,Medicina,0.46666666666666673
+5390,13,Medicina,1
+5391,2,Espacio,1
+5392,45,Automóviles,1
+5393,2,Automóviles,1
+5394,2,Medicina,0.4
+5395,18,Automóviles,1
+5396,3,Hockey,1
+5397,4,Hockey,1
+5398,4,Gráficos,0.55
+5399,4,Automóviles,1
+5400,32,Medicina,0.92734375
+5401,4,Automóviles,1
+5402,3,Espacio,1
+5403,34,Oriente Medio,0.9314878892733562
+5404,2,Espacio,1
+5405,3,Medicina,0.46666666666666673
+5406,2,Espacio,1
+5407,3,Medicina,0.46666666666666673
+5408,6,Hockey,0.20000000000000004
+5409,8,Hockey,0.1375
+5410,4,Espacio,0.25
+5411,4,Hockey,1
+5412,2,Automóviles,1
+5413,16,Espacio,1
+5414,5,Automóviles,0.3280000000000001
+5415,4,Automóviles,1
+5416,15,Medicina,1
+5417,12,Medicina,1
+5418,7,Hockey,1
+5419,21,Gráficos,0.7877551020408164
+5420,2,Automóviles,1
+5421,15,Hockey,1
+5422,6,Hockey,1
+5423,5,Oriente Medio,1
+5424,2,Espacio,0.4
+5425,4,Automóviles,0.55
+5426,2,Automóviles,1
+5427,2,Espacio,0.4
+5428,3,Medicina,0.46666666666666673
+5429,2,Oriente Medio,1
+5430,3,Medicina,1
+5431,2,Hockey,1
+5432,13,Espacio,1
+5433,3,Espacio,1
+5434,6,Espacio,1
+5435,8,Automóviles,1
+5436,2,Automóviles,0.4
+5437,4,Gráficos,0.55
+5438,2,Gráficos,1
+5439,3,Espacio,1
+5440,15,Gráficos,0.05066666666666666
+5441,21,Hockey,1
+5442,4,Medicina,1
+5443,6,Medicina,0.6666666666666669
+5444,5,Gráficos,1
+5445,5,Gráficos,0.3280000000000001
+5446,20,Espacio,1
+5447,2,Medicina,1
+5448,2,Espacio,0.4
+5449,3,Automóviles,0.19999999999999998
+5450,3,Gráficos,0.46666666666666673
+5451,6,Espacio,1
+5452,6,Gráficos,0.6666666666666669
+5453,7,Espacio,1
+5454,2,Hockey,1
+5455,4,Hockey,1
+5456,22,Gráficos,1
+5457,2,Gráficos,1
+5458,31,Medicina,0.7852237252861601
+5459,52,Automóviles,1
+5460,3,Oriente Medio,1
+5461,5,Automóviles,1
+5462,2,Espacio,1
+5463,4,Hockey,1
+5464,7,Automóviles,0.5102040816326531
+5465,12,Gráficos,1
+5466,9,Oriente Medio,0.08148148148148147
+5467,2,Automóviles,1
+5468,2,Gráficos,1
+5469,3,Automóviles,0.19999999999999998
+5470,2,Automóviles,0.4
+5471,3,Gráficos,1
+5472,4,Automóviles,0.4
+5473,4,Espacio,0.55
+5474,4,Hockey,1
+5475,2,Espacio,1
+5476,4,Espacio,0.4
+5477,2,Hockey,1
+5478,2,Hockey,1
+5479,2,Automóviles,0.4
+5480,10,Oriente Medio,0.11200000000000009
+5481,6,Hockey,1
+5482,2,Espacio,0.4
+5483,2,Espacio,0.4
+5484,14,Hockey,1
+5485,2,Espacio,1
+5486,7,Hockey,0.11836734693877554
+5487,9,Medicina,0.17037037037037037
+5488,3,Espacio,0.19999999999999998
+5489,68,Oriente Medio,1
+5490,7,Hockey,1
+5491,2,Espacio,0.4
+5492,5,Automóviles,1
+5493,3,Hockey,1
+5494,3,Hockey,1
+5495,38,Oriente Medio,1
+5496,2,Automóviles,1
+5497,29,Oriente Medio,1
+5498,2,Espacio,1
+5499,2,Oriente Medio,1
+5500,8,Gráficos,0.5125000000000001
+5501,2,Automóviles,1
+5502,3,Espacio,1
+5503,4,Oriente Medio,1
+5504,4,Automóviles,0.4
+5505,5,Espacio,0.23200000000000012
+5506,3,Medicina,1
+5507,25,Hockey,1
+5508,12,Espacio,1
+5509,3,Automóviles,1
+5510,4,Hockey,1
+5511,29,Automóviles,1
+5512,5,Medicina,0.23200000000000012
+5513,22,Gráficos,1
+5514,2,Espacio,0.4
+5515,3,Medicina,0.46666666666666673
+5516,2,Automóviles,0.4
+5517,2,Automóviles,1
+5518,2,Automóviles,1
+5519,22,Espacio,0.4
+5520,23,Gráficos,0.804914933837429
+5521,7,Automóviles,1
+5522,6,Gráficos,0.13333333333333336
+5523,6,Gráficos,0.6666666666666669
+5524,60,Oriente Medio,1
+5525,3,Espacio,0.46666666666666673
+5526,2,Hockey,1
+5527,3,Oriente Medio,1
+5528,3,Hockey,1
+5529,9,Hockey,1
+5530,3,Hockey,1
+5531,8,Hockey,1
+5532,2,Gráficos,1
+5533,10,Gráficos,1
+5534,4,Medicina,0.25
+5535,2,Espacio,0.4
+5536,4,Espacio,1
+5537,8,Automóviles,1
+5538,4,Espacio,1
+5539,2,Espacio,1
+5540,3,Oriente Medio,1
+5541,3,Espacio,1
+5542,6,Medicina,1
+5543,4,Espacio,0.25
+5544,3,Automóviles,0.46666666666666673
+5545,8,Oriente Medio,0.1
+5546,13,Oriente Medio,0.6733727810650887
+5547,6,Automóviles,1
+5548,3,Espacio,0.19999999999999998
+5549,9,Hockey,0.762962962962963
+5550,2,Espacio,0.4
+5551,3,Espacio,1
+5552,4,Medicina,1
+5553,2,Hockey,1
+5554,19,Espacio,1
+5555,5,Oriente Medio,0.32799999999999996
+5556,2,Oriente Medio,1
+5557,5,Gráficos,0.6160000000000002
+5558,2,Espacio,0.4
+5559,2,Automóviles,1
+5560,15,Medicina,0.06133333333333336
+5561,3,Automóviles,1
+5562,39,Medicina,0.9400394477317555
+5563,6,Gráficos,1
+5564,7,Espacio,0.7061224489795918
+5565,17,Hockey,1
+5566,11,Automóviles,0.24628099173553716
+5567,17,Hockey,1
+5568,4,Automóviles,1
+5569,3,Espacio,0.46666666666666673
+5570,3,Oriente Medio,1
+5571,13,Gráficos,0.6733727810650888
+5572,4,Hockey,0.4
+5573,4,Espacio,1
+5574,8,Espacio,1
+5575,2,Medicina,0.4
+5576,3,Gráficos,0.46666666666666673
+5577,41,Espacio,1
+5578,3,Oriente Medio,1
+5579,4,Oriente Medio,1
+5580,3,Gráficos,1
+5581,7,Hockey,1
+5582,13,Hockey,1
+5583,3,Medicina,1
+5584,10,Medicina,1
+5585,2,Espacio,0.4
+5586,6,Oriente Medio,1
+5587,20,Automóviles,0.8859999999999999
+5588,6,Espacio,0.13333333333333336
+5589,3,Medicina,1
+5590,2,Espacio,1
+5591,2,Gráficos,0.4
+5592,2,Hockey,0.4
+5593,9,Oriente Medio,1
+5594,4,Espacio,0.25
+5595,4,Automóviles,0.1
+5596,24,Espacio,1
+5597,6,Gráficos,1
+5598,2,Automóviles,1
+5599,12,Oriente Medio,0.1666666666666667
+5600,2,Automóviles,1
+5601,4,Hockey,0.55
+5602,3,Medicina,1
+5603,8,Gráficos,1
+5604,2,Espacio,0.4
+5605,3,Gráficos,1
+5606,3,Espacio,0.46666666666666673
+5607,11,Medicina,0.22644628099173553
+5608,5,Medicina,0.32799999999999996
+5609,4,Automóviles,1
+5610,20,Oriente Medio,0.8859999999999999
+5611,15,Hockey,1
+5612,5,Gráficos,1
+5613,4,Espacio,1
+5614,5,Automóviles,0.23200000000000012
+5615,6,Medicina,1
+5616,36,Oriente Medio,0.935185185185185
+5617,7,Espacio,1
+5618,9,Oriente Medio,0.08148148148148147
+5619,4,Gráficos,0.4
+5620,5,Medicina,1
+5621,6,Gráficos,1
+5622,3,Automóviles,1
+5623,11,Gráficos,1
+5624,3,Gráficos,1
+5625,2,Automóviles,1
+5626,11,Hockey,0.16694214876033056
+5627,4,Automóviles,0.1
+5628,20,Medicina,1
+5629,3,Medicina,0.46666666666666673
+5630,6,Espacio,0.4
+5631,12,Medicina,1
+5632,6,Oriente Medio,0.06666666666666667
+5633,2,Espacio,0.4
+5634,14,Oriente Medio,1
+5635,2,Automóviles,0.4
+5636,8,Gráficos,0.1
+5637,3,Espacio,1
+5638,5,Automóviles,0.6160000000000002
+5639,81,Automóviles,1
+5640,5,Automóviles,1
+5641,13,Hockey,0.1479289940828403
+5642,2,Gráficos,1
+5643,5,Medicina,0.42400000000000004
+5644,3,Medicina,1
+5645,26,Hockey,1
+5646,7,Medicina,1
+5647,4,Hockey,1
+5648,5,Espacio,1
+5649,3,Oriente Medio,1
+5650,2,Automóviles,1
+5651,4,Automóviles,1
+5652,2,Automóviles,0.4
+5653,4,Automóviles,0.1
+5654,3,Espacio,0.46666666666666673
+5655,2,Espacio,0.4
+5656,3,Automóviles,0.46666666666666673
+5657,3,Espacio,0.46666666666666673
+5658,4,Medicina,1
+5659,2,Automóviles,1
+5660,4,Hockey,1
+5661,9,Medicina,1
+5662,3,Automóviles,0.46666666666666673
+5663,22,Espacio,1
+5664,2,Oriente Medio,1
+5665,5,Hockey,1
+5666,17,Medicina,0.07820069204152254
+5667,11,Gráficos,0.8016528925619834
+5668,4,Gráficos,0.4
+5669,13,Medicina,1
+5670,2,Gráficos,1
+5671,2,Automóviles,0.4
+5672,5,Oriente Medio,1
+5673,52,Oriente Medio,1
+5674,28,Automóviles,0.9173469387755103
+5675,5,Medicina,1
+5676,4,Medicina,0.55
+5677,2,Automóviles,1
+5678,2,Oriente Medio,1
+5679,5,Automóviles,0.23200000000000012
+5680,15,Medicina,1
+5681,4,Oriente Medio,0.25
+5682,34,Hockey,1
+5683,8,Espacio,0.1
+5684,42,Espacio,1
+5685,4,Gráficos,0.55
+5686,2,Espacio,0.4
+5687,9,Oriente Medio,0.2888888888888889
+5688,10,Gráficos,0.6160000000000002
+5689,22,Hockey,1
+5690,4,Espacio,1
+5691,2,Gráficos,1
+5692,32,Hockey,1
+5693,5,Gráficos,1
+5694,2,Hockey,0.4
+5695,2,Espacio,1
+5696,2,Espacio,0.4
+5697,2,Gráficos,1
+5698,4,Gráficos,1
+5699,11,Hockey,1
+5700,2,Oriente Medio,1
+5701,5,Automóviles,0.3280000000000001
+5702,3,Espacio,1
+5703,2,Gráficos,1
+5704,13,Hockey,1
+5705,2,Espacio,0.4
+5706,2,Gráficos,1
+5707,14,Oriente Medio,0.6938775510204082
+5708,5,Automóviles,0.23200000000000012
+5709,23,Espacio,0.4011342155009452
+5710,3,Gráficos,0.19999999999999998
+5711,12,Oriente Medio,0.06666666666666667
+5712,14,Gráficos,0.5591836734693876
+5713,2,Automóviles,1
+5714,13,Hockey,0.8295857988165682
+5715,17,Hockey,0.36055363321799316
+5716,5,Espacio,1
+5717,6,Automóviles,0.26666666666666666
+5718,8,Oriente Medio,1
+5719,8,Oriente Medio,1
+5720,3,Medicina,1
+5721,6,Espacio,1
+5722,5,Automóviles,1
+5723,6,Espacio,0.4
+5724,7,Medicina,1
+5725,2,Hockey,1
+5726,13,Medicina,0.04852071005917161
+5727,9,Automóviles,0.46666666666666673
+5728,3,Hockey,0.46666666666666673
+5729,8,Medicina,0.325
+5730,2,Gráficos,0.4
+5731,27,Oriente Medio,0.9144032921810697
+5732,17,Medicina,0.06989619377162631
+5733,13,Espacio,0.8295857988165682
+5734,10,Medicina,0.20800000000000002
+5735,4,Gráficos,0.55
+5736,2,Hockey,0.4
+5737,10,Automóviles,1
+5738,4,Gráficos,1
+5739,5,Hockey,1
+5740,3,Espacio,1
+5741,2,Medicina,1
+5742,18,Medicina,0.09629629629629628
+5743,5,Oriente Medio,0.6160000000000002
+5744,4,Automóviles,1
+5745,2,Hockey,1
+5746,3,Automóviles,1
+5747,14,Espacio,1
+5748,11,Oriente Medio,1
+5749,2,Espacio,1
+5750,5,Automóviles,0.3280000000000001
+5751,6,Gráficos,0.6666666666666669
+5752,7,Gráficos,0.7061224489795918
+5753,3,Espacio,1
+5754,10,Gráficos,0.44799999999999995
+5755,5,Hockey,1
+5756,3,Hockey,1
+5757,3,Automóviles,0.46666666666666673
+5758,3,Espacio,1
+5759,2,Automóviles,0.4
+5760,19,Hockey,1
+5761,2,Oriente Medio,1
+5762,88,Automóviles,1
+5763,5,Automóviles,1
+5764,12,Hockey,1
+5765,4,Espacio,0.25
+5766,6,Oriente Medio,0.4
+5767,13,Medicina,1
+5768,5,Gráficos,0.6160000000000002
+5769,4,Hockey,1
+5770,5,Espacio,0.6160000000000002
+5771,20,Espacio,1
+5772,3,Espacio,1
+5773,4,Gráficos,0.55
+5774,4,Medicina,1
+5775,13,Automóviles,0.07692307692307698
+5776,8,Espacio,0.7375
+5777,4,Medicina,1
+5778,29,Espacio,1
+5779,2,Espacio,1
+5780,3,Oriente Medio,0.46666666666666673
+5781,5,Hockey,0.6160000000000002
+5782,8,Gráficos,0.7375
+5783,13,Automóviles,1
+5784,4,Gráficos,0.55
+5785,6,Gráficos,0.6666666666666669
+5786,11,Gráficos,0.6429752066115704
+5787,32,Gráficos,1
+5788,2,Automóviles,0.4
+5789,4,Automóviles,1
+5790,2,Espacio,1
+5791,5,Espacio,1
+5792,7,Gráficos,0.26530612244897966
+5793,6,Medicina,1
+5794,12,Medicina,1
+5795,12,Espacio,0.46666666666666673
+5796,8,Hockey,0.1
+5797,3,Espacio,0.46666666666666673
+5798,3,Gráficos,0.46666666666666673
+5799,16,Automóviles,0.17500000000000002
+5800,5,Medicina,0.6160000000000002
+5801,14,Hockey,1
+5802,9,Hockey,1
+5803,17,Gráficos,0.867128027681661
+5804,7,Automóviles,1
+5805,6,Medicina,1
+5806,12,Espacio,0.8166666666666665
+5807,5,Gráficos,0.13600000000000004
+5808,32,Medicina,1
+5809,36,Hockey,1
+5810,5,Automóviles,1
+5811,4,Automóviles,0.25
+5812,2,Automóviles,0.4
+5813,3,Espacio,0.46666666666666673
+5814,26,Espacio,0.4035502958579882
+5815,23,Gráficos,1
+5816,19,Gráficos,1
+5817,2,Oriente Medio,1
+5818,2,Automóviles,1
+5819,3,Oriente Medio,1
+5820,6,Automóviles,0.4
+5821,2,Hockey,1
+5822,2,Automóviles,1
+5823,7,Automóviles,0.21632653061224483
+5824,8,Medicina,0.2125
+5825,18,Gráficos,0.45925925925925926
+5826,9,Espacio,0.3185185185185186
+5827,10,Medicina,0.784
+5828,13,Gráficos,0.24733727810650882
+5829,35,Hockey,1
+5830,5,Automóviles,0.42400000000000004
+5831,15,Automóviles,0.06133333333333336
+5832,13,Gráficos,1
+5833,7,Automóviles,0.11836734693877547
+5834,2,Espacio,1
+5835,2,Automóviles,1
+5836,21,Automóviles,1
+5837,2,Gráficos,1
+5838,24,Hockey,1
+5839,5,Automóviles,0.23200000000000012
+5840,4,Medicina,0.25
+5841,6,Gráficos,1
+5842,21,Medicina,0.0585034013605442
+5843,14,Espacio,0.8408163265306122
+5844,10,Oriente Medio,1
+5845,7,Automóviles,1
+5846,2,Espacio,0.4
+5847,7,Automóviles,0.1673469387755102
+5848,5,Espacio,0.6160000000000002
+5849,3,Espacio,0.19999999999999998
+5850,9,Gráficos,0.5555555555555557
+5851,4,Automóviles,0.1
+5852,4,Automóviles,1
+5853,10,Espacio,0.040000000000000056
+5854,3,Gráficos,1
+5855,8,Medicina,1
+5856,8,Gráficos,1
+5857,3,Espacio,0.46666666666666673
+5858,92,Automóviles,1
+5859,3,Gráficos,0.19999999999999998
+5860,4,Espacio,1
+5861,62,Oriente Medio,1
+5862,4,Automóviles,1
+5863,7,Espacio,1
+5864,2,Medicina,0.4
+5865,6,Espacio,0.6666666666666669
+5866,26,Automóviles,0.6698224852071005
+5867,7,Automóviles,0.06938775510204079
+5868,4,Gráficos,1
+5869,8,Gráficos,1
+5870,2,Medicina,1
+5871,12,Oriente Medio,1
+5872,2,Automóviles,0.4
+5873,12,Hockey,1
+5874,45,Espacio,1
+5875,14,Gráficos,1
+5876,54,Medicina,0.9563786008230453
+5877,2,Gráficos,0.4
+5878,11,Gráficos,1
+5879,2,Automóviles,0.4
+5880,5,Medicina,1
+5881,3,Gráficos,1
+5882,16,Hockey,1
+5883,2,Automóviles,0.4
+5884,41,Oriente Medio,0.9428911362284353
+5885,18,Hockey,1
+5886,13,Hockey,0.11952662721893495
+5887,13,Oriente Medio,0.13372781065088762
+5888,6,Hockey,1
+5889,2,Automóviles,0.4
+5890,2,Hockey,1
+5891,2,Hockey,0.4
+5892,3,Oriente Medio,1
+5893,29,Hockey,1
+5894,4,Espacio,0.25
+5895,9,Gráficos,0.5851851851851853
+5896,14,Medicina,0.0326530612244898
+5897,3,Espacio,1
+5898,13,Oriente Medio,0.09112426035502962
+5899,5,Espacio,0.23200000000000012
+5900,71,Oriente Medio,1
+5901,32,Automóviles,0.859375
+5902,9,Automóviles,0.3185185185185186
+5903,2,Espacio,1
+5904,5,Medicina,0.3280000000000001
+5905,2,Automóviles,1
+5906,9,Oriente Medio,1
+5907,16,Medicina,0.6062500000000001
+5908,8,Oriente Medio,1
+5909,5,Gráficos,1
+5910,5,Oriente Medio,0.13600000000000004
+5911,3,Hockey,1
+5912,5,Automóviles,1
+5913,20,Hockey,0.17200000000000007
+5914,14,Gráficos,0.19183673469387758
+5915,3,Medicina,1
+5916,2,Automóviles,0.4
+5917,3,Espacio,0.46666666666666673
+5918,2,Espacio,0.4
+5919,7,Medicina,1
+5920,9,Automóviles,1
+5921,69,Espacio,1
+5922,11,Medicina,1
+5923,7,Espacio,1
+5924,3,Espacio,0.46666666666666673
+5925,96,Automóviles,1
+5926,27,Gráficos,0.7530864197530862
+5927,7,Automóviles,0.7061224489795918
+5928,3,Espacio,0.46666666666666673
+5929,5,Medicina,1
+5930,5,Medicina,0.13600000000000004
+5931,28,Automóviles,0.6908163265306122
+5932,29,Oriente Medio,0.9200951248513676
+5933,8,Oriente Medio,1
+5934,5,Gráficos,1
+5935,3,Medicina,1
+5936,4,Gráficos,0.25
+5937,17,Medicina,0.13633217993079588
+5938,7,Espacio,0.3142857142857142
+5939,13,Gráficos,1
+5940,5,Gráficos,0.6160000000000002
+5941,5,Automóviles,0.23200000000000012
+5942,2,Espacio,0.4
+5943,5,Medicina,0.6160000000000002
+5944,15,Medicina,0.08266666666666667
+5945,5,Medicina,1
+5946,7,Automóviles,1
+5947,22,Automóviles,1
+5948,34,Gráficos,1
+5949,11,Automóviles,0.2859504132231404
+5950,11,Espacio,0.028099173553719024
+5951,12,Medicina,0.1666666666666667
+5952,6,Gráficos,0.26666666666666666
+5953,4,Oriente Medio,0.25
+5954,6,Espacio,0.20000000000000004
+5955,2,Espacio,1
+5956,7,Espacio,0.11836734693877547
+5957,15,Oriente Medio,0.7120000000000001
+5958,16,Gráficos,0.146875
+5959,58,Medicina,0.959334126040428
+5960,7,Oriente Medio,1
+5961,22,Gráficos,1
+5962,2,Automóviles,0.4
+5963,3,Hockey,1
+5964,12,Medicina,0.8166666666666665
+5965,3,Espacio,1
+5966,21,Gráficos,1
+5967,18,Hockey,0.38518518518518513
+5968,25,Gráficos,1
+5969,4,Espacio,0.25
+5970,5,Hockey,1
+5971,8,Hockey,1
+5972,3,Espacio,0.46666666666666673
+5973,5,Oriente Medio,1
+5974,36,Medicina,1
+5975,6,Espacio,0.6666666666666669
+5976,27,Espacio,0.36131687242798344
+5977,31,Espacio,1
+5978,20,Oriente Medio,1
+5979,40,Automóviles,0.8859999999999999
+5980,2,Oriente Medio,1
+5981,16,Gráficos,0.03437500000000001
+5982,8,Medicina,1
+5983,20,Hockey,1
+5984,32,Medicina,0.79140625
+5985,6,Automóviles,0.20000000000000004
+5986,3,Automóviles,1
+5987,4,Medicina,1
+5988,4,Hockey,0.55
+5989,10,Hockey,0.6160000000000002
+5990,4,Gráficos,1
+5991,12,Automóviles,0.18333333333333332
+5992,13,Automóviles,1
+5993,8,Hockey,1
+5994,7,Medicina,0.1673469387755102
+5995,2,Espacio,0.4
+5996,20,Automóviles,0.058
+5997,12,Oriente Medio,0.15000000000000002
+5998,14,Oriente Medio,0.27755102040816326
+5999,4,Espacio,1
+6000,4,Automóviles,1
+6001,6,Automóviles,1
+6002,2,Automóviles,1
+6003,6,Hockey,0.6666666666666669
+6004,32,Espacio,1
+6005,21,Espacio,1
+6006,40,Gráficos,1
+6007,14,Oriente Medio,0.08163265306122448
+6008,31,Gráficos,0.3656607700312174
+6009,15,Medicina,0.6160000000000002
+6010,29,Hockey,1
+6011,10,Gráficos,0.08800000000000004
+6012,12,Oriente Medio,1
+6013,23,Automóviles,1
+6014,123,Oriente Medio,1
+6015,10,Medicina,0.16000000000000006
+6016,65,Medicina,0.9636449704142013
+6017,3,Gráficos,0.46666666666666673
+6018,29,Medicina,0.13246135552913196
+6019,91,Oriente Medio,1
+6020,5,Gráficos,0.6160000000000002
+6021,2,Gráficos,1
+6022,23,Oriente Medio,0.07901701323251416
+6023,19,Medicina,0.5811634349030471
+6024,3,Hockey,1
+6025,14,Espacio,0.8408163265306122
+6026,2,Gráficos,0.4
+6027,18,Automóviles,0.21481481481481485
+6028,31,Automóviles,0.7177939646201873
+6029,39,Hockey,1
+6030,3,Automóviles,1
+6031,13,Espacio,1
+6032,9,Oriente Medio,0.17037037037037037
+6033,6,Medicina,0.6666666666666669
+6034,5,Oriente Medio,1
+6035,6,Automóviles,0.6666666666666669
+6036,3,Automóviles,1
+6037,36,Hockey,1
+6038,5,Espacio,0.6160000000000002
+6039,16,Medicina,1
+6040,8,Hockey,1
+6041,6,Espacio,1
+6042,23,Gráficos,0.3013232514177694
+6043,4,Hockey,0.55
+6044,2,Gráficos,0.4
+6045,5,Oriente Medio,0.6160000000000002
+6046,8,Espacio,1
+6047,4,Hockey,1
+6048,9,Hockey,1
+6049,3,Gráficos,1
+6050,31,Hockey,1
+6051,10,Gráficos,0.784
+6052,42,Oriente Medio,0.9442176870748298
+6053,3,Gráficos,0.46666666666666673
+6054,3,Oriente Medio,1
+6055,15,Hockey,0.16800000000000012
+6056,15,Gráficos,0.17866666666666672
+6057,5,Espacio,1
+6058,15,Espacio,0.8506666666666668
+6059,9,Hockey,0.17037037037037037
+6060,2,Gráficos,1
+6061,100,Automóviles,1
+6062,3,Automóviles,1
+6063,3,Automóviles,0.46666666666666673
+6064,23,Automóviles,1
+6065,6,Espacio,0.6666666666666669
+6066,3,Automóviles,0.19999999999999998
+6067,6,Espacio,0.26666666666666666
+6068,2,Gráficos,0.4
+6069,5,Medicina,1
+6070,30,Gráficos,0.7759999999999999
+6071,12,Espacio,0.8166666666666665
+6072,5,Espacio,0.6160000000000002
+6073,6,Gráficos,0.6666666666666669
+6074,48,Medicina,0.9510416666666666
+6075,9,Gráficos,1
+6076,5,Medicina,0.32799999999999996
+6077,45,Oriente Medio,0.9478518518518518
+6078,4,Automóviles,0.4
+6079,13,Medicina,0.04852071005917164
+6080,7,Automóviles,1
+6081,7,Automóviles,0.06938775510204079
+6082,25,Espacio,1
+6083,38,Gráficos,1
+6084,4,Hockey,0.4
+6085,3,Automóviles,0.46666666666666673
+6086,8,Gráficos,1
+6087,22,Hockey,1
+6088,12,Hockey,0.8166666666666665
+6089,26,Gráficos,1
+6090,3,Automóviles,0.46666666666666673
+6091,2,Espacio,0.4
+6092,2,Automóviles,0.4
+6093,10,Oriente Medio,0.784
+6094,20,Medicina,0.10000000000000007
+6095,28,Espacio,1
+6096,53,Medicina,0.9555713777144891
+6097,8,Medicina,0.7375
+6098,5,Oriente Medio,1
+6099,15,Automóviles,1
+6100,9,Gráficos,1
+6101,74,Espacio,1
+6102,3,Espacio,0.19999999999999998
+6103,7,Medicina,0.7061224489795918
+6104,14,Espacio,0.4
+6105,46,Oriente Medio,0.9489603024574669
+6106,45,Gráficos,1
+6107,14,Hockey,0.6938775510204079
+6108,7,Gráficos,0.21632653061224483
+6109,7,Medicina,0.41224489795918356
+6110,8,Espacio,0.2125
+6111,2,Gráficos,0.4
+6112,6,Hockey,1
+6113,22,Hockey,0.16694214876033056
+6114,18,Automóviles,0.02962962962962966
+6115,4,Oriente Medio,0.55
+6116,7,Medicina,0.46122448979591846
+6117,2,Medicina,0.4
+6118,18,Hockey,0.874074074074074
+6119,2,Automóviles,1
+6120,5,Medicina,0.42400000000000004
+6121,3,Oriente Medio,1
+6122,3,Medicina,0.46666666666666673
+6123,6,Medicina,0.6666666666666669
+6124,15,Gráficos,0.296
+6125,6,Automóviles,0.46666666666666673
+6126,17,Automóviles,0.061591695501730125
+6127,5,Espacio,0.23200000000000012
+6128,4,Oriente Medio,0.25
+6129,5,Medicina,0.6160000000000002
+6130,4,Automóviles,0.55
+6131,14,Automóviles,0.13061224489795922
+6132,6,Espacio,0.6666666666666669
+6133,20,Automóviles,0.16
+6134,19,Hockey,0.880332409972299
+6135,76,Espacio,1
+6136,3,Automóviles,1
+6137,5,Espacio,0.13600000000000004
+6138,24,Oriente Medio,0.4625000000000001
+6139,47,Oriente Medio,0.9500226346763241
+6140,3,Espacio,0.19999999999999998
+6141,4,Automóviles,0.25
+6142,17,Gráficos,1
+6143,40,Hockey,0.9414999999999999
+6144,10,Oriente Medio,0.5920000000000002
+6145,9,Gráficos,1
+6146,104,Automóviles,1
+6147,19,Espacio,0.10914127423822713
+6148,22,Oriente Medio,0.8958677685950416
+6149,7,Gráficos,1
+6150,4,Espacio,1
+6151,17,Hockey,0.10311418685121106
+6152,5,Medicina,0.32799999999999996
+6153,6,Automóviles,0.4
+6154,4,Espacio,0.55
+6155,3,Gráficos,0.46666666666666673
+6156,5,Espacio,0.6160000000000002
+6157,9,Automóviles,0.2592592592592593
+6158,6,Gráficos,1
+6159,13,Medicina,1
+6160,21,Medicina,0.08027210884353737
+6161,11,Automóviles,1
+6162,30,Hockey,1
+6163,22,Automóviles,0.13719008264462812
+6164,8,Automóviles,0.25
+6165,10,Hockey,0.06400000000000004
+6166,4,Espacio,1
+6167,6,Medicina,0.26666666666666666
+6168,5,Espacio,0.13600000000000004
+6169,9,Medicina,0.08148148148148147
+6170,2,Espacio,0.4
+6171,8,Espacio,0.2125
+6172,2,Automóviles,0.4
+6173,26,Oriente Medio,0.04497041420118346
+6174,24,Gráficos,0.32083333333333336
+6175,5,Espacio,0.6160000000000002
+6176,17,Medicina,0.23598615916955018
+6177,42,Automóviles,0.891156462585034
+6178,7,Gráficos,0.7061224489795918
+6179,8,Espacio,0.2125
+6180,6,Automóviles,0.06666666666666672
+6181,40,Hockey,1
+6182,11,Hockey,0.8016528925619834
+6183,36,Hockey,1
+6184,128,Oriente Medio,1
+6185,4,Gráficos,0.55
+6186,19,Automóviles,0.016066481994459845
+6187,10,Espacio,0.784
+6188,47,Gráficos,1
+6189,2,Espacio,0.4
+6190,26,Gráficos,0.1088757396449704
+6191,6,Automóviles,0.4
+6192,12,Hockey,0.08333333333333333
+6193,2,Automóviles,0.4
+6194,8,Automóviles,0.1375
+6195,24,Medicina,0.10833333333333338
+6196,3,Automóviles,0.46666666666666673
+6197,109,Automóviles,1
+6198,2,Espacio,0.4
+6199,5,Automóviles,0.6160000000000002
+6200,3,Automóviles,0.19999999999999998
+6201,9,Automóviles,0.08148148148148147
+6202,53,Espacio,1
+6203,6,Espacio,0.26666666666666666
+6204,5,Automóviles,0.6160000000000002
+6205,4,Gráficos,0.55
+6206,2,Hockey,0.4
+6207,12,Medicina,0.05000000000000002
+6208,13,Espacio,0.34674556213017754
+6209,26,Automóviles,1
+6210,14,Espacio,0.44897959183673464
+6211,69,Medicina,0.9657214870825457
+6212,3,Gráficos,1
+6213,42,Hockey,1
+6214,84,Espacio,1
+6215,13,Gráficos,0.24733727810650882
+6216,11,Hockey,1
+6217,15,Gráficos,0.8506666666666668
+6218,7,Automóviles,0.21632653061224483
+6219,18,Automóviles,1
+6220,14,Espacio,0.8408163265306122
+6221,8,Automóviles,0.5125000000000001
+6222,4,Gráficos,0.55
+6223,19,Gráficos,0.7739612188365651
+6224,18,Medicina,1
+6225,9,Espacio,0.3185185185185186
+6226,5,Medicina,0.32799999999999996
+6227,8,Medicina,0.1375
+6228,8,Espacio,0.7375
+6229,18,Medicina,1
+6230,24,Automóviles,0.09583333333333335
+6231,27,Automóviles,0.05185185185185184
+6232,16,Hockey,0.484375
+6233,3,Oriente Medio,0.46666666666666673
+6234,3,Gráficos,1
+6235,12,Hockey,0.46666666666666673
+6236,5,Oriente Medio,0.6160000000000002
+6237,20,Oriente Medio,0.778
+6238,7,Oriente Medio,0.7061224489795918
+6239,21,Espacio,0.891156462585034
+6240,87,Espacio,0.9727308759413396
+6241,27,Espacio,1
+6242,24,Hockey,0.24999999999999994
+6243,7,Automóviles,0.41224489795918356
+6244,25,Gráficos,0.28192
+6245,38,Hockey,1
+6246,13,Medicina,0.8295857988165682
+6247,48,Gráficos,1
+6248,2,Gráficos,1
+6249,17,Hockey,1
+6250,4,Espacio,1
+6251,4,Espacio,1
+6252,112,Automóviles,0.9787627551020408
+6253,40,Gráficos,0.06699999999999998
+6254,9,Automóviles,0.3777777777777777
+6255,7,Gráficos,0.7061224489795918
+6256,14,Gráficos,0.5714285714285714
+6257,34,Espacio,1
+6258,22,Hockey,0.04793388429752064
+6259,25,Oriente Medio,0.90784
+6260,37,Medicina,0.09013878743608475
+6261,12,Automóviles,0.06666666666666667
+6262,18,Automóviles,0.044444444444444474
+6263,27,Automóviles,0.14732510288065842
+6264,48,Oriente Medio,0.9510416666666666
+6265,14,Oriente Medio,0.2040816326530612
+6266,131,Oriente Medio,1
+6267,13,Automóviles,1
+6268,2,Automóviles,0.4
+6269,15,Hockey,1
+6270,11,Oriente Medio,0.46446280991735545
+6271,3,Hockey,0.46666666666666673
+6272,20,Medicina,0.394
+6273,42,Hockey,1
+6274,14,Espacio,0.13061224489795917
+6275,56,Hockey,1
+6276,42,Gráficos,1
+6277,12,Medicina,0.2666666666666667
+6278,12,Hockey,0.8166666666666665
+6279,56,Espacio,1
+6280,21,Medicina,0.5210884353741496
+6281,35,Hockey,1
+6282,16,Gráficos,1
+6283,115,Automóviles,0.97931190926276
+6284,5,Gráficos,0.42400000000000004
+6285,2,Automóviles,1
+6286,28,Oriente Medio,0.029591836734693844
+6287,27,Gráficos,0.8320987654320987
+6288,34,Automóviles,0.5785467128027681
+6289,8,Automóviles,0.4375
+6290,2,Medicina,1
+6291,10,Gráficos,0.784
+6292,7,Espacio,0.7061224489795918
+6293,6,Espacio,0.20000000000000004
+6294,3,Automóviles,0.19999999999999998
+6295,21,Automóviles,0.14557823129251704
+6296,5,Hockey,1
+6297,10,Medicina,0.784
+6298,9,Medicina,0.3185185185185186
+6299,20,Medicina,1
+6300,7,Espacio,0.46122448979591846
+6301,11,Gráficos,1
+6302,34,Gráficos,1
+6303,48,Medicina,0.09895833333333337
+6304,16,Hockey,1
+6305,30,Automóviles,0.09866666666666667
+6306,92,Espacio,0.974196597353497
+6307,3,Automóviles,1
+6308,4,Medicina,1
+6309,9,Hockey,1
+6310,3,Espacio,0.19999999999999998
+6311,10,Gráficos,0.3040000000000001
+6312,31,Gráficos,0.7202913631633714
+6313,33,Hockey,0.7950413223140497
+6314,4,Automóviles,0.1
+6315,28,Oriente Medio,0.38469387755102047
+6316,4,Espacio,1
+6317,30,Espacio,0.9226666666666665
+6318,48,Hockey,1
+6319,43,Automóviles,0.8935640886965928
+6320,39,Automóviles,1
+6321,7,Medicina,0.3142857142857142
+6322,8,Espacio,0.17500000000000002
+6323,21,Oriente Medio,0.6952380952380951
+6324,53,Gráficos,1
+6325,7,Medicina,0.16734693877551016
+6326,122,Medicina,0.9611394786347757
+6327,32,Automóviles,0.1046875
+6328,3,Espacio,0.46666666666666673
+6329,13,Gráficos,1
+6330,30,Gráficos,0.27733333333333327
+6331,106,Espacio,0.9553577785688857
+6332,72,Hockey,1
+6333,5,Gráficos,0.13600000000000004
+6334,133,Automóviles,0.9820905647577589
+6335,3,Hockey,0.46666666666666673
+6336,6,Automóviles,0.46666666666666673
+6337,3,Automóviles,0.46666666666666673
+6338,8,Espacio,0.2125
+6339,7,Automóviles,0.1673469387755102
+6340,37,Oriente Medio,0.025273922571219885
+6341,32,Gráficos,0.33437500000000003
+6342,17,Medicina,0.867128027681661
+6343,17,Automóviles,1
+6344,4,Automóviles,0.4
+6345,6,Espacio,1
+6346,21,Hockey,0.891156462585034
+6347,33,Automóviles,0.10082644628099172
+6348,35,Gráficos,0.08114285714285713
+6349,24,Oriente Medio,0.9041666666666669
+6350,29,Automóviles,0.04684898929845421
+6351,9,Automóviles,0.2296296296296296
+6352,39,Medicina,0.09585798816568053
+6353,3,Automóviles,0.19999999999999998
+6354,4,Oriente Medio,1
+6355,4,Espacio,0.4
+6356,35,Oriente Medio,0.26922448979591834
+6357,42,Medicina,0.06802721088435372
+6358,8,Oriente Medio,0.2125
+6359,17,Espacio,0.7508650519031141
+6360,13,Hockey,0.1479289940828403
+6361,7,Espacio,0.7061224489795918
+6362,21,Medicina,1
+6363,5,Gráficos,0.13600000000000004
+6364,11,Espacio,0.8016528925619834
+6365,133,Oriente Medio,1
+6366,18,Espacio,0.5481481481481483
+6367,8,Automóviles,0.17500000000000002
+6368,26,Hockey,0.23668639053254442
+6369,30,Gráficos,0.5866666666666668
+6370,157,Oriente Medio,0.9848107428293238
+6371,10,Gráficos,0.16000000000000006
+6372,32,Hockey,0.92734375
+6373,23,Gráficos,0.3194706994328923
+6374,23,Medicina,0.38752362948960306
+6375,8,Espacio,0.5125000000000001
+6376,45,Automóviles,0.898074074074074
+6377,32,Automóviles,1
+6378,3,Gráficos,0.46666666666666673
+6379,67,Gráficos,0.14617955001113828
+6380,10,Automóviles,0.11200000000000002
+6381,26,Hockey,0.030769230769230826
+6382,34,Gráficos,0.30449826989619383
+6383,13,Hockey,0.3751479289940829
+6384,31,Automóviles,0.06097814776274713
+6385,135,Medicina,0.9648395061728394
+6386,19,Automóviles,0.880332409972299
+6387,7,Oriente Medio,0.46122448979591846
+6388,30,Gráficos,0.8506666666666668
+6389,60,Espacio,1
+6390,4,Gráficos,0.55
+6391,18,Gráficos,1
+6392,60,Medicina,0.016000000000000004
+6393,155,Medicina,0.86643912591051
+6394,47,Automóviles,0.066727025803531
+6395,12,Automóviles,0.28333333333333344
+6396,140,Automóviles,0.9662040816326531
+6397,94,Espacio,1
+6398,43,Gráficos,0.8403461330448891
+6399,49,Hockey,0.9520199916701374
+6400,45,Hockey,1
+6401,37,Automóviles,0.08838568298027762
+6402,15,Hockey,0.12533333333333338
+6403,10,Espacio,0.3040000000000001
+6404,113,Espacio,0.9171117550317174
+6405,21,Medicina,0.036734693877550996
+6406,33,Automóviles,0.09862258953168047
+6407,117,Hockey,1
+6408,29,Medicina,0.3521997621878716
+6409,28,Hockey,0.029591836734693875
+6410,88,Hockey,0.9730371900826447
+6411,39,Automóviles,0.13057199211045364
+6412,5,Hockey,0.23200000000000012
+6413,34,Gráficos,0.6346020761245675
+6414,18,Hockey,0.5185185185185185
+6415,17,Oriente Medio,0.15294117647058825
+6416,48,Automóviles,0.9041666666666669
+6417,43,Gráficos,0.03818280151433207
+6418,44,Medicina,0.028099173553719024
+6419,50,Medicina,0.8627199999999999
+6420,3,Automóviles,0.19999999999999998
+6421,29,Medicina,0.6375743162901308
+6422,7,Gráficos,0.7061224489795918
+6423,21,Hockey,0.6136054421768709
+6424,64,Medicina,0.01328125000000001
+6425,57,Gráficos,0.8411819021237303
+6426,7,Espacio,1
+6427,67,Medicina,0.014123412786812228
+6428,26,Automóviles,0.2189349112426036
+6429,34,Espacio,0.8650519031141868
+6430,172,Medicina,0.8663872363439697
+6431,11,Oriente Medio,0.8016528925619834
+6432,16,Gráficos,0.2875
+6433,95,Espacio,1
+6434,4,Gráficos,0.55
+6435,48,Automóviles,0.060416666666666716
+6436,41,Automóviles,1
+6437,35,Hockey,0.028244897959183654
+6438,39,Espacio,0.7207100591715978
+6439,44,Hockey,1
+6440,40,Oriente Medio,0.2859999999999999
+6441,5,Automóviles,0.3280000000000001
+6442,65,Medicina,0.027502958579881685
+6443,13,Gráficos,0.16213017751479294
+6444,64,Hockey,0.9630859375
+6445,2,Espacio,0.4
+6446,20,Oriente Medio,0.13000000000000003
+6447,39,Automóviles,0.0863905325443787
+6448,12,Medicina,0.18333333333333332
+6449,6,Gráficos,0.6666666666666669
+6450,77,Gráficos,0.12565356721200877
+6451,35,Gráficos,0.2417959183673469
+6452,41,Gráficos,0.9428911362284353
+6453,185,Medicina,0.8753893352812271
+6454,24,Espacio,0.07083333333333332
+6455,34,Hockey,0.4851211072664361
+6456,67,Automóviles,0.8962797950545778
+6457,51,Espacio,0.06343713956170707
+6458,45,Espacio,0.016296296296296274
+6459,31,Medicina,0.6578563995837671
+6460,10,Espacio,0.256
+6461,12,Oriente Medio,0.65
+6462,14,Hockey,0.04489795918367349
+6463,5,Espacio,0.23200000000000012
+6464,130,Espacio,0.8930650887573965
+6465,52,Oriente Medio,0.15857988165680478
+6466,51,Espacio,0.4389850057670129
+6467,195,Medicina,0.8699171597633135
+6468,25,Gráficos,0.90784
+6469,39,Gráficos,0.18106508875739633
+6470,16,Espacio,0.31562500000000004
+6471,20,Hockey,0.8859999999999999
+6472,12,Medicina,0.18333333333333332
+6473,3,Gráficos,0.19999999999999998
+6474,47,Gráficos,0.04717066545948395
+6475,17,Gráficos,0.23598615916955018
+6476,15,Hockey,0.28533333333333327
+6477,44,Gráficos,0.7954545454545454
+6478,57,Espacio,0.4038781163434903
+6479,30,Gráficos,0.5920000000000001
+6480,28,Automóviles,0.20408163265306128
+6481,32,Medicina,0.31093750000000003
+6482,11,Oriente Medio,0.08760330578512399
+6483,108,Hockey,0.9779835390946501
+6484,7,Automóviles,0.11836734693877547
+6485,37,Medicina,0.46530314097881664
+6486,23,Espacio,0.4465028355387523
+6487,178,Oriente Medio,0.9469763918697133
+6488,64,Oriente Medio,0.2142578125
+6489,67,Medicina,0.02214301626197371
+6490,39,Medicina,0.193688362919132
+6491,109,Hockey,0.9567713155458294
+6492,9,Automóviles,0.2296296296296296
+6493,6,Medicina,0.6666666666666669
+6494,13,Espacio,0.13372781065088762
+6495,63,Gráficos,0.8210128495842781
+6496,59,Espacio,0.3898305084745762
+6497,78,Gráficos,0.8252465483234716
+6498,50,Gráficos,0.10528000000000003
+6499,47,Automóviles,0.1308284291534631
+6500,53,Medicina,0.870131719473122
+6501,12,Gráficos,0.06666666666666667
+6502,51,Gráficos,0.06435986159169552
+6503,17,Hockey,0.06989619377162631
+6504,13,Gráficos,0.3183431952662722
+6505,52,Gráficos,0.529585798816568
+6506,99,Automóviles,0.9289868380777473
+6507,28,Espacio,0.029591836734693844
+6508,181,Automóviles,0.973773694331675
+6509,22,Espacio,0.7966942148760331
+6510,89,Oriente Medio,0.34887009216008075
+6511,128,Hockey,0.962939453125
+6512,62,Espacio,0.4936524453694069
+6513,57,Gráficos,0.09067405355493997
+6514,5,Hockey,0.13600000000000004
+6515,157,Espacio,0.7730374457381638
+6516,18,Oriente Medio,0.09629629629629628
+6517,22,Oriente Medio,0.10743801652892566
+6518,226,Oriente Medio,0.9477954420863026
+6519,20,Gráficos,0.06400000000000002
+6520,93,Gráficos,0.7411030176899065
+6521,100,Automóviles,0.9296799999999998
+6522,52,Hockey,0.47189349112426027
+6523,66,Gráficos,0.06170798898071623
+6524,14,Automóviles,0.08163265306122448
+6525,184,Automóviles,0.974196597353497
+6526,205,Medicina,0.8022320047590721
+6527,120,Oriente Medio,0.9801666666666667
+6528,56,Gráficos,0.5285714285714287
+6529,42,Medicina,0.18367346938775506
+6530,6,Hockey,0.4
+6531,37,Gráficos,0.2864864864864865
+6532,242,Medicina,0.7369851786080185
+6533,245,Hockey,0.9805281132861308
+6534,19,Medicina,0.05595567867036011
+6535,43,Gráficos,0.701460248783126
+6536,20,Espacio,0.052
+6537,32,Hockey,0.1375
+6538,32,Oriente Medio,0.07421875000000001
+6539,60,Automóviles,0.07266666666666667
+6540,73,Gráficos,0.0866579095515106
+6541,254,Medicina,0.7006510013020026
+6542,36,Hockey,0.1574074074074074
+6543,315,Oriente Medio,0.7457898715041572
+6544,284,Automóviles,0.9583713548899028
+6545,79,Medicina,0.03400096138439355
+6546,287,Espacio,0.8257014167951533
+6547,115,Hockey,0.9185179584120983
+6548,18,Medicina,0.059259259259259255
+6549,134,Gráficos,0.7996435731788817
+6550,360,Hockey,0.9604259259259258
+6551,318,Automóviles,0.9117835528657885
+6552,8,Automóviles,0.06250000000000001
+6553,94,Gráficos,0.13110004526935265
+6554,107,Automóviles,0.05668617346493138
+6555,115,Gráficos,0.18971644612476374
+6556,115,Gráficos,0.05052551984877126
+6557,121,Gráficos,0.7782118707738543
+6558,32,Espacio,0.04375000000000001
+6559,30,Oriente Medio,0.04533333333333332
+6560,112,Medicina,0.008163265306122458
+6561,304,Medicina,0.7250346260387812
+6562,412,Hockey,0.8871288528607786
+6563,157,Gráficos,0.6889123291005721
+6564,79,Gráficos,0.08283928857554879
+6565,66,Hockey,0.05785123966942154
+6566,26,Oriente Medio,0.04852071005917164
+6567,129,Espacio,0.04957634757526591
+6568,52,Espacio,0.02721893491124261
+6569,86,Automóviles,0.09302325581395349
+6570,278,Gráficos,0.7240826044200611
+6571,189,Espacio,0.05285966238347187
+6572,356,Medicina,0.5377098851155158
+6573,152,Gráficos,0.07070637119113578
+6574,331,Gráficos,0.7647338012613978
+6575,435,Oriente Medio,0.8070233848592945
+6576,173,Gráficos,0.10003007116843202
+6577,374,Medicina,0.5000657725413938
+6578,402,Espacio,0.5232642756367416
+6579,486,Medicina,0.30825585530660976
+6580,275,Automóviles,0.05608991735537191
+6581,98,Oriente Medio,0.061640982923781736
+6582,593,Automóviles,0.35190601992327586
+6583,888,Espacio,0.17842403214024832
+6584,445,Hockey,0.8799545511930313
+6585,325,Gráficos,0.06833420118343198
+6586,1481,Automóviles,0.09939202894553156
+6587,533,Oriente Medio,0.5808750074800504
+6588,656,Gráficos,0.31505056513979773
+6589,471,Hockey,0.830029615805915
+6590,1507,Automóviles,0.0962372013990011
+6591,1538,Automóviles,0.09376269317726396
+6592,2071,Oriente Medio,0.04951172068534668
+6593,684,Gráficos,0.29302349440853587
+6594,2091,Oriente Medio,0.04811863647373077
+6595,2775,Gráficos,0.02293239834429024
+6596,3246,Espacio,0.00023005707009792208
+6597,3299,Automóviles,9.188304280760561e-8
+6598,3300,Automóviles,3.3306690738754695e-17

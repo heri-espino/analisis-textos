@@ -1,0 +1,10 @@
+{
+  "modelo": "SGD",
+  "representacion": "Léxica",
+  "top3": [
+    "SGD",
+    "Stacking (XGBoost)",
+    "Regresión logística"
+  ],
+  "evaluacion": "exploratoria; prueba observada antes de experiment006"
+}

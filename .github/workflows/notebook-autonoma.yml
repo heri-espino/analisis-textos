@@ -1,0 +1,50 @@
+name: Notebook autónoma
+on:
+  push:
+    branches: [proyecto/experimentos]
+    paths: ['notebook_autonoma.ipynb', '.github/workflows/notebook-autonoma.yml', 'scripts/verificar_notebook.py']
+  workflow_dispatch:
+    inputs:
+      ejecutar_completa:
+        description: 'Ejecutar todos los análisis'
+        type: boolean
+        default: false
+concurrency:
+  group: notebook-autonoma-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  verificar:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 180
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar código y ausencia de dependencias locales
+        run: |
+          $conda = @("$env:USERPROFILE\miniconda3\Scripts\conda.exe", "$env:USERPROFILE\miniforge3\Scripts\conda.exe", "$env:USERPROFILE\anaconda3\Scripts\conda.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $conda) { $conda = (Get-Command conda.exe).Source }
+          "CONDA_EXE_PROYECTO=$conda" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          & $conda run -n analisis-textos python scripts/verificar_notebook.py --sintaxis
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Prueba real en un directorio independiente
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python scripts/verificar_notebook.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notebook-autonoma
+          path: notebook_autonoma.ipynb
+      - name: Ejecutar notebook completa
+        if: github.event_name == 'push' || inputs.ejecutar_completa
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python scripts/verificar_notebook.py --completa
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push' || inputs.ejecutar_completa
+        with:
+          name: notebook-ejecutada
+          path: notebook_autonoma_ejecutada.ipynb

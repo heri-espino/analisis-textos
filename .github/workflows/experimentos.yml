@@ -1,0 +1,100 @@
+name: Experimentos de análisis de textos
+
+on:
+  push:
+    branches: [proyecto/experimentos]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - 'environment.yml'
+      - 'pyproject.toml'
+      - '.github/workflows/experimentos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: analisis-textos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  experimentos:
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 180
+    defaults:
+      run:
+        shell: powershell
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar Conda existente
+        run: |
+          $candidatos = @("$env:USERPROFILE\miniconda3\Scripts\conda.exe", "$env:USERPROFILE\miniforge3\Scripts\conda.exe", "$env:USERPROFILE\anaconda3\Scripts\conda.exe")
+          $conda = $candidatos | Where-Object { Test-Path $_ } | Select-Object -First 1
+          if (-not $conda) {
+            $cmd = Get-Command conda.exe -ErrorAction SilentlyContinue
+            if ($cmd) { $conda = $cmd.Source }
+          }
+          if (-not $conda) { throw "No se encontró una instalación de Conda en el runner." }
+          "CONDA_EXE_PROYECTO=$conda" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          & $conda --version
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & $conda env update -n analisis-textos -f environment.yml --prune
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Instalar proyecto
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m pip install --no-deps --no-build-isolation -e .
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Pruebas unitarias
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m pytest -q
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Actualizar proyecciones y entregables sin reentrenar
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment007:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment007
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto entrega
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Diagnósticos complementarios sin modificar resultados históricos
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment008:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment008
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Medoides y DBSCAN originales
+        if: github.event_name == 'push' && startsWith(github.event.head_commit.message, 'experiment009:')
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto experiment009
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Ejecutar experimentos y generar entregables
+        if: github.event_name != 'push' || (!startsWith(github.event.head_commit.message, 'experiment007:') && !startsWith(github.event.head_commit.message, 'experiment008:') && !startsWith(github.event.head_commit.message, 'experiment009:'))
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python -m proyecto
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Registrar versiones
+        run: |
+          & "$env:CONDA_EXE_PROYECTO" list -n analisis-textos --explicit | Out-File -Encoding utf8 resultados/conda-win-64.txt
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Conservar artefactos
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: analisis-textos-resultados
+          path: |
+            resultados/
+            notebook_final.ipynb
+            reporte.pdf
+          if-no-files-found: warn
+      - name: Versionar resultados en la rama
+        if: github.ref == 'refs/heads/proyecto/experimentos'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resultados notebook_final.ipynb reporte.pdf
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { exit 0 }
+          git commit -m "Guardar resultados reproducibles y entregables [skip ci]"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          git push origin HEAD:proyecto/experimentos
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
