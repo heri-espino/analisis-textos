@@ -1,4 +1,4 @@
-name: Notebook autónoma LDS1071
+name: Notebook autónoma
 on:
   push:
     branches: [proyecto/experimentos]
@@ -23,7 +23,7 @@ jobs:
         shell: powershell
     steps:
       - uses: actions/checkout@v4
-      - name: Validar notebook y módulos incluidos
+      - name: Validar código y ausencia de dependencias locales
         run: |
           $conda = @("$env:USERPROFILE\miniconda3\Scripts\conda.exe", "$env:USERPROFILE\miniforge3\Scripts\conda.exe", "$env:USERPROFILE\anaconda3\Scripts\conda.exe") | Where-Object { Test-Path $_ } | Select-Object -First 1
           if (-not $conda) { $conda = (Get-Command conda.exe).Source }

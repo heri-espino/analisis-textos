@@ -55,13 +55,9 @@ Para actualizar únicamente los dos dashboards del capítulo 2 con resultados an
 
 `python -m proyecto experiment009`: medoides coseno de los diez grupos y etiquetas DBSCAN originales, verificadas contra las métricas históricas.
 
-## Notebook autónoma
-`notebook_autonoma.ipynb` contiene el código fuente de todos los módulos necesarios. No requiere clonar el repositorio ni descargar scripts. Ejecutar en el entorno Conda anterior o activar INSTALAR. La primera ejecución descarga 20 Newsgroups. El flujo dedicado valida la sintaxis y ejecuta una prueba de carga, EDA e importación de todos los módulos en un directorio temporal. Los cambios a la notebook activan también la ejecución completa desde un directorio vacío y sin caché previa del corpus; puede lanzarse manualmente con workflow_dispatch y ejecutar_completa=true.
+## Notebook autónoma para Google Colab
 
-La notebook se organiza en celdas breves con Markdown contextual. Las celdas de escritura guardan fragmentos independientes; `ensamblar` reconstruye los módulos locales sin duplicar código al repetir celdas. Ejecutar de arriba abajo. Se mantienen las rejillas y el protocolo original.
-
-## Google Colab
-Abrir directamente: https://colab.research.google.com/github/heri-espino/analisis-textos/blob/proyecto/experimentos/notebook_autonoma.ipynb . Seleccionar CPU. La notebook instala automáticamente las versiones de dependencias en Colab; si solicita reinicio, reiniciar la sesión y ejecutar todo otra vez. Se limita el paralelismo a dos procesos en Colab para controlar memoria, sin reducir las rejillas, pliegues ni corpus. En Colab se crea /content/LDS1071_autonomo sin clonar el repositorio. Se verifican las métricas de los veinte candidatos contra las predicciones generadas en esa sesión, y se guardan las versiones del entorno. Descargar el ZIP de resultados antes de desconectar. Los tiempos dependen del hardware.
+Abrir [notebook_autonoma.ipynb en Colab](https://colab.research.google.com/github/heri-espino/analisis-textos/blob/proyecto/experimentos/notebook_autonoma.ipynb). Seleccionar CPU y ejecutar todas las celdas. Contiene código Python directo, descarga pública por scikit-learn y dependencias instaladas automáticamente en Colab. No escribe módulos, no importa código del repositorio, no lee CSV ni modelos previos y no requiere rutas de trabajo. Tablas, figuras y modelos se mantienen en memoria; la última celda permite exportar tablas, gráficos y metadatos a resultados.zip opcionalmente. El protocolo experimental permanece intacto. El workflow dedicado comprueba la sintaxis y ejecuta la notebook desde un directorio vacío.
 
 ## Entrega rápida sin entrenamiento
 `notebook_resultados.ipynb` carga `outputs/` o `resultados/`, reproduce visualizaciones a partir de CSV y verifica las métricas de predicciones históricas. Carga los dos pipelines serializados para inferencia. No descarga el corpus ni reentrena. `notebook_autonoma.ipynb` se conserva para reproducir los experimentos. El flujo Entrega rápida LDS1071 ejecuta la notebook en una carpeta independiente y empaqueta el ZIP para entrega.
