@@ -48,3 +48,42 @@ jobs:
         with:
           name: notebook-ejecutada
           path: notebook_autonoma_ejecutada.ipynb
+
+  compatibilidad-python313:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Instalar las versiones declaradas por la notebook
+        run: |
+          python - <<'PY'
+          import ast, json, subprocess, sys
+          with open("notebook_autonoma.ipynb", encoding="utf-8") as f:
+              nb = json.load(f)
+          codigo = "".join(nb["cells"][2]["source"])
+          nodo = next(n for n in ast.parse(codigo).body
+                      if isinstance(n, ast.Assign) and any(
+                          isinstance(t, ast.Name) and t.id == "DEPENDENCIAS" for t in n.targets))
+          deps = ast.literal_eval(nodo.value)
+          subprocess.check_call([sys.executable, "-m", "pip", "install", "--prefer-binary",
+                                 *[f"{k}=={v}" for k,v in deps.items()]])
+          PY
+      - name: Probar importaciones y ajuste real de UMAP
+        env:
+          VALIDAR_NOTEBOOK: '1'
+        run: |
+          python - <<'PY'
+          import json
+          with open("notebook_autonoma.ipynb", encoding="utf-8") as f:
+              nb = json.load(f)
+          exec("".join(nb["cells"][2]["source"]))
+          from umap import UMAP
+          X = np.random.default_rng(42).normal(size=(80, 10))
+          Z = UMAP(n_components=2, n_neighbors=15, random_state=42,
+                   n_jobs=1).fit_transform(X)
+          assert Z.shape == (80, 2) and np.isfinite(Z).all()
+          print("Python 3.13: UMAP verificado.")
+          PY
