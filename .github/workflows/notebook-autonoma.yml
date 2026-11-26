@@ -9,6 +9,9 @@ on:
         description: 'Ejecutar todos los análisis'
         type: boolean
         default: false
+concurrency:
+  group: notebook-autonoma-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
