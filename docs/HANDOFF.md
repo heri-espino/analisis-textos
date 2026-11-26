@@ -27,3 +27,5 @@ Reorganización de la notebook autónoma: fragmentos fuente pequeños, ensamblad
 Compatibilidad Colab: instalación condicional de dependencias, aviso de reinicio cuando se sustituyen módulos cargados, límite de procesos y descarga ZIP final. Protocolo experimental intacto. La ejecución de Colab real debe comprobarse aparte de las pruebas de la VM Windows.
 
 Entrega rápida: notebook_resultados.ipynb, resultados históricos inmutables, métricas verificadas mediante predicciones, pipelines originales léxico e híbrido. No se han guardado otros estimadores. El flujo dedicado prohíbe ajustes y descarga del corpus, verifica los hashes y empaqueta los outputs. La notebook autónoma completa se conserva.
+
+Notebook autónoma para Colab: evitar dependencia del ganador de agrupamiento de Windows, guardar corte K-means de diez grupos, mostrar ambos dashboards, reproducir corte jerárquico y pureza, verificar métricas con predicciones recién calculadas y guardar versiones. El workflow dedicado ejecuta desde carpeta vacía sin caché en la prueba completa; no modifica resultados históricos. Comprobar el run antes de afirmar validación integral.

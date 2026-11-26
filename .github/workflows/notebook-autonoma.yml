@@ -36,12 +36,12 @@ jobs:
           name: notebook-autonoma
           path: notebook_autonoma.ipynb
       - name: Ejecutar notebook completa
-        if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
+        if: github.event_name == 'push' || inputs.ejecutar_completa
         run: |
           & "$env:CONDA_EXE_PROYECTO" run --no-capture-output -n analisis-textos python scripts/verificar_notebook.py --completa
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - uses: actions/upload-artifact@v4
-        if: github.event_name == 'workflow_dispatch' && inputs.ejecutar_completa
+        if: github.event_name == 'push' || inputs.ejecutar_completa
         with:
           name: notebook-ejecutada
           path: notebook_autonoma_ejecutada.ipynb

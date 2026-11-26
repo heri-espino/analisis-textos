@@ -1,6 +1,6 @@
 """Verificar la notebook sin importar el paquete instalado del repositorio."""
 from pathlib import Path
-import tempfile, shutil, sys
+import tempfile, shutil, sys, os
 import nbformat
 from nbclient import NotebookClient
 
@@ -18,7 +18,7 @@ if "--sintaxis" in sys.argv:
 with tempfile.TemporaryDirectory(prefix="lds1071-notebook-") as tmp:
     work=Path(tmp)
     # Reusar únicamente la caché del corpus público, si existe.
-    if (root/"data").is_dir():
+    if not completa and (root/"data").is_dir():
         shutil.copytree(root/"data", work/"data")
     if not completa:
         # Las celdas de escritura se ejecutan realmente; luego EDA y prueba de importación.
@@ -36,6 +36,7 @@ with tempfile.TemporaryDirectory(prefix="lds1071-notebook-") as tmp:
             "assert comun.RAIZ == Path.cwd()\n"
             "print('Carga, EDA, módulos y pipeline supervisado verificados.')")
         nb=nbformat.v4.new_notebook(cells=[*setup,*modulos,*auxiliares,test],metadata=nb.metadata)
+    os.environ["LDS1071_VALIDACION"]="1"
     client=NotebookClient(nb,timeout=None,kernel_name="python3",resources={"metadata":{"path":str(work)}})
     client.execute()
     if completa:
